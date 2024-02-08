@@ -1209,7 +1209,7 @@ hr:not([size]) {
 .acco {
   margin-top: 17px;
 }
-.accordion-button::after {
+.Educational_bags .accordion-button::after {
   margin-right: auto !important;
   margin-left: unset;
 }
@@ -1248,24 +1248,24 @@ hr:not([size]) {
   font-size: 1rem;
   color: #656b78;
 }
-.accordion-button:not(.collapsed) {
+.Educational_bags .accordion-button:not(.collapsed) {
   background-color: #e9ebf8;
   box-shadow: unset !important;
 }
-.accordion-button:focus {
+.Educational_bags .accordion-button:focus {
   box-shadow: unset !important;
 }
-.accordion-button {
+.Educational_bags .accordion-button {
   background-color: #e9ebf8;
   margin-bottom: 1rem;
   padding: 0.5rem;
   border-radius: 10px;
 }
-.accordion-item {
+.Educational_bags .accordion-item {
   border: unset !important;
   border-radius: 15px;
 }
-.accordion-body {
+.Educational_bags .accordion-body {
   padding: 1rem 1.25rem;
   border: 1px solid #00000029;
   border-radius: 6px;
@@ -1670,7 +1670,7 @@ img.pro-reta {
   font-family: "semibold";
 }
 .our-blog-page .sections ul ::marker {
-  color: #E5890A;
+  color: #e5890a;
   font-size: 1.2rem;
 }
 
@@ -1717,8 +1717,8 @@ img.pro-reta {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #E5890A;
-  border: 1px solid #E5890A;
+  background-color: #e5890a;
+  border: 1px solid #e5890a;
   padding: 1.5rem;
   margin-right: 1rem;
   display: flex;
@@ -1729,7 +1729,7 @@ img.pro-reta {
   background-color: black;
 }
 .our-blog-page .pagination .page-contant a {
-  color:white;
+  color: white;
 }
 .our-blog-page .pagination a {
   border: none;
@@ -1738,45 +1738,45 @@ img.pro-reta {
   box-shadow: none;
 }
 /*  */
-.our-blog-page .contant-page{
-margin-top: 2rem;
+.our-blog-page .contant-page {
+  margin-top: 2rem;
 }
 .our-blog-page .contant-page .img img {
-width: 100%;
+  width: 100%;
 }
 .our-blog-page .contant-page .contantt h6 {
-color: #E5890A;
-font-size: 20px;
-font-family: "semibold";
-margin: 1rem 0;
+  color: #e5890a;
+  font-size: 20px;
+  font-family: "semibold";
+  margin: 1rem 0;
 }
 .our-blog-page .contant-page .contantt .head h4 {
-color: black;
-font-size: 30px;
-font-family: "semibold";
+  color: black;
+  font-size: 30px;
+  font-family: "semibold";
 }
 .our-blog-page .contant-page .contantt .head p {
-color: #6F777B;
-font-size: 18px;
-font-family: "regular";
+  color: #6f777b;
+  font-size: 18px;
+  font-family: "regular";
 }
-.our-blog-page .contant-page .contantt .head  {
-margin: 1rem 0;
+.our-blog-page .contant-page .contantt .head {
+  margin: 1rem 0;
 }
-.our-blog-page .contant-page .contantt .Number-Visitors  h4{
+.our-blog-page .contant-page .contantt .Number-Visitors h4 {
   color: black;
   font-size: 24px;
   font-family: "regular";
 }
-.our-blog-page .contant-page .contantt .Number-Visitors .btn-warning  {
-  background-color: #E5890A;
+.our-blog-page .contant-page .contantt .Number-Visitors .btn-warning {
+  background-color: #e5890a;
   color: white;
   border-radius: 5px;
-  padding:.5rem 1rem;
+  padding: 0.5rem 1rem;
   font-size: 20px;
   font-family: "semibold";
 }
-.our-blog-page .contant-page .contantt  .Tags h6 {
+.our-blog-page .contant-page .contantt .Tags h6 {
   font-size: 24px;
   font-family: "semibold";
   color: black;
@@ -1791,64 +1791,62 @@ margin: 1rem 0;
   height: 40px;
   background-color: #d9d9d961;
   border-radius: 66px;
-  margin: 1rem .5rem 1rem 0;
+  margin: 1rem 0.5rem 1rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.our-blog-page .contant-page .contantt .share{
- display: flex;
- flex-direction: column;
+.our-blog-page .contant-page .contantt .share {
+  display: flex;
+  flex-direction: column;
 }
-.our-blog-page .contant-page .contantt .share .head h4{
+.our-blog-page .contant-page .contantt .share .head h4 {
   font-size: 24px;
   font-family: "semibold";
-  color: #E5890A;
+  color: #e5890a;
 }
-.our-blog-page .contant-page .contantt .share .logo{
- display: flex;
-
+.our-blog-page .contant-page .contantt .share .logo {
+  display: flex;
 }
-.our-blog-page .contant-page .contantt .share .logo .icon-one{
-color: black;
+.our-blog-page .contant-page .contantt .share .logo .icon-one {
+  color: black;
 }
-.our-blog-page .contant-page .contantt .share .logo .icon{
-background-color: black;
-color: white;
-margin: 0 1rem;
-width: 40px;
-height: 40px;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-align-items: center;
+.our-blog-page .contant-page .contantt .share .logo .icon {
+  background-color: black;
+  color: white;
+  margin: 0 1rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .our-blog-page .contant-page .contantt .share {
-margin: 1rem 0;
+  margin: 1rem 0;
 }
-
 
 .home .privacy-polisty .head {
-margin: 1rem;
+  margin: 1rem;
 }
-.home .privacy-polisty .head h4{
+.home .privacy-polisty .head h4 {
   font-size: 14px;
   font-family: "semibold";
 }
-.home .privacy-polisty .head span{
-color: #CECECE;
+.home .privacy-polisty .head span {
+  color: #cecece;
 }
-.home .privacy-polisty h3{
+.home .privacy-polisty h3 {
   font-size: 30px;
   font-family: "bold";
 }
-.home .privacy-polisty p{
-color: #66686D;
-margin: 1rem;
+.home .privacy-polisty p {
+  color: #66686d;
+  margin: 1rem;
 }
 .home .privacy-polisty {
-margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 .explain-company .contant {
   margin: 3rem 0;
@@ -1889,7 +1887,7 @@ margin-bottom: 3rem;
   color: #66686d;
   line-height: 1.8rem;
 }
-.accordion-button::after {
+.explain-company .accordion-button::after {
   /* background-color: #d0d2d7;
   border-radius: 50%;
   height: 40px;
@@ -1900,11 +1898,9 @@ margin-bottom: 3rem;
   margin: 0;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16' width='14' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z'/%3E%3C/svg%3E");
 }
-.accordion-button:not(.collapsed)::after {
+.explain-company .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16' width='14' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z'/%3E%3C/svg%3E");
 }
-
-
 
 /* responsive */
 @media (min-width: 1600px) and (max-width: 2600px) {

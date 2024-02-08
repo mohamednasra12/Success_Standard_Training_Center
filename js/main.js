@@ -12,6 +12,13 @@ let hidna = document.getElementById("hid-na");
 let hidnas = document.getElementById("hid-nas");
 let hidens = document.getElementById("hidens");
 let hideng = document.getElementById("hideng");
+let hid1 = document.getElementById("hid-1");
+let hidnas1 = document.getElementById("hid-nas-1");
+let hidjj = document.getElementById("hid-jj");
+let hidnakk = document.getElementById("hid-na-kk");
+let hidnasoo = document.getElementById("hid-nas-oo");
+let hidna1 = document.getElementById("hid-na-1");
+let gohid = document.getElementById("go-hid");
 function bigImg() {
   hid.style.display = "block";
 }
@@ -49,11 +56,49 @@ function bi() {
 function nor() {
   hideng.style.display = "none";
 }
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   // Initialize AOS
-//   AOS.init();
-// });
+function bigImgv() {
+  hid1.style.display = "block";
+}
+function normalImgv() {
+  hid1.style.display = "none";
+}
+function bigImgf() {
+  hidna1.style.display = "block";
+}
+function normalImgf() {
+  hidna1.style.display = "none";
+}
+function bigImgg() {
+  hidnas1.style.display = "block";
+}
+function normalImgg() {
+  hidnas1.style.display = "none";
+}
+function bigImgz() {
+  hidjj.style.display = "block";
+}
+function normalImgz() {
+  hidjj.style.display = "none";
+}
+function bigImgnac() {
+  hidnakk.style.display = "block";
+}
+function normalImgnac() {
+  hidnakk.style.display = "none";
+}
+function bigImgnasv(){
+  hidnasoo.style.display = "block";
+}
+function normalImgnasv() {
+  hidnasoo.style.display = "none";
+}
+function big(){
+  gohid.style.display = "block";
+}
+function norma() {
+  gohid.style.display = "none";
+}
+// hover
 
 $(document).ready(function () {
   var pragraph = $("#pragraph");
@@ -74,10 +119,13 @@ $(document).ready(function () {
   });
 });
 
-// let page = document.querySelector(".nas");
-// let imge = ["../photo/c1.png", "../photo/c2.png.png", "../photo/c3.png"];
+$(document).on("click", "#open", function () {
+  $(".accordion-collapse").toggleClass("show");
+  $("#open").toggleClass("active");
+  if ($("#open").hasClass("active")) {
+    $("#open").text("إغلاق كل المعايير");
+  } else {
+    $("#open").text("فتح كل المعايير");
+  }
+});
 
-// setInterval(() => {
-//   let rundom = Math.floor(Math.random() * imge.length);
-//   page.style.backgroundImage = 'url("../img/' + imge[rundom] + '")';
-// }, 1000);

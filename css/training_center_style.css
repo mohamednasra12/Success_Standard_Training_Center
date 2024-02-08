@@ -411,7 +411,7 @@ button.btn.btn-light:hover {
   padding: 0.4rem;
   border-radius: 5px;
   overflow: hidden;
-  height: 550px;
+  height: 479px;
   position: relative;
 }
 .card-blog:hover img {
@@ -434,12 +434,14 @@ button.btn.btn-light:hover {
   height: calc(var(--line-height) * 2em);
   line-height: var(--line-height);
   --line-height: 1.5;
+  margin-bottom: 2rem;
 }
 .card-blog p {
   font-family: "regular";
   line-height: 2rem;
   color: #656b78;
   margin-top: -1rem;
+  font-size: 0.7rem;
 }
 .card-blog a {
   color: #3d4c5e;
@@ -678,7 +680,7 @@ button.btn.btn-warning.more:hover {
 }
 .text-true {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   font-family: "regular";
   font-size: 0.9rem;
   margin-top: 10px;
@@ -694,7 +696,7 @@ button.btn.btn-warning.more:hover {
 }
 .text-true-1 {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   font-family: "regular";
   font-size: 0.9rem;
   margin-top: 10px;
@@ -1018,12 +1020,16 @@ h4.week {
   align-items: center;
   font-size: 0.8rem;
 }
+section.frist_sec.aos-init.aos-animate {
+  position: relative;
+  z-index: -1;
+}
 
 /* bags */
 .bags {
   background-image: url(../photo/bags.png);
   width: 100%;
-  height: 503px;
+  height: 575px;
   padding: 3rem;
 }
 .linked {
@@ -1108,13 +1114,12 @@ hr:not([size]) {
   font-family: "regular";
   color: #e5890a;
   cursor: pointer;
-  border-bottom:1px solid #e5890a;
+  border-bottom: 1px solid #e5890a;
 }
 .open h6 {
   margin-bottom: 0;
   font-family: "regular";
   color: #656b78;
-  
 }
 
 /* bags */
@@ -1130,6 +1135,100 @@ hr:not([size]) {
   }
 }
 
+@media only screen and (max-width: 1440px) {
+  #hid {
+    background-color: white;
+    box-shadow: 1px 1px 10px #00000073;
+    width: 363px;
+    height: 430px;
+    position: absolute;
+    z-index: 100;
+    padding: 1rem;
+    top: 569px;
+    border-radius: 10px;
+  }
+  #hiden {
+    background-color: white;
+    box-shadow: 1px 1px 10px #00000073;
+    width: 363px;
+    height: 400px;
+    position: absolute;
+    z-index: 100;
+    padding: 1rem;
+    top: 1008px;
+    border-radius: 10px;
+  }
+  div#hid-na {
+    background-color: white;
+    box-shadow: 1px 1px 10px #00000073;
+    width: 363px;
+    height: 430px;
+    position: absolute;
+    z-index: 100;
+    padding: 1rem;
+    top: 569px;
+    border-radius: 10px;
+  }
+  div#hid-nas {
+    background-color: white;
+    box-shadow: 1px 1px 10px #00000073;
+    width: 363px;
+    height: 430px;
+    position: absolute;
+    z-index: 100;
+    padding: 1rem;
+    top: 569px;
+    border-radius: 10px;
+  }
+  div#hidens {
+    background-color: white;
+    box-shadow: 1px 1px 10px #00000073;
+    width: 363px;
+    height: 430px;
+    position: absolute;
+    z-index: 100;
+    padding: 1rem;
+    top: 1008px;
+    border-radius: 10px;
+  }
+  div#hidens {
+    background-color: white;
+    box-shadow: 1px 1px 10px #00000073;
+    width: 363px;
+    height: 430px;
+    position: absolute;
+    z-index: 100;
+    padding: 1rem;
+    top: 1008px;
+    border-radius: 10px;
+  }
+  div#hideng {
+    background-color: white;
+    box-shadow: 1px 1px 10px #00000073;
+    width: 363px;
+    height: 430px;
+    position: absolute;
+    z-index: 100;
+    padding: 1rem;
+    top: 1008px;
+    border-radius: 10px;
+  }
+  .img-sub img {
+    height: 24rem;
+  }
+  .all-lastsub {
+    width: 80%;
+  }
+  .card_introduction {
+    width: 100%;
+  }
+  h4.growup {
+    width: 70%;
+  }
+  .card-go {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .top_nav {
     height: 98px;

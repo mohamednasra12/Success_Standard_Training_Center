@@ -69,7 +69,7 @@
     </section>
     <!-- top_nav -->
     <!-- NAV -->
-    <section class="nav-bar" data-aos="fade-up">
+    <section class="nav-bar" >
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#">
@@ -127,11 +127,11 @@
     <!-- NAV -->
     <div class="home">
       <!-- firstsec -->
-      <section class="frist_sec" data-aos="fade-up">
+      <section class="frist_sec">
         <div class="content">
           <div class="container">
             <div class="all-frist">
-              <div class="text-fristsec">
+              <div class="text-fristsec" data-aos="fade-right">
                 <p class="welcome">مرحبا بك في مركز معيار النجاح للتدريب</p>
                 <h4 class="growup">تنمية مهاراتك معنا ستحدد مستقبلك</h4>
                 <p class="weekup">
@@ -143,7 +143,7 @@
                   ابــــدأ الآن
                 </button>
               </div>
-              <div class="img-fristsec">
+              <div class="img-fristsec" data-aos="fade-left">
                 <div class="box_one"></div>
                 <div class="box_two">
                   <!-- الصوره الي جوه المربع -->
@@ -156,7 +156,7 @@
       </section>
       <!-- firstsec -->
       <!-- secondsec -->
-      <section class="second_sec">
+      <section class="second_sec"  data-aos="zoom-in">
         <div class="header">
           <h5>“ماذا نقدم لك”</h5>
           <h4>تعلم مهارات جديدة متى وأين تريد</h4>
@@ -214,7 +214,7 @@
       </section>
       <!-- secondsec -->
       <!-- thirdsec -->
-      <section class="fourd_sec" data-aos="fade-up">
+      <section class="fourd_sec" data-aos="fade-left">
         <div class="header">
           <h5>“حقائبنا التعليمية”</h5>
           <h4>ابحث عن البرامج التدريبية لبناء حياتك المهنية</h4>
@@ -773,7 +773,7 @@
       </section>
       <!-- thirdsec -->
       <!-- ads -->
-      <section class="ads">
+      <section class="ads" data-aos="zoom-in-up">
         <div class="all-ads">
           <div class="img-ads">
             <img src="photo/person.png" alt="" />
@@ -792,7 +792,8 @@
       </section>
       <!-- ads -->
       <!-- fourdsec -->
-      <section class="five_sec" data-aos="fade-up">
+      <section class="five_sec"  data-aos="fade-up"
+      data-aos-duration="3000">
         <div class="container">
           <div class="all-go">
             <div class="right-side">
@@ -866,7 +867,9 @@
       </section>
       <!-- fourdsec -->
       <!-- fivesec -->
-      <section class="six_sec" data-aos="fade-up">
+      <section class="six_sec" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
         <div class="container">
           <div class="header">
             <h5>“المدونه”</h5>
@@ -881,10 +884,10 @@
               <div class="card-blog">
                 <img src="photo/blog1.png" alt="" />
                 <div class="cle">
-                  <h4>
+                  <h3>
                     23 <br />
                     يناير
-                  </h4>
+                  </h3>
                 </div>
                 <h4>
                   البحث عن وظيفة: 5 نصائح من فريق معيار النجاح ستساعدك في العثور
@@ -906,10 +909,10 @@
               <div class="card-blog">
                 <img src="photo/blog1.png" alt="" />
                 <div class="cle">
-                  <h4>
+                  <h3>
                     23 <br />
                     يناير
-                  </h4>
+                  </h3>
                 </div>
                 <h4>اللغة الإنجليزية: 5 نصائح لإتقانها من فريق معيار النجاح</h4>
                 <p>
@@ -928,10 +931,10 @@
               <div class="card-blog">
                 <img src="photo/blog1.png" alt="" />
                 <div class="cle">
-                  <h4>
+                  <h3>
                     23 <br />
                     يناير
-                  </h4>
+                  </h3>
                 </div>
                 <h4>
                   نصائح لكتابة السيرة الذاتية للمنح الدراسية من فريق معيار
@@ -1059,7 +1062,7 @@
 
     <script src="js/aos-anmite.js"></script>
     <script>
-      AOS.init();
+    AOS.init({disable: 'mobile'});
     </script>
     <script src="js/main.js"></script>
   </body>

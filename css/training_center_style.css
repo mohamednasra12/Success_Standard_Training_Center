@@ -1020,10 +1020,7 @@ h4.week {
   align-items: center;
   font-size: 0.8rem;
 }
-section.frist_sec.aos-init.aos-animate {
-  position: relative;
-  z-index: -1;
-}
+
 
 /* bags */
 .bags {
@@ -1616,5 +1613,6 @@ hr:not([size]) {
   .card-go {
     width: 100%;
   }
+
 }
 /* responsive */

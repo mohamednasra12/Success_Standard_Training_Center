@@ -2616,5 +2616,17 @@ img.pro-reta {
   .price {
     flex-wrap: wrap;
   }
+  .Buy-the-course {
+    width: 100%;
+  }
+  .help-card {
+    width: 100%;
+  }
+  .rate-bags {
+    animation: unset;
+  }
+  html {
+    font-size: 0.8rem;
+  }
 }
 /* responsive */

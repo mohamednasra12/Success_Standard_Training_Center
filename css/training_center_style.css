@@ -753,6 +753,9 @@ button.btn.btn-warning.more:hover {
   align-items: center;
   gap: 5px;
 }
+.lastcard-sup img {
+  animation: koko 2s ease infinite;
+}
 .lastcard-sup p {
   margin-bottom: 0;
   display: flex;
@@ -895,8 +898,8 @@ span.arrwo {
   top: 557px;
   background-color: white;
   z-index: 100000;
-  left: 94px;
-  border: 1px solid;
+  left: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.137);
   padding: 0.8rem;
   border-radius: 15px;
 }
@@ -1285,6 +1288,32 @@ hr:not([size]) {
   padding: 1rem;
   border-radius: 15px;
   width: 16%;
+  animation: koko 2s ease infinite;
+}
+@keyframes koko {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
 }
 .rate-bags h4 {
   font-size: 0.9rem;
@@ -1439,6 +1468,7 @@ img.pro-reta {
   width: 100%;
   font-family: "regular";
   color: #15b386;
+  font-size: 0.8rem;
 }
 .discount {
   display: flex;
@@ -1500,6 +1530,9 @@ img.pro-reta {
   justify-content: center;
   align-items: flex-start;
   gap: 5px;
+}
+.lastcard-sup1 img {
+  animation: tot 2s linear infinite;
 }
 .lastcard-sup1 h4 {
   margin-bottom: 0;
@@ -1573,6 +1606,9 @@ img.pro-reta {
 }
 .call-help p {
   margin-bottom: 0;
+}
+.call-help img {
+  animation: tot 2s linear infinite;
 }
 /* bags */
 /* our-blog-page */
@@ -2012,7 +2048,7 @@ img.pro-reta {
     padding: 0.5rem;
   }
   .Category-usedbag h5 {
-    width: 100%;
+    width: 60%;
   }
   .pro-bag {
     flex-wrap: wrap;
@@ -2038,6 +2074,35 @@ img.pro-reta {
   }
   .price {
     gap: 10px;
+  }
+  .Buy-the-course {
+    width: 308px;
+  }
+  .lang-arab h4 {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+  }
+  .text-scoo h4 {
+    font-size: 0.9rem;
+  }
+  .text-scoo p {
+    font-size: 0.9rem;
+  }
+  #go-hid {
+    position: absolute;
+    top: 340px;
+    background-color: white;
+    z-index: 100000;
+    left: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 0.8rem;
+    border-radius: 15px;
+  }
+  .help-card {
+    width: 308px;
+  }
+  .rate-bags {
+    width: fit-content;
   }
 }
 @media only screen and (max-width: 1200px) {

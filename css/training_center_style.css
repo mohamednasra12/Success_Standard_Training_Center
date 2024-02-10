@@ -627,6 +627,7 @@ button.btn.btn-warning.more:hover {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  margin-top: 1rem;
 }
 .star {
   display: flex;
@@ -660,11 +661,12 @@ button.btn.btn-warning.more:hover {
 }
 .adress h4 {
   font-family: "bold";
-  font-size: 1rem;
+  font-size: 0.8rem;
   width: 70%;
   line-height: 1.8rem;
+  color: #000000 !important;
 }
-.adress a {
+.adress a h5{
   background-color: #e58a0a23;
   color: #e5890a;
   padding: 0.5rem 1rem;
@@ -673,9 +675,9 @@ button.btn.btn-warning.more:hover {
 }
 .adress a h5 {
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
-.adress a:hover {
+.adress a h5:hover {
   background-color: #532807;
   color: white;
 }
@@ -2226,6 +2228,9 @@ svg.svg-inline--fa.fa-list-check {
   .container-xxl {
     max-width: 1750px;
   }
+  .img-sub img {
+    width: 52rem;
+  }
 }
 
 @media only screen and (max-width: 1440px) {
@@ -2308,6 +2313,7 @@ svg.svg-inline--fa.fa-list-check {
   }
   .img-sub img {
     height: 24rem;
+    width: 33rem;
   }
   .all-lastsub {
     width: 80%;
@@ -2476,7 +2482,7 @@ svg.svg-inline--fa.fa-list-check {
     flex-wrap: wrap;
   }
   .img-sub img {
-    width: 58rem;
+    width:27rem;
   }
 
   .lastcard-sup {

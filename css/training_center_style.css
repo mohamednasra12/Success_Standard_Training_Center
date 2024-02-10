@@ -2221,6 +2221,10 @@ svg.svg-inline--fa.fa-list-check {
 .deta-pro {
   position: relative;
 }
+ .card-subject {
+  margin-bottom: 0.8rem;
+  transition: 0.7s;
+}
 /* responsive */
 @media (min-width: 1600px) and (max-width: 2600px) {
   .container,
@@ -2450,9 +2454,7 @@ svg.svg-inline--fa.fa-list-check {
     height: 300px;
     border-radius: 15px;
   }
-  .nav-tabs {
-    display: block;
-  }
+  
   .all-go {
     flex-wrap: wrap;
   }
@@ -2485,6 +2487,9 @@ svg.svg-inline--fa.fa-list-check {
     flex-wrap: wrap;
   }
   .img-sub img {
+    width:57rem;
+  }
+  .bace-bags  .img-sub img {
     width:27rem;
   }
 
@@ -2568,6 +2573,7 @@ svg.svg-inline--fa.fa-list-check {
   .all-frist {
     flex-wrap: wrap;
     padding: 1rem;
+    text-align: center;
   }
 
   h4.growup {
@@ -2611,9 +2617,7 @@ svg.svg-inline--fa.fa-list-check {
     height: 300px;
     border-radius: 15px;
   }
-  .nav-tabs {
-    display: block;
-  }
+  
   .all-go {
     flex-wrap: wrap;
   }
@@ -2698,6 +2702,12 @@ svg.svg-inline--fa.fa-list-check {
   .last-global {
     flex-wrap: wrap;
   }
+  svg.svg-inline--fa.fa-border-all {
+    display: none;
+  }
+  svg.svg-inline--fa.fa-list-check {
+    display: none;
+  }
   .linked {
     flex-wrap: wrap;
   }
@@ -2781,6 +2791,7 @@ svg.svg-inline--fa.fa-list-check {
   .all-frist {
     flex-wrap: wrap;
     padding: 1rem;
+    text-align: center;
   }
 
   h4.growup {
@@ -2823,9 +2834,7 @@ svg.svg-inline--fa.fa-list-check {
     height: 200px;
     border-radius: 15px;
   }
-  .nav-tabs {
-    display: block;
-  }
+  
   .all-go {
     flex-wrap: wrap;
   }
@@ -3053,6 +3062,19 @@ div#hidens{
 }
 div#hideng{
   width: 300px;
+}
+.content {
+  height: 100%;
+}
+.drow {
+  width: 30px;
+  height: 30px;
+}
+svg.svg-inline--fa.fa-border-all {
+  display: none;
+}
+svg.svg-inline--fa.fa-list-check {
+  display: none;
 }
 }
 /* responsive */

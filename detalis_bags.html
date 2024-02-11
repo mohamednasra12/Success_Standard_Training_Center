@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="css/training_center_style.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos-anmite.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
+      integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- ? Custom CSS -->
     <!-- ? Main JavaScript -->
@@ -109,10 +116,14 @@
                 <a class="nav-link" aria-current="page" href="#">من نحن</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="blog.html">المدونة</a>
+                <a class="nav-link" aria-current="page" href="blog.html"
+                  >المدونة</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">تواصل معنا</a>
+                <a class="nav-link" aria-current="page" href="connect-us.html"
+                  >تواصل معنا</a
+                >
               </li>
             </ul>
 
@@ -140,15 +151,13 @@
               <i class="fa-solid fa-chevron-left"></i>
               <h6>تفاصيل الحقيبة</h6>
             </div>
-            <div class="text-bags" data-aos="fade-up"
-            data-aos-duration="3000" >
+            <div class="text-bags" data-aos="fade-up" data-aos-duration="3000">
               <h4>
                 البرنامج التدريبي لتأهيل معلمي اللغة العربية للحصول علي الرخصة
                 المهنية
               </h4>
             </div>
-            <div class="star-rat"  data-aos="fade-up"
-            data-aos-duration="3000">
+            <div class="star-rat" data-aos="fade-up" data-aos-duration="3000">
               <i class="fa-regular fa-star" style="color: #e5890a"></i>
               <i class="fa-regular fa-star" style="color: #e5890a"></i>
               <i class="fa-regular fa-star" style="color: #e5890a"></i>
@@ -157,24 +166,33 @@
               <div class="small-box">5.9</div>
               <span>( 220 تقييم )</span>
             </div>
-            <div class="text-truebag"  data-aos="fade-up"
-            data-aos-duration="3000">
+            <div
+              class="text-truebag"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <img src="photo/icons/truebag.svg" alt="" />
               <p>
                 اتقان معلمي اللغة العربية للجوانب المعرفية والادائية اللازمة
                 لتعليم و تعلم اللغة العربية بجودة و دقة عالية
               </p>
             </div>
-            <div class="text-truebag"  data-aos="fade-up"
-            data-aos-duration="3000">
+            <div
+              class="text-truebag"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <img src="photo/icons/truebag.svg" alt="" />
               <p>
                 اتقان معلمي اللغة العربية للجوانب المعرفية والادائية اللازمة
                 لتعليم و تعلم اللغة العربية بجودة و دقة عالية
               </p>
             </div>
-            <div class="Category-usedbag"  data-aos="fade-up"
-            data-aos-duration="3000">
+            <div
+              class="Category-usedbag"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <img src="photo/icons/hand.svg" alt="" />
               <h5>
                 <span>الفئة المستهدفة :</span> معلمي و معلمات اللغة العربية
@@ -182,7 +200,7 @@
                 للحصول علي الرخصة لمهنية
               </h5>
             </div>
-            <div class="last-global" >
+            <div class="last-global">
               <div class="infor">
                 <img src="photo/icons/information.svg" alt="" />
                 <h4>اخر تحديث : 12 اغسطس, 2023</h4>
@@ -650,6 +668,8 @@
                   </p>
                   <div class="input-rate">
                     <input
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
                       type="text"
                       class="form-control"
                       placeholder="قم بإبداء رأيك ...."
@@ -657,6 +677,168 @@
                     <button type="button" class="btn btn-warning rate-now">
                       اضف تعليقك
                     </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        اضافة تقييم
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="hed">
+                        <h4>
+                          نحن سعداء لابداء رأيكم و تقييمك لنا و سوف يساعدنا ذلك
+                          علي تحسين مستوي الخدمة من اجل راحتكم و تقديم مستوي
+                          افضل
+                        </h4>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-12 col-12">
+                          <label for="">تقييم شرح المدرب</label>
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>شرح المدرب</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-12">
+                          <label for="">تقييم درجة الاستيعاب</label>
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>درجة الاستيعاب</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="genral">
+                        <h4>التقييم العام</h4>
+                        <img src="photo/icons/hand-star.svg" alt="" />
+                      </div>
+                      <div class="radio-btn">
+                        <div class="all-radio">
+                          <input
+                            type="radio"
+                            class="btn-check"
+                            name="options-outlined"
+                            id="danger-outlined5"
+                            autocomplete="off"
+                          />
+                          <label
+                            class="btn btn-outline-danger"
+                            for="danger-outlined5"
+                          >
+                            <img src="photo/icons/s.svg" alt="" />
+                            مقبول
+                          </label>
+                        </div>
+
+                        <div class="all-radio">
+                          <input
+                            type="radio"
+                            class="btn-check"
+                            name="options-outlined"
+                            id="danger-outlined6"
+                            autocomplete="off"
+                          />
+                          <label
+                            class="btn btn-outline-danger"
+                            for="danger-outlined6"
+                          >
+                            <img src="photo/icons/s1.svg" alt="" />
+                            متوسط
+                          </label>
+                        </div>
+                        <div class="all-radio">
+                          <input
+                            type="radio"
+                            class="btn-check"
+                            name="options-outlined"
+                            id="success-outlined"
+                            autocomplete="off"
+                            checked
+                          />
+                          <label
+                            class="btn btn-outline-success"
+                            for="success-outlined"
+                          >
+                            <img src="photo/icons/s2.svg" alt="" />
+                            جيد
+                          </label>
+                        </div>
+                        <div class="all-radio">
+                          <input
+                            type="radio"
+                            class="btn-check"
+                            name="options-outlined"
+                            id="danger-outlined"
+                            autocomplete="off"
+                          />
+                          <label
+                            class="btn btn-outline-danger"
+                            for="danger-outlined"
+                          >
+                            <img src="photo/icons/s3.svg" alt="" />
+                            جيد جداً
+                          </label>
+                        </div>
+                        <div class="all-radio">
+                          <input
+                            type="radio"
+                            class="btn-check"
+                            name="options-outlined"
+                            id="danger-outlined2"
+                            autocomplete="off"
+                          />
+                          <label
+                            class="btn btn-outline-danger"
+                            for="danger-outlined2"
+                          >
+                            <img src="photo/icons/s4.svg" alt="" />
+                            ممتاز
+                          </label>
+                        </div>
+                      </div>
+                      <div class="text-aria">
+                        <label for=""
+                          >من فضلك قم بابداء تعليقك لتحسين مستوي الخدمة</label
+                        >
+                        <textarea
+                          name=""
+                          id=""
+                          cols="70"
+                          rows="10"
+                          placeholder="قم بكتابة ارائك ...."
+                        ></textarea>
+                      </div>
+                      <button type="button" class="btn btn-addrate" onclick="addrate()">اضافة تقييم</button>
+                    </div>
+                    <div class="modal-footer"></div>
                   </div>
                 </div>
               </div>
@@ -761,6 +943,7 @@
               <div class="Buy-the-course">
                 <div class="video-buy">
                   <img src="photo/video.png" alt="" />
+                  <i class="fa-solid fa-circle-play" onclick="blockAlert()"></i>
                 </div>
                 <div class="price">
                   <h4>1655 ر.س</h4>
@@ -1419,10 +1602,32 @@
       </section>
       <!-- endpage(footer) -->
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
+      integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
+    <script>
+      function blockAlert() {
+        Swal.fire({
+          html: ' <video src="photo/icons/Countdown 5 seconds timer (1).mp4" controls></video>',
+        });
+      }
+    </script>
+    
+    <script>
+      function addrate() {
+        Swal.fire({
+          html: '<img src="photo/finger.png" alt="">'+
+          ' <h4>تم ارسال تقييمك بنجاح</h4>'
+        });
+      }
+    </script>
     <script src="js/aos-anmite.js"></script>
     <script>
-      AOS.init({disable: 'mobile'});
+      AOS.init({ disable: "mobile" });
     </script>
     <script src="js/main.js"></script>
   </body>

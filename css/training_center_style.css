@@ -621,7 +621,7 @@ button.btn.btn-warning.more:hover {
   transition: 0.7s;
 }
 .img-sub img {
-  width: 33rem;
+  width: 100%;
 }
 .adress {
   display: flex;
@@ -898,10 +898,10 @@ span.arrwo {
 }
 #go-hid {
   position: absolute;
-  top: 557px;
+  top: 37px;
   background-color: white;
   z-index: 100000;
-  left: 25px;
+  right: 4px;
   border: 1px solid rgba(0, 0, 0, 0.137);
   padding: 0.8rem;
   border-radius: 15px;
@@ -911,6 +911,9 @@ span.arrwo {
   align-items: center;
   font-family: "regular";
   gap: 10px;
+}
+.text-scoo h4 {
+  font-size: 1rem;
 }
 .scools p {
   color: #656b78;
@@ -1417,11 +1420,42 @@ img.pro-reta {
   display: block;
   width: 100%;
 }
+.bace-bags .test {
+  display: block;
+}
 .bace-bags .card-subject {
   display: block;
   width: 100%;
 }
+.grid {
+  display: flex;
+  align-items: center;
+  /* background-color: #06797e; */
+}
 
+.grid .hamadas {
+  width: 50%;
+}
+
+.listmode {
+  width: 100% !important;
+  display: block !important;
+  /* background-color: aqua !important; */
+}
+.listmode div#core {
+  display: flex !important;
+}
+.listmode .hamadas {
+  width: 100% !important;
+}
+
+.row.hamada {
+  display: flex;
+}
+
+.hamadas {
+  width: 50% !important;
+}
 .Educational_bags .img-sub img {
   /* width: 51rem; */
   width: 100%;
@@ -2265,6 +2299,15 @@ svg.svg-inline--fa.fa-list-check {
   margin-bottom: 0.8rem;
   transition: 0.7s;
 }
+
+.all-lastsub {
+  position: relative;
+}
+.btnContainer {
+  display: flex;
+  align-items: center;
+}
+
 /* connect */
 .connect-page .head-connect {
   background-image: url(../photo/black.png);
@@ -2432,6 +2475,7 @@ text-align: center;
 }
 /* page error */
 
+
 /* responsive */
 @media (min-width: 1600px) and (max-width: 2600px) {
   .container,
@@ -2443,7 +2487,10 @@ text-align: center;
     max-width: 1750px;
   }
   .img-sub img {
-    width: 52rem;
+    width: 100%;
+  }
+  .bace-bags .img-sub img {
+    width: 100%;
   }
 }
 
@@ -2526,8 +2573,7 @@ text-align: center;
     border-radius: 10px;
   }
   .img-sub img {
-    height: 24rem;
-    width: 33rem;
+    width: 100%;
   }
   .all-lastsub {
     width: 80%;
@@ -2601,6 +2647,27 @@ text-align: center;
   }
   .rate-bags {
     width: fit-content;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Buy-the-course {
+    width: 259px;
+  }
+  .lang-arab {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .price h4 {
+    font-size: 0.8rem;
+  }
+  .price del {
+    font-size: 0.8rem;
+  }
+  .help-card {
+    width: 259px;
+  }
+  .lastcard-sup p {
+    font-size: 0.8rem;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -2694,11 +2761,15 @@ text-align: center;
     flex-wrap: wrap;
   }
   .img-sub img {
-    width: 57rem;
+
+    width: 100%;
   }
   .bace-bags .img-sub img {
-    width: 27rem;
+    width: 100%;
+
+    width: 57rem;
   }
+  
 
   .lastcard-sup {
     margin-top: 10px;
@@ -2737,17 +2808,14 @@ text-align: center;
   }
   .Buy-the-course {
     margin-top: unset;
-    width: 100%;
   }
-  .help-card {
-    width: 100%;
-  }
-  .allrate {
+
+  /* .allrate {
     flex-wrap: wrap;
-  }
-  .rate-bags {
+  } */
+  /* .rate-bags {
     width: 100%;
-  }
+  } */
   .input-bags {
     width: 100%;
   }
@@ -2884,7 +2952,7 @@ text-align: center;
     flex-wrap: wrap;
   }
   .img-sub img {
-    width: 42rem;
+    width: 100%;
   }
   .card_introduction {
     width: 100%;
@@ -2978,6 +3046,14 @@ text-align: center;
     top: 39px;
     width: 300px;
   }
+
+  .Buy-the-course {
+    width: 50%;
+  }
+  .help-card {
+    width: 50%;
+  }
+
   .our-blog-page .Related-posts .section .img img {
     width: 115px;
   }
@@ -3062,6 +3138,7 @@ text-align: center;
 .page-notfound .page .btn-warning {
   font-size: 12px;
 }
+
 }
 @media only screen and (max-width: 600px) {
   .top_nav {
@@ -3313,7 +3390,10 @@ text-align: center;
     width: 100%;
   }
   #go-hid {
-    top: 3474px;
+
+    top: 23px;
+
+   
   }
   #hid-1 {
     width: 300px;
@@ -3361,6 +3441,7 @@ text-align: center;
   svg.svg-inline--fa.fa-list-check {
     display: none;
   }
+
   .our-blog-page .Related-posts {
     margin: 3rem 0;
   }
@@ -3507,5 +3588,6 @@ text-align: center;
 .page-notfound .page .btn-warning {
   font-size: 10px;
 }
+
 }
 /* responsive */

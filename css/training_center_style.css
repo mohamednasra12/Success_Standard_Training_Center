@@ -621,7 +621,7 @@ button.btn.btn-warning.more:hover {
   transition: 0.7s;
 }
 .img-sub img {
-  width: 33rem;
+  width: 100%;
 }
 .adress {
   display: flex;
@@ -666,7 +666,7 @@ button.btn.btn-warning.more:hover {
   line-height: 1.8rem;
   color: #000000 !important;
 }
-.adress a h5{
+.adress a h5 {
   background-color: #e58a0a23;
   color: #e5890a;
   padding: 0.5rem 1rem;
@@ -898,10 +898,10 @@ span.arrwo {
 }
 #go-hid {
   position: absolute;
-  top: 557px;
+  top: 37px;
   background-color: white;
   z-index: 100000;
-  left: 25px;
+  right: 4px;
   border: 1px solid rgba(0, 0, 0, 0.137);
   padding: 0.8rem;
   border-radius: 15px;
@@ -911,6 +911,9 @@ span.arrwo {
   align-items: center;
   font-family: "regular";
   gap: 10px;
+}
+.text-scoo h4 {
+  font-size: 1rem;
 }
 .scools p {
   color: #656b78;
@@ -1417,11 +1420,42 @@ img.pro-reta {
   display: block;
   width: 100%;
 }
+.bace-bags .test {
+  display: block;
+}
 .bace-bags .card-subject {
   display: block;
   width: 100%;
 }
+.grid {
+  display: flex;
+  align-items: center;
+  /* background-color: #06797e; */
+}
 
+.grid .hamadas {
+  width: 50%;
+}
+
+.listmode {
+  width: 100% !important;
+  display: block !important;
+  /* background-color: aqua !important; */
+}
+.listmode div#core {
+  display: flex !important;
+}
+.listmode .hamadas {
+  width: 100% !important;
+}
+
+.row.hamada {
+  display: flex;
+}
+
+.hamadas {
+  width: 50% !important;
+}
 .Educational_bags .img-sub img {
   /* width: 51rem; */
   width: 100%;
@@ -1980,7 +2014,7 @@ img.pro-reta {
   transition: 0.7s;
   margin-top: 1rem;
 }
-.detalis .ara a h5:hover{
+.detalis .ara a h5:hover {
   background-color: #3c1d05;
   color: white;
 }
@@ -2046,9 +2080,9 @@ img.pro-reta {
   margin-top: 1rem !important;
 }
 .detalis .heder {
-  font-family: 'regular';
+  font-family: "regular";
   margin-top: 16px;
-font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 .bace-bags .fliter {
   display: flex;
@@ -2118,13 +2152,13 @@ svg.svg-inline--fa.fa-list-check {
   font-size: 1.8rem;
 }
 
-.bace-bags  #hid-1 {
+.bace-bags #hid-1 {
   top: 39px;
 }
-.bace-bags  #hid-na-1 {
+.bace-bags #hid-na-1 {
   top: 39px;
 }
-.bace-bags  #hid-nas-1 {
+.bace-bags #hid-nas-1 {
   top: 39px;
 }
 .bace-bags #hid-jj {
@@ -2172,7 +2206,7 @@ svg.svg-inline--fa.fa-list-check {
 .list-bags #hid-na-1 {
   top: 39px;
 }
-.list-bags #hid-nas-1{
+.list-bags #hid-nas-1 {
   top: 39px;
 }
 .list-bags #hid-jj {
@@ -2221,9 +2255,16 @@ svg.svg-inline--fa.fa-list-check {
 .deta-pro {
   position: relative;
 }
- .card-subject {
+.card-subject {
   margin-bottom: 0.8rem;
   transition: 0.7s;
+}
+.all-lastsub {
+  position: relative;
+}
+.btnContainer {
+  display: flex;
+  align-items: center;
 }
 /* responsive */
 @media (min-width: 1600px) and (max-width: 2600px) {
@@ -2236,7 +2277,10 @@ svg.svg-inline--fa.fa-list-check {
     max-width: 1750px;
   }
   .img-sub img {
-    width: 52rem;
+    width: 100%;
+  }
+  .bace-bags .img-sub img {
+    width: 100%;
   }
 }
 
@@ -2319,8 +2363,7 @@ svg.svg-inline--fa.fa-list-check {
     border-radius: 10px;
   }
   .img-sub img {
-    height: 24rem;
-    width: 33rem;
+    width: 100%;
   }
   .all-lastsub {
     width: 80%;
@@ -2396,6 +2439,27 @@ svg.svg-inline--fa.fa-list-check {
     width: fit-content;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .Buy-the-course {
+    width: 259px;
+  }
+  .lang-arab {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .price h4 {
+    font-size: 0.8rem;
+  }
+  .price del {
+    font-size: 0.8rem;
+  }
+  .help-card {
+    width: 259px;
+  }
+  .lastcard-sup p {
+    font-size: 0.8rem;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .top_nav {
     height: 98px;
@@ -2454,7 +2518,7 @@ svg.svg-inline--fa.fa-list-check {
     height: 300px;
     border-radius: 15px;
   }
-  
+
   .all-go {
     flex-wrap: wrap;
   }
@@ -2487,10 +2551,10 @@ svg.svg-inline--fa.fa-list-check {
     flex-wrap: wrap;
   }
   .img-sub img {
-    width:57rem;
+    width: 100%;
   }
-  .bace-bags  .img-sub img {
-    width:27rem;
+  .bace-bags .img-sub img {
+    width: 100%;
   }
 
   .lastcard-sup {
@@ -2530,17 +2594,14 @@ svg.svg-inline--fa.fa-list-check {
   }
   .Buy-the-course {
     margin-top: unset;
-    width: 100%;
   }
-  .help-card {
-    width: 100%;
-  }
-  .allrate {
+
+  /* .allrate {
     flex-wrap: wrap;
-  }
-  .rate-bags {
+  } */
+  /* .rate-bags {
     width: 100%;
-  }
+  } */
   .input-bags {
     width: 100%;
   }
@@ -2617,7 +2678,7 @@ svg.svg-inline--fa.fa-list-check {
     height: 300px;
     border-radius: 15px;
   }
-  
+
   .all-go {
     flex-wrap: wrap;
   }
@@ -2677,7 +2738,7 @@ svg.svg-inline--fa.fa-list-check {
     flex-wrap: wrap;
   }
   .img-sub img {
-    width: 42rem;
+    width: 100%;
   }
   .card_introduction {
     width: 100%;
@@ -2750,28 +2811,33 @@ svg.svg-inline--fa.fa-list-check {
   .detalis #hid {
     top: 39px;
     width: 300px;
-}
-.detalis #hid-nas {
-  top: 39px;
-  width: 300px;
-}
-.detalis #hid-na {
-  top: 39px;
-  width: 300px;
-}
-.detalis #hiden {
-  top: 39px;
-  width: 300px;
-}
-.detalis #hidens {
-  top: 39px;
-  width: 300px;
-}
-.detalis #hideng {
-  top: 39px;
-  width: 300px;
-}
-
+  }
+  .detalis #hid-nas {
+    top: 39px;
+    width: 300px;
+  }
+  .detalis #hid-na {
+    top: 39px;
+    width: 300px;
+  }
+  .detalis #hiden {
+    top: 39px;
+    width: 300px;
+  }
+  .detalis #hidens {
+    top: 39px;
+    width: 300px;
+  }
+  .detalis #hideng {
+    top: 39px;
+    width: 300px;
+  }
+  .Buy-the-course {
+    width: 50%;
+  }
+  .help-card {
+    width: 50%;
+  }
 }
 @media only screen and (max-width: 600px) {
   .top_nav {
@@ -2834,7 +2900,7 @@ svg.svg-inline--fa.fa-list-check {
     height: 200px;
     border-radius: 15px;
   }
-  
+
   .all-go {
     flex-wrap: wrap;
   }
@@ -2885,12 +2951,11 @@ svg.svg-inline--fa.fa-list-check {
     margin-top: 10px;
     width: 16rem;
   }
-  
+
   #hid {
     top: 100%;
     right: 0px;
     width: 300px;
-
   }
   .all-ads {
     flex-wrap: wrap;
@@ -2982,99 +3047,95 @@ svg.svg-inline--fa.fa-list-check {
   .detalis #hid {
     top: 39px;
     width: 300px;
-}
-.detalis #hid-nas {
-  top: 39px;
+  }
+  .detalis #hid-nas {
+    top: 39px;
     width: 300px;
-}
-.detalis #hid-na {
-  top: 39px;
+  }
+  .detalis #hid-na {
+    top: 39px;
     width: 300px;
-}
-.detalis #hiden {
-  top: 39px;
+  }
+  .detalis #hiden {
+    top: 39px;
     width: 300px;
-}
-.detalis #hidens {
-  top: 39px;
+  }
+  .detalis #hidens {
+    top: 39px;
     width: 300px;
-}
-.detalis #hideng {
-  top: 39px;
+  }
+  .detalis #hideng {
+    top: 39px;
     width: 300px;
-}
-.bace-bags .fliter {
-  flex-wrap: wrap;
-}
-.list-bags .fliter {
-  flex-wrap: wrap;
-}
-.bace-bags .seclect {
-  flex-wrap: wrap;
-  justify-content: start;
- 
-}
-.list-bags .seclect {
-  flex-wrap: wrap;
-  justify-content: start;
- 
-}
-.bace-bags .form-select {width: 100%;}
-.list-bags .form-select {width: 100%;}
-#go-hid {
-  top: 3474px;
-}
-#hid-1 {
-  width: 300px;
-
-}
-#hid-na-1{
-  width: 300px;
-
-}
-#hid-nas-1{
-  width: 300px;
-
-}
-#hid-jj{
-  width: 300px;
-
-}
-#hid-na-kk{
-  width: 300px;
-
-}
-#hid-nas-oo{
-  width: 300px;
-
-}
-div#hid-na {
-  width: 300px;
-}
-div#hid-nas {
-  width: 300px;
-}
-#hiden{
-  width: 300px;
-}
-div#hidens{
-  width: 300px;
-}
-div#hideng{
-  width: 300px;
-}
-.content {
-  height: 100%;
-}
-.drow {
-  width: 30px;
-  height: 30px;
-}
-svg.svg-inline--fa.fa-border-all {
-  display: none;
-}
-svg.svg-inline--fa.fa-list-check {
-  display: none;
-}
+  }
+  .bace-bags .fliter {
+    flex-wrap: wrap;
+  }
+  .list-bags .fliter {
+    flex-wrap: wrap;
+  }
+  .bace-bags .seclect {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .list-bags .seclect {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .bace-bags .form-select {
+    width: 100%;
+  }
+  .list-bags .form-select {
+    width: 100%;
+  }
+  #go-hid {
+    top: 23px;
+  }
+  #hid-1 {
+    width: 300px;
+  }
+  #hid-na-1 {
+    width: 300px;
+  }
+  #hid-nas-1 {
+    width: 300px;
+  }
+  #hid-jj {
+    width: 300px;
+  }
+  #hid-na-kk {
+    width: 300px;
+  }
+  #hid-nas-oo {
+    width: 300px;
+  }
+  div#hid-na {
+    width: 300px;
+  }
+  div#hid-nas {
+    width: 300px;
+  }
+  #hiden {
+    width: 300px;
+  }
+  div#hidens {
+    width: 300px;
+  }
+  div#hideng {
+    width: 300px;
+  }
+  .content {
+    height: 100%;
+  }
+  .drow {
+    width: 30px;
+    height: 30px;
+  }
+  svg.svg-inline--fa.fa-border-all {
+    display: none;
+  }
+  svg.svg-inline--fa.fa-list-check {
+    display: none;
+  }
 }
 /* responsive */

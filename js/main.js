@@ -86,13 +86,13 @@ function bigImgnac() {
 function normalImgnac() {
   hidnakk.style.display = "none";
 }
-function bigImgnasv(){
+function bigImgnasv() {
   hidnasoo.style.display = "block";
 }
 function normalImgnasv() {
   hidnasoo.style.display = "none";
 }
-function big(){
+function big() {
   gohid.style.display = "block";
 }
 function norma() {
@@ -129,3 +129,16 @@ $(document).on("click", "#open", function () {
   }
 });
 
+
+
+function gridView() {
+  var container = document.getElementById("container");
+  container.classList.remove("listmode");
+  container.classList.add("grid");
+}
+
+function listView() {
+  var container = document.getElementById("container");
+  container.classList.remove("grid");
+  container.classList.add("listmode");
+}

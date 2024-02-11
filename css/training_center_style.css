@@ -16,7 +16,7 @@
 }
 
 @font-face {
-  font-family: "semibold";
+  font-family: "Medium";
   src: url("../fonts/alfont_com_Somar-Medium.otf");
 }
 
@@ -1661,6 +1661,18 @@ img.pro-reta {
   background-size: cover;
   padding: 2.5rem 0;
 }
+.our-blog-page .head {
+  margin-top: 2rem;
+}
+.our-blog-page .head p {
+  font-size: 16px;
+  font-family: "light";
+}
+.our-blog-page .head p span {
+  font-size: 16px;
+  font-family: "light";
+  color: #3c1d05;
+}
 .our-blog-page .head-blog p {
   color: white;
   font-size: 12px;
@@ -1679,6 +1691,7 @@ img.pro-reta {
   border: 0.5px solid rgb(24 25 69 / 25%);
   border-radius: 10px;
   margin: 2rem 0;
+  height: 460px;
 }
 .our-blog-page .card-plog a {
   text-decoration: none;
@@ -1716,14 +1729,14 @@ img.pro-reta {
 }
 .our-blog-page .card-plog h4 {
   color: black;
-  font-size: 22px;
-  font-family: "semibold";
+  font-size: 20px;
+  font-family: "Medium";
   margin: 1rem 0;
 }
 
 .our-blog-page .card-plog p {
   color: #6f777b;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "regular";
   margin-bottom: 1rem;
 }
@@ -1733,19 +1746,21 @@ img.pro-reta {
   font-family: "light";
 }
 .our-blog-page .card-plog h6 {
-  color: #56a0dd;
+  color: #c57016;
   font-size: 18px;
   font-family: "light";
+  text-align: end;
 }
 .our-blog-page .sections {
   margin: 2rem 0;
 }
-.our-blog-page .sections {
-  margin: 2rem 0;
+.our-blog-page .sections h4 {
+  font-size: 24px;
+  font-family: "Medium";
 }
 .our-blog-page .sections h6 {
   font-size: 24px;
-  font-family: "semibold";
+  font-family: "Medium";
 }
 .our-blog-page .sections ul ::marker {
   color: #e5890a;
@@ -1757,9 +1772,18 @@ img.pro-reta {
   font-family: "regular";
   margin: 0.7rem 0;
 }
+.our-blog-page .Related-posts h4 {
+  font-size: 24px;
+  font-family: "Medium";
+}
 .our-blog-page .Related-posts h6 {
-  font-size: 20px;
-  font-family: "semibold";
+  font-size: 15px;
+  font-family: "regular";
+}
+.our-blog-page .Related-posts p {
+  font-size: 10px;
+  font-family: "regular";
+  color: #8c8896;
 }
 .our-blog-page .Related-posts .section {
   margin: 1rem 0;
@@ -1771,15 +1795,15 @@ img.pro-reta {
 .our-blog-page .Related-posts .section .img img {
   width: 140px;
 }
-.our-blog-page .Tags h6 {
-  font-size: 24px;
-  font-family: "semibold";
-}
 .our-blog-page .Tags .head {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+.our-blog-page .Tags h4 {
+  font-size: 24px;
+  font-family: "Medium";
 }
 .our-blog-page .Tags .head .one-tag {
   width: 93px;
@@ -1825,26 +1849,28 @@ img.pro-reta {
 .our-blog-page .contant-page .contantt h6 {
   color: #e5890a;
   font-size: 20px;
-  font-family: "semibold";
+  font-family: "Medium";
   margin: 1rem 0;
 }
 .our-blog-page .contant-page .contantt .head h4 {
   color: black;
   font-size: 30px;
-  font-family: "semibold";
+  font-family: "Medium";
 }
 .our-blog-page .contant-page .contantt .head p {
   color: #6f777b;
   font-size: 18px;
   font-family: "regular";
+  line-height: 2rem;
 }
 .our-blog-page .contant-page .contantt .head {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 .our-blog-page .contant-page .contantt .Number-Visitors h4 {
   color: black;
   font-size: 24px;
   font-family: "regular";
+  margin-bottom: 1rem;
 }
 .our-blog-page .contant-page .contantt .Number-Visitors .btn-warning {
   background-color: #e5890a;
@@ -1852,11 +1878,11 @@ img.pro-reta {
   border-radius: 5px;
   padding: 0.5rem 1rem;
   font-size: 20px;
-  font-family: "semibold";
+  font-family: "Medium";
 }
 .our-blog-page .contant-page .contantt .Tags h6 {
   font-size: 24px;
-  font-family: "semibold";
+  font-family: "Medium";
   color: black;
 }
 .our-blog-page .contant-page .contantt .Tags .head {
@@ -1880,7 +1906,7 @@ img.pro-reta {
 }
 .our-blog-page .contant-page .contantt .share .head h4 {
   font-size: 24px;
-  font-family: "semibold";
+  font-family: "Medium";
   color: #e5890a;
 }
 .our-blog-page .contant-page .contantt .share .logo {
@@ -1910,29 +1936,30 @@ img.pro-reta {
 }
 .home .privacy-polisty .head h4 {
   font-size: 14px;
-  font-family: "semibold";
+  font-family: "regular";
 }
 .home .privacy-polisty .head span {
   color: #cecece;
 }
 .home .privacy-polisty h3 {
-  font-size: 30px;
+  font-size: 28px;
   font-family: "bold";
 }
 .home .privacy-polisty p {
   color: #66686d;
   margin: 1rem;
+  font-size: 14px;
+  font-family: "light";
+  line-height: 1.8rem;
 }
 .home .privacy-polisty {
   margin-bottom: 3rem;
 }
-.explain-company .contant {
-  margin: 3rem 0;
-}
+
 .explain-company .contant h4 {
-  font-size: 40px;
+  font-size: 30px;
   font-family: "bold";
-  margin: 1rem 0 2rem;
+  margin: 1rem 0;
 }
 .explain-company .contant p {
   font-size: 14px;
@@ -1950,6 +1977,7 @@ img.pro-reta {
   font-size: 20px;
   font-family: "bold";
   justify-content: space-between;
+  border-radius: 10px;
 }
 .explain-company .accordion .accordion-item {
   border: 1px solid #a8a8a8;
@@ -1961,23 +1989,35 @@ img.pro-reta {
 }
 .explain-company .accordion .accordion-body p {
   font-size: 15px;
-  font-family: "regular";
+  font-family: "light";
   color: #66686d;
   line-height: 1.8rem;
 }
 .explain-company .accordion-button::after {
-  /* background-color: #d0d2d7;
+  background-color: #d0d2d7;
   border-radius: 50%;
   height: 40px;
   width: 40px;
   display: flex;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
+  background-position: center;
   margin: 0;
+  background-size: 1.1rem;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16' width='14' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z'/%3E%3C/svg%3E");
 }
 .explain-company .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16' width='14' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z'/%3E%3C/svg%3E");
+  background-color: #e5890a;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  margin: 0;
+  background-size: 1.1rem;
+  background-image: url(../photo/min.svg);
 }
 .detalis .cover {
   background-image: url(../photo/cover.png);
@@ -2259,6 +2299,7 @@ svg.svg-inline--fa.fa-list-check {
   margin-bottom: 0.8rem;
   transition: 0.7s;
 }
+
 .all-lastsub {
   position: relative;
 }
@@ -2266,6 +2307,175 @@ svg.svg-inline--fa.fa-list-check {
   display: flex;
   align-items: center;
 }
+
+/* connect */
+.connect-page .head-connect {
+  background-image: url(../photo/black.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 2.5rem 0;
+}
+.connect-page .head-connect p {
+  color: white;
+  font-size: 12px;
+  font-family: "regular";
+}
+.connect-page .head-connect p span {
+  color: #cecece;
+}
+.connect-page .Means-communication {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.connect-page .Means-communication .phone {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  margin: 2rem 0;
+  padding: 2rem 0;
+  background-color: #f5f7f9;
+  transition: .5s all;
+}
+.connect-page .Means-communication .phone:hover {
+  background-color: #e5890a;
+  color: white;
+  transition: .5s all;
+}
+.connect-page .Means-communication .phone:hover .icon {
+  background-color: #fff;
+}
+.connect-page .Means-communication .phone:hover .icon img {
+  filter: invert(71%) sepia(50%) saturate(5727%) hue-rotate(4deg)
+    brightness(98%) contrast(92%);
+}
+.connect-page .Means-communication .phone:hover p {
+  color: #fff;
+}
+.connect-page .Means-communication .phone:hover h5 {
+  color: #fff;
+}
+.connect-page .Means-communication a {
+  width: 30%;
+}
+.connect-page .Means-communication .phone .icon {
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5890a;
+}
+.connect-page .Means-communication .phone p {
+  color: #3c1d05;
+  font-size: 15px;
+  font-family: "light";
+  margin: 1rem;
+}
+.connect-page .Means-communication .phone h5 {
+  color: #3c1d05;
+  font-size: 19px;
+  font-family: "regular";
+}
+.connect-page form h4 {
+  font-size: 30px;
+  font-family: "bold";
+}
+.connect-page form p {
+  font-size: 15px;
+  font-family: "regular";
+  color: #9ca2ac;
+}
+.connect-page form .form-group label {
+  font-size: 14px;
+  font-family: "regular";
+  color: #66686d;
+}
+.connect-page form .form-group input {
+  font-size: 14px;
+  font-family: "regular";
+  background-color: #f5f7f9;
+  height: 2.5rem;
+  width: 100%;
+  margin: 1rem 0;
+  box-shadow: none;
+  border: none;
+}
+.connect-page form .form-group textarea {
+  font-size: 14px;
+  font-family: "regular";
+  background-color: #f5f7f9;
+  margin: 1rem 0;
+  border: none;
+}
+.connect-page form .btn-primary {
+  width: 100%;
+  background-color: #e5890a;
+  border: none;
+  box-shadow: none;
+  padding: 0.7rem;
+  font-size: 14px;
+  font-family: "regular";
+}
+.connect-page form {
+  margin-bottom: 2rem;
+}
+.connect-page .img-phone img {
+  width: 100%;
+  height: 500px;
+}
+.connect-page .map {
+  margin: 2rem 0;
+}
+.connect-page .map img {
+  width: 100%;
+}
+/* connect */
+/* page error */
+.page-notfound{
+  margin: 5rem 0;
+}
+.page-notfound .page{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.page-notfound .page h5{
+  font-size: 28px;
+  font-family: "bold";
+}
+.page-notfound .page .img {
+ margin-bottom: 2rem;
+}
+.page-notfound .page .img img{
+  width: 100%;
+}
+.page-notfound .page p{
+color: #656B78;
+font-size: 17px;
+font-family: "light";
+width: 50%;
+text-align: center;
+}
+.page-notfound .page .btn-warning{
+  background-color: #e5890a;
+  border: 1px solid #e5890a;
+  color: white;
+  font-family: "bold";
+  font-size: 14px;
+  padding: 0.7rem 2rem;
+  transition: 0.7s;
+  margin-top: 20px;
+}
+/* page error */
+
+
 /* responsive */
 @media (min-width: 1600px) and (max-width: 2600px) {
   .container,
@@ -2551,11 +2761,15 @@ svg.svg-inline--fa.fa-list-check {
     flex-wrap: wrap;
   }
   .img-sub img {
+
     width: 100%;
   }
   .bace-bags .img-sub img {
     width: 100%;
+
+    width: 57rem;
   }
+  
 
   .lastcard-sup {
     margin-top: 10px;
@@ -2832,12 +3046,99 @@ svg.svg-inline--fa.fa-list-check {
     top: 39px;
     width: 300px;
   }
+
   .Buy-the-course {
     width: 50%;
   }
   .help-card {
     width: 50%;
   }
+
+  .our-blog-page .Related-posts .section .img img {
+    width: 115px;
+  }
+  .our-blog-page .Related-posts h6 {
+    font-size: 12px;
+    font-family: "regular";
+  }
+  .our-blog-page .Related-posts {
+    margin: 2rem 0;
+  }
+  .our-blog-page .contant-page .contantt .head h4 {
+    font-size: 20px;
+  }
+  .our-blog-page .contant-page .contantt .head p {
+    font-size: 14px;
+  }
+  .our-blog-page .contant-page .contantt .Number-Visitors h4 {
+    font-size: 20px;
+  }
+  .our-blog-page .contant-page .contantt .Tags h6 {
+    font-size: 20px;
+  }
+  .our-blog-page .contant-page .contantt .share .head h4 {
+    font-size: 20px;
+  }
+  .our-blog-page .contant-page .contantt .Number-Visitors .btn-warning {
+    font-size: 15px;
+  }
+  .connect-page .img-phone img {
+    height: 250px;
+    margin-top: 10rem;
+  }
+  .connect-page .Means-communication .phone h5 {
+    color: #3c1d05;
+    font-size: 15px;
+  }
+  .connect-page form h4 {
+    font-size: 26px;
+  }
+  .connect-page form p {
+    font-size: 13px;
+  }
+  .home .privacy-polisty .head h4 {
+    font-size: 12px;
+  }
+  .home .privacy-polisty h3 {
+    font-size: 22px;
+  }
+  .home .privacy-polisty p {
+    font-size: 12px;
+  }
+  .explain-company .accordion .accordion-button {
+    font-size: 15px;
+  }
+  .explain-company .accordion .accordion-body p {
+    font-size: 11px;
+  }
+  .explain-company .accordion-button:not(.collapsed)::after {
+    height: 35px;
+    width: 35px;
+  }
+  .explain-company .accordion-button::after {
+    height: 35px;
+    width: 35px;
+  }
+  .explain-company .contant h4 {
+    font-size: 25px;
+  }
+  .page-notfound .page h5 {
+    font-size: 25px;
+  }
+  .page-notfound .page .img img {
+    width: 85%;
+}
+  .page-notfound .page .img  {
+   text-align: center;
+}
+.page-notfound .page p {
+  color: #656B78;
+  font-size: 15px;
+}
+.page-notfound .page .btn-warning {
+  font-size: 12px;
+}
+
 }
 @media only screen and (max-width: 600px) {
   .top_nav {
@@ -3089,7 +3390,10 @@ svg.svg-inline--fa.fa-list-check {
     width: 100%;
   }
   #go-hid {
+
     top: 23px;
+
+   
   }
   #hid-1 {
     width: 300px;
@@ -3137,5 +3441,153 @@ svg.svg-inline--fa.fa-list-check {
   svg.svg-inline--fa.fa-list-check {
     display: none;
   }
+
+  .our-blog-page .Related-posts {
+    margin: 3rem 0;
+  }
+  .our-blog-page .Related-posts h4 {
+    font-size: 20px;
+  }
+  .our-blog-page .sections h4 {
+    font-size: 20px;
+  }
+  .our-blog-page .Related-posts .section .img img {
+    width: 130px;
+  }
+  .our-blog-page .Related-posts h6 {
+    font-size: 12px;
+  }
+  .our-blog-page .Tags h4 {
+    font-size: 20px;
+  }
+  .our-blog-page .card-plog .img h5 {
+    font-size: 15px;
+  }
+  .our-blog-page .card-plog h4 {
+    font-size: 15px;
+  }
+  .our-blog-page .card-plog p {
+    color: #6f777b;
+    font-size: 13px;
+  }
+  .our-blog-page .card-plog {
+    height: auto;
+    margin: 1.5rem 0;
+  }
+  .our-blog-page .card-plog h6 {
+    font-size: 15px;
+  }
+  .our-blog-page .head p {
+    font-size: 11px;
+  }
+  .our-blog-page .head p span {
+    font-size: 11px;
+  }
+  .our-blog-page .sections h4 {
+    font-size: 15px;
+  }
+  .our-blog-page .sections ul li {
+    font-size: 13px;
+  }
+  .our-blog-page .Related-posts h4 {
+    font-size: 15px;
+  }
+  .our-blog-page .Related-posts .section .img img {
+    width: 110px;
+  }
+  .our-blog-page .Related-posts h6 {
+    font-size: 10px;
+  }
+  .our-blog-page .Tags h4 {
+    font-size: 15px;
+  }
+  .our-blog-page .contant-page .contantt h6 {
+    font-size: 15px;
+  }
+  .our-blog-page .contant-page .contantt .head h4 {
+    font-size: 15px;
+  }
+  .our-blog-page .contant-page .contantt .head p {
+    font-size: 12px;
+  }
+  .our-blog-page .contant-page .contantt .Number-Visitors h4 {
+    font-size: 15px;
+  }
+  .our-blog-page .contant-page .contantt .Tags h6 {
+    font-size: 15px;
+  }
+  .our-blog-page .contant-page .contantt .share .head h4 {
+    font-size: 15px;
+  }
+  .our-blog-page .Number-Visitors {
+    margin-bottom: 2rem;
+  }
+  .connect-page .Means-communication a {
+    width: 100%;
+  }
+  .connect-page .Means-communication {
+    flex-direction: column;
+  }
+  .connect-page .img-phone img {
+    height: 150px;
+    margin-top: 0rem;
+  }
+  .connect-page .Means-communication .phone p {
+    font-size: 12px;
+  }
+  .connect-page .Means-communication .phone h5 {
+    color: #3c1d05;
+    font-size: 15px;
+  }
+  .connect-page form h4 {
+    font-size: 22px;
+  }
+  .connect-page form p {
+    font-size: 12px;
+  }
+  .connect-page .head-connect p {
+    font-size: 10px;
+  }
+  .home .privacy-polisty .head h4 {
+    font-size: 10px;
+  }
+  .home .privacy-polisty h3 {
+    font-size: 19px;
+  }
+  .home .privacy-polisty p {
+    font-size: 10px;
+    margin-bottom: 2rem;
+  }
+  .explain-company .accordion .accordion-button {
+    font-size: 10px;
+  }
+  .explain-company .accordion .accordion-body p {
+    font-size: 10px;
+  }
+  .explain-company .accordion-button:not(.collapsed)::after {
+    height: 30px;
+    width: 30px;
+  }
+  .explain-company .accordion-button::after {
+    height: 30px;
+    width: 30px;
+  }
+  .explain-company .contant h4 {
+    font-size: 20px;
+  }
+  .page-notfound .page .img img {
+    width: 70%;
+}
+.page-notfound .page h5 {
+  font-size: 20px;
+}
+.page-notfound .page p {
+  width: 90%;
+  font-size: 12px;
+}
+.page-notfound .page .btn-warning {
+  font-size: 10px;
+}
+
 }
 /* responsive */

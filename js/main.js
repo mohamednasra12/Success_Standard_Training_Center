@@ -142,3 +142,21 @@ function listView() {
   container.classList.remove("grid");
   container.classList.add("listmode");
 }
+$(document).ready(function () {
+  var topNav = $(".top_nav");
+  var navBar = $(".nav-bar");
+
+  $(window).scroll(function () {
+    // Check if the page has been scrolled
+    if ($(this).scrollTop() > 0) {
+      // Hide top_nav and make nav-bar fixed
+      topNav.hide();
+      navBar.addClass("fixed-navbar");
+    } else {
+      // Show top_nav and remove fixed style from nav-bar
+      topNav.show();
+      navBar.removeClass("fixed-navbar");
+    }
+  });
+});
+

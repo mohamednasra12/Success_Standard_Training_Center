@@ -33,6 +33,12 @@ body {
   counter-reset: section;
 }
 
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
 /* top_nav */
 .top_nav {
   background-color: #1a0d02;
@@ -589,6 +595,9 @@ button.btn.btn-warning.more:hover {
 }
 .header-company {
   font-family: "bold";
+  border-bottom: 4px solid #5751E1 ;
+  margin-bottom: 2rem;
+  width: fit-content;
 }
 .last-link {
   display: flex;
@@ -597,6 +606,25 @@ button.btn.btn-warning.more:hover {
 }
 .last-link h5 {
   margin-bottom: 0;
+}
+button#dropdownMenuButton1 {
+  border-radius: 50%;
+  margin-top: 20px;
+  font-family: "bold";
+  letter-spacing: 1.8px;
+  background-color: #EFF0F1;
+  color: #000000;
+  border: 0;
+}
+.dropdown-toggle::after {
+   display: unset !important; 
+   margin-left: unset !important; 
+   vertical-align: unset !important; 
+  content: "";
+  border-top: 0 !important;
+  border-right:  0 !important;
+  border-bottom: 0;
+  border-left:  0 !important;
 }
 .end-page a {
   color: white;
@@ -1077,9 +1105,10 @@ section.five_sec.aos-init.aos-animate {
   margin-bottom: 60px;
 }
 h4.week {
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-right: 27px;
   margin-top: 3px;
+  color: #bfbfbf;
 }
 .card-go {
   padding: 0.5rem;
@@ -2610,6 +2639,25 @@ button.btn.btn-addrate {
   color: white;
   background-color: #e5890a;
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e5890a; 
+  border-radius: 4px;
+  transition: 0.7s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #06042e; 
+ 
+}
 /* page error */
 
 /* responsive */
@@ -2631,6 +2679,7 @@ button.btn.btn-addrate {
 }
 
 @media only screen and (max-width: 1440px) {
+  
   #hid {
     background-color: white;
     box-shadow: 1px 1px 10px #00000073;
@@ -2710,6 +2759,7 @@ button.btn.btn-addrate {
   }
   .img-sub img {
     width: 100%;
+    height: 361px;
   }
   .all-lastsub {
     width: 80%;

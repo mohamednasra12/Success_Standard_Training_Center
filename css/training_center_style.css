@@ -1380,7 +1380,7 @@ button.btn.btn-warning.rate-now:hover {
 }
 ::placeholder {
   font-family: "regular";
-  color: #7b82911f;
+  color: #7b829160;
 }
 .img-ratedes {
   display: flex;
@@ -2478,6 +2478,137 @@ svg.svg-inline--fa.fa-list-check {
   padding: 0.7rem 2rem;
   transition: 0.7s;
   margin-top: 20px;
+}
+.video-buy {
+  position: relative;
+}
+.video-buy svg {
+  font-size: 4rem;
+  position: absolute;
+  right: 0;
+  top: 44%;
+  right: 41%;
+  cursor: pointer;
+  color: #00000099;
+}
+video {
+  width: 100%;
+}
+.genral {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+.radio-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-family: "regular";
+  gap: 12px;
+}
+.btn-check:active + .btn-outline-secondary,
+.btn-check:checked + .btn-outline-secondary,
+.btn-outline-secondary.active,
+.btn-outline-secondary.dropdown-toggle.show,
+.btn-outline-secondary:active {
+  border: 3px solid #c57016;
+  background-color: white !important;
+  color: #000000;
+  box-shadow: unset;
+}
+.btn-check:active + .btn-outline-primary,
+.btn-check:checked + .btn-outline-primary,
+.btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show,
+.btn-outline-primary:active {
+  border: 3px solid #e5890a;
+  background-color: white !important;
+  color: #000000;
+  box-shadow: unset;
+}
+.btn-check:active + .btn-outline-success,
+.btn-check:checked + .btn-outline-success,
+.btn-outline-success.active,
+.btn-outline-success.dropdown-toggle.show,
+.btn-outline-success:active {
+  border: 3px solid #e5890a;
+  background-color: white !important;
+  color: #000000;
+  box-shadow: unset;
+}
+.btn-check:active + .btn-outline-danger,
+.btn-check:checked + .btn-outline-danger,
+.btn-outline-danger.active,
+.btn-outline-danger.dropdown-toggle.show,
+.btn-outline-danger:active {
+  border: 3px solid #e5890a;
+  background-color: white !important;
+  color: #000000;
+  box-shadow: unset;
+}
+.btn-check:active + .btn-outline-danger,
+.btn-check:checked + .btn-outline-danger,
+.btn-outline-danger.active,
+.btn-outline-danger.dropdown-toggle.show,
+.btn-outline-danger:active {
+  border: 3px solid #e5890a;
+  background-color: white !important;
+  color: #000000;
+  box-shadow: unset;
+}
+.btn-outline-danger {
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  color: black !important;
+}
+.btn-outline-danger:hover {
+  background-color: transparent;
+  border: 1px solid #e5890a;
+}
+.btn-outline-success {
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  color: black !important;
+}
+.btn-outline-success:hover {
+  background-color: white;
+  border: 1px solid #e5890a;
+}
+.modal.show .modal-dialog {
+  min-width: 566px !important;
+}
+.genral {
+  margin: 1rem 0;
+}
+.genral h4 {
+  font-family: "regular";
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+.hed h4 {
+  font-family: "regular";
+  color: #656b78;
+  font-size: 0.9rem;
+}
+label {
+  font-family: "regular";
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+select.form-select {
+  font-family: "regular";
+}
+.modal-header .btn-close {
+  margin: unset !important;
+}
+h5#exampleModalLabel {
+  font-family: "regular";
+}
+button.btn.btn-addrate {
+  width: 100%;
+  font-family: "regular";
+  color: white;
+  background-color: #e5890a;
 }
 /* page error */
 
@@ -3601,6 +3732,18 @@ svg.svg-inline--fa.fa-list-check {
     width: 100% !important;
   }
   .connect-page .Means-communication .phone {
+    width: 100%;
+  }
+  .modal.show .modal-dialog {
+    min-width: 100% !important;
+  }
+  .radio-btn {
+    display: block;
+  }
+  .btn-outline-danger {
+    width: 100%;
+  }
+  .btn-outline-success {
     width: 100%;
   }
 }

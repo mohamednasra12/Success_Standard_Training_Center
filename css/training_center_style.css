@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  transition: 0.7s;
 }
 @font-face {
   font-family: "light";
@@ -595,7 +596,7 @@ button.btn.btn-warning.more:hover {
 }
 .header-company {
   font-family: "bold";
-  border-bottom: 4px solid #5751E1 ;
+  border-bottom: 4px solid #5751e1;
   margin-bottom: 2rem;
   width: fit-content;
 }
@@ -612,19 +613,19 @@ button#dropdownMenuButton1 {
   margin-top: 20px;
   font-family: "bold";
   letter-spacing: 1.8px;
-  background-color: #EFF0F1;
+  background-color: #eff0f1;
   color: #000000;
   border: 0;
 }
 .dropdown-toggle::after {
-   display: unset !important; 
-   margin-left: unset !important; 
-   vertical-align: unset !important; 
+  display: unset !important;
+  margin-left: unset !important;
+  vertical-align: unset !important;
   content: "";
   border-top: 0 !important;
-  border-right:  0 !important;
+  border-right: 0 !important;
   border-bottom: 0;
-  border-left:  0 !important;
+  border-left: 0 !important;
 }
 .end-page a {
   color: white;
@@ -2647,85 +2648,84 @@ button.btn.btn-addrate {
 
 /* Track */
 
- 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #e5890a; 
+  background: #e5890a;
   border-radius: 4px;
   transition: 0.7s;
+  width: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #06042e; 
- 
+  background: #a8a8a8;
 }
 /* page error */
 
-
 /* who-we */
-.who-we .all{
+.who-we .all {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 90px;
   margin-top: 4rem;
 }
-.who-we .img-beet{  display: flex;
+.who-we .img-beet {
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
 }
-.who-we .beet-two{
+.who-we .beet-two {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.who-we .text-icon{ 
+.who-we .text-icon {
   display: flex;
   justify-content: center;
   align-items: start;
   gap: 10px;
 }
-.who-we .desgin h4{
+.who-we .desgin h4 {
   font-family: "bold";
   font-size: 0.8rem;
 }
-.who-we .desgin p{
+.who-we .desgin p {
   font-family: "regular";
   font-size: 0.8rem;
-  color: #656B78;
+  color: #656b78;
 }
-.who-we .text-beet h4{
+.who-we .text-beet h4 {
   font-family: "bold";
   color: #e5890a;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
-.who-we .text-beet h3{
-  font-family: "regular";
-  font-size: 0.8rem;
+.who-we .text-beet h3 {
+  font-family: "bold";
+  font-size: 1rem;
   line-height: 1.3rem;
 }
-.who-we .beet-one img{
+.who-we .beet-one img {
   width: 10rem;
 }
-.who-we .beet-two img{
+.who-we .beet-two img {
   width: 10rem;
 }
-.who-we .steps-card{ 
+.who-we .steps-card {
   text-align: center;
-  margin-top:4rem;
+  margin-top: 4rem;
+  position: relative;
 }
-.who-we .steps-card h4{
+.who-we .steps-card h4 {
   font-family: "bold";
   font-size: 0.9rem;
-
 }
-.who-we .steps-card p{
+.who-we .steps-card p {
   font-family: "regular";
   font-size: 0.8rem;
-  color: #656B78;
+  color: #656b78;
 }
 .who-we .steps-card img {
   margin-bottom: 1.1rem;
@@ -2743,23 +2743,37 @@ button.btn.btn-addrate {
   display: flex;
   align-items: center;
 }
-.who-we .des p{
-margin-bottom: 0;
+.who-we .des p {
+  margin-bottom: 0;
 }
 .who-we .card-teacher {
   margin-top: 4rem;
-  
- 
+  position: relative;
 }
 
- 
+.who-we .card-teacher::after {
+  content: "";
+  background-image: url(../photo/proder.png);
+  position: absolute;
+  left: -2px;
+  top: -1px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 102%;
+  height: 59.3%;
+  transition: 0.5s all;
+}
+.who-we .card-teacher:hover img {
+  transform: rotate(10deg);
+}
 
 .who-we .all-teacher-card {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-} 
+  gap: 80px;
+}
 .who-we .card-teacher h4 {
   font-size: 1rem;
   font-family: "bold";
@@ -2773,14 +2787,146 @@ margin-bottom: 0;
 .who-we .des {
   margin-bottom: 10px;
 }
-/* .who-we .
-.who-we .
-.who-we .
-.who-we .
-.who-we .
-.who-we . */
-/* who-we */
 
+.who-we .linked {
+  color: #000000;
+  margin-bottom: 1rem;
+}
+.who-we .one_sec {
+  margin-top: 1rem;
+}
+.who-we .text-icon img {
+  width: 3%;
+}
+.who-we .arrows {
+  position: absolute;
+  top: 41px;
+  right: 321px;
+}
+.who-we .fourd_sec {
+  position: relative;
+}
+.who-we .absl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 8px;
+}
+.who-we .all-Trainees {
+  background-image: url(../photo/tranbc.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 160px;
+}
+.who-we .trainees-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 10px;
+  font-family: "bold";
+}
+.who-we .text-icontran h4 {
+  margin-bottom: 0;
+  font-size: 1.6rem;
+}
+.who-we .text-icontran p {
+  margin-bottom: 0;
+  font-family: "regular";
+  font-size: 1.6rem;
+}
+.who-we.who-we .trainees-icon img {
+  background-color: #f1aa47;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.who-we .tranining {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+}
+.who-we .head-what h4 {
+  font-family: "bold";
+}
+.who-we .head-what p {
+  font-family: "regular";
+  color: #656b78;
+}
+.who-we .head-rate {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.who-we .head-rate h4 {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+.who-we .head-rate p {
+  margin-bottom: 0;
+}
+.who-we .card-rate {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 15px;
+}
+.who-we .card-what {
+  background-color: white;
+}
+.who-we .six_sec {
+  background-color: #f8f8f8;
+  padding: 1.1rem;
+}
+.who-we .cards {
+  padding: 1rem;
+  width: 462px;
+}
+.who-we .cards p {
+  font-family: "regular";
+  color: #656b78;
+  font-size: 0.8rem;
+}
+.who-we .head-what {
+  margin-top: 1rem;
+}
+.who-we .What-did {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 13px;
+  overflow-x: scroll;
+}
+
+.who-we .What-did::-webkit-scrollbar {
+  height: 5px;
+}
+
+/* Track */
+
+/* Handle */
+.who-we .What-did::-webkit-scrollbar-thumb {
+  background: #e5890a;
+  border-radius: 4px;
+  transition: 0.7s;
+  height: 5px;
+}
+
+/* Handle on hover */
+.who-we .What-did::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.who-we .card-rate p {
+  margin-top: 0.8rem;
+}
+.who-we .this {
+  margin-top: 10px;
+}
 /* responsive */
 @media (min-width: 1600px) and (max-width: 2600px) {
   .container,
@@ -2800,7 +2946,10 @@ margin-bottom: 0;
 }
 
 @media only screen and (max-width: 1440px) {
-  
+  .who-we .all-teacher-card {
+    flex-wrap: wrap;
+  }
+
   #hid {
     background-color: white;
     box-shadow: 1px 1px 10px #00000073;
@@ -3014,10 +3163,7 @@ margin-bottom: 0;
   ul.btn button.btn.btn-warning {
     width: 100%;
   }
-  ul.btn {
-    display: block;
-    margin-top: 24px;
-  }
+
   button.btn.btn-warning.signout {
     margin-top: 10px;
   }
@@ -3134,6 +3280,21 @@ margin-bottom: 0;
   .price {
     flex-wrap: wrap;
   }
+  .who-we .all-teacher-card {
+    flex-wrap: wrap;
+  }
+  .who-we .arrows {
+    display: none;
+  }
+  .who-we .all {
+    flex-wrap: wrap;
+  }
+  .who-we .adsss {
+    background-size: cover;
+  }
+  .who-we .text-icontran p {
+    font-size: 0.9rem;
+  }
 }
 
 @media only screen and (max-width: 991.98px) {
@@ -3171,10 +3332,7 @@ margin-bottom: 0;
   ul.btn button.btn.btn-warning {
     width: 100%;
   }
-  ul.btn {
-    display: block;
-    margin-top: 24px;
-  }
+
   button.btn.btn-warning.signout {
     margin-top: 10px;
   }
@@ -3450,6 +3608,19 @@ margin-bottom: 0;
   .hamadas {
     width: 100% !important;
   }
+  .who-we .all-teacher-card {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .who-we .arrows {
+    display: none;
+  }
+  .who-we .all {
+    flex-wrap: wrap;
+  }
+  .who-we .adsss {
+    background-size: cover;
+  }
 }
 @media only screen and (max-width: 600px) {
   .top_nav {
@@ -3486,9 +3657,7 @@ margin-bottom: 0;
   ul.btn button.btn.btn-warning {
     width: 100%;
   }
-  ul.btn {
-    display: block;
-  }
+
   button.btn.btn-warning.signout {
     margin-top: 10px;
   }
@@ -3922,6 +4091,35 @@ margin-bottom: 0;
   }
   .who-we .all-teacher-card {
     flex-wrap: wrap;
+    gap: 10px;
+  }
+  .who-we .arrows {
+    display: none;
+  }
+  .who-we .tranining {
+    flex-wrap: wrap;
+  }
+  .who-we .all-Trainees {
+    height: 273px;
+  }
+  .who-we .trainees-icon {
+    margin-top: 10px;
+  }
+  .who-we .card-teacher {
+    margin-top: 1rem;
+  }
+  .who-we .text-icon img {
+    width: 10%;
+  }
+  .who-we .absl img {
+    width: 10%;
+  }
+  .who-we .adsss {
+    background-size: cover;
+    padding: 1rem;
+  }
+  .who-we .card-teacher::after {
+    display: none;
   }
 }
 /* responsive */

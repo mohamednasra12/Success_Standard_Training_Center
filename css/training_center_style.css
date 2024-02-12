@@ -1081,9 +1081,11 @@ section.fourd_sec.aos-init.aos-animate {
   color: white;
   font-family: "regular";
 }
+
 .all-ads p {
   width: 70%;
 }
+
 svg.svg-inline--fa.fa-angles-left.arrow {
   margin-right: 19px;
 }
@@ -2660,6 +2662,125 @@ button.btn.btn-addrate {
 }
 /* page error */
 
+
+/* who-we */
+.who-we .all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4rem;
+}
+.who-we .img-beet{  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.who-we .beet-two{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.who-we .text-icon{ 
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+.who-we .desgin h4{
+  font-family: "bold";
+  font-size: 0.8rem;
+}
+.who-we .desgin p{
+  font-family: "regular";
+  font-size: 0.8rem;
+  color: #656B78;
+}
+.who-we .text-beet h4{
+  font-family: "bold";
+  color: #e5890a;
+  font-size: 0.8rem;
+}
+.who-we .text-beet h3{
+  font-family: "regular";
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+.who-we .beet-one img{
+  width: 10rem;
+}
+.who-we .beet-two img{
+  width: 10rem;
+}
+.who-we .steps-card{ 
+  text-align: center;
+  margin-top:4rem;
+}
+.who-we .steps-card h4{
+  font-family: "bold";
+  font-size: 0.9rem;
+
+}
+.who-we .steps-card p{
+  font-family: "regular";
+  font-size: 0.8rem;
+  color: #656B78;
+}
+.who-we .steps-card img {
+  margin-bottom: 1.1rem;
+}
+.who-we .three-secbac {
+  background-image: url(../photo/ba2.png);
+}
+
+.who-we .adsss {
+  background-image: url(../photo/bc3.png);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.who-we .des {
+  display: flex;
+  align-items: center;
+}
+.who-we .des p{
+margin-bottom: 0;
+}
+.who-we .card-teacher {
+  margin-top: 4rem;
+  
+ 
+}
+
+ 
+
+.who-we .all-teacher-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+} 
+.who-we .card-teacher h4 {
+  font-size: 1rem;
+  font-family: "bold";
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.who-we .des p {
+  font-family: "regular";
+  font-size: 0.9rem;
+}
+.who-we .des {
+  margin-bottom: 10px;
+}
+/* .who-we .
+.who-we .
+.who-we .
+.who-we .
+.who-we .
+.who-we . */
+/* who-we */
+
 /* responsive */
 @media (min-width: 1600px) and (max-width: 2600px) {
   .container,
@@ -3795,6 +3916,12 @@ button.btn.btn-addrate {
   }
   .btn-outline-success {
     width: 100%;
+  }
+  .who-we .all {
+    flex-wrap: wrap;
+  }
+  .who-we .all-teacher-card {
+    flex-wrap: wrap;
   }
 }
 /* responsive */

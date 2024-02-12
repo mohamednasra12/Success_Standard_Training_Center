@@ -855,7 +855,22 @@ span.arrwo {
   border-radius: 15px;
   font-family: "regular";
 }
-
+.all-teacher-card a {
+  color: #000000;
+  text-decoration: none;
+}
+svg.svg-inline--fa.fa-heart {
+  width: 25px;
+  color: #3d4c5e;
+}
+.love {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  background-color: white;
+  padding: 0.4rem;
+  border-radius: 50%;
+}
 #hid {
   background-color: white;
   box-shadow: 1px 1px 10px #00000073;
@@ -2067,6 +2082,7 @@ img.pro-reta {
   align-items: center;
   gap: 14px;
 }
+
 .detalis .text {
   width: 100%;
 }
@@ -2123,7 +2139,7 @@ img.pro-reta {
   text-align: center;
 }
 .detalis .main-img img {
-  width: 19%;
+  width: 15%;
 }
 .detalis .all-img {
   border: 1px solid #00000017;
@@ -2155,6 +2171,10 @@ img.pro-reta {
 }
 .detalis .card-subject {
   margin-top: 1rem !important;
+  width: 100%;
+}
+.detalis .card-subject .text-sub {
+  width: 100%;
 }
 .detalis .heder {
   font-family: "regular";
@@ -2755,13 +2775,13 @@ button.btn.btn-addrate {
   content: "";
   background-image: url(../photo/proder.png);
   position: absolute;
-  left: -2px;
+  left: -3px;
   top: -1px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  width: 102%;
-  height: 59.3%;
+  width: 103%;
+  height: 61.3%;
   transition: 0.5s all;
 }
 .who-we .card-teacher:hover img {
@@ -2813,6 +2833,7 @@ button.btn.btn-addrate {
   position: absolute;
   width: 100%;
   top: 8px;
+  z-index: -1;
 }
 .who-we .all-Trainees {
   background-image: url(../photo/tranbc.png);

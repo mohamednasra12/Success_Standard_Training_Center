@@ -99,7 +99,7 @@ function norma() {
   gohid.style.display = "none";
 }
 // hover
-
+// part word
 $(document).ready(function () {
   var pragraph = $("#pragraph");
   var showtext = $("#showtext");
@@ -118,6 +118,7 @@ $(document).ready(function () {
     showtext.toggle();
   });
 });
+// part word
 
 $(document).on("click", "#open", function () {
   $(".accordion-collapse").toggleClass("show");
@@ -128,8 +129,6 @@ $(document).on("click", "#open", function () {
     $("#open").text("فتح كل المعايير");
   }
 });
-
-
 
 function gridView() {
   var container = document.getElementById("container");
@@ -160,3 +159,27 @@ $(document).ready(function () {
   });
 });
 
+function myFunction() {
+  var x = document.getElementById("myInputs");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+function myFunctions() {
+  var x = document.getElementById("myInputa");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+function myFunctiona() {
+  var x = document.getElementById("myInputd");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}

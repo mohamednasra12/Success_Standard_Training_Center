@@ -128,9 +128,21 @@ ul.dropdown-menu.show {
 a.dropdown-item {
   color: rgb(0, 0, 0) !important;
 }
+a.dropdown-item.sin {
+  color: rgb(0, 0, 0) !important;
+  text-align: start;
+  font-size: 0.8rem;
+  padding: 0.8rem 0.2rem;
+}
+a.dropdown-item.sin img {
+  margin-left: 10px;
+}
 a.dropdown-item:hover {
-  background-color: #06797e;
+  background-color: #e5890a;
   color: white !important;
+}
+.dropdown-menu.sin {
+  width: 100%;
 }
 li.lang {
   margin-top: 15px;
@@ -2924,7 +2936,7 @@ button.btn.btn-addrate {
 }
 
 .who-we .What-did::-webkit-scrollbar {
-  height: 5px;
+  height: 15px;
 }
 
 /* Track */
@@ -2948,6 +2960,273 @@ button.btn.btn-addrate {
 .who-we .this {
   margin-top: 10px;
 }
+/* personal */
+.btn .btn-secondary.dropdown-toggle.profile {
+  background-color: transparent !important;
+  display: flex;
+  box-shadow: unset !important;
+}
+.profile-sin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-sin .text-profi h4 {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  font-family: "regular";
+}
+.profile-sin .text-profi p {
+  font-size: 0.7rem;
+  margin-bottom: 0;
+  font-family: "regular";
+  color: #99a3aa;
+}
+.aro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.presonal-account .frist-sec {
+  background-image: url(../photo/cover.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 150px;
+  padding: 4rem;
+}
+.presonal-account .all-tabs {
+  display: flex;
+  align-items: start;
+  gap: 40px;
+}
+.presonal-account .pro-detailes {
+  background-image: url(../photo/detalis.png);
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.presonal-account .right-nav {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 20%;
+  border: 1px solid rgba(0, 0, 0, 0.158);
+  border-radius: 15px;
+}
+.presonal-account button {
+  width: 100%;
+  background-color: unset;
+  border: 0;
+  text-align: start;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+  color: #3d4c5e;
+}
+.presonal-account .nav-link-tab:last-child {
+  border-bottom: 0 solid rgba(0, 0, 0, 0.185);
+}
+.presonal-account .pro-detailes .color {
+  color: #e5890a;
+  font-family: "regular";
+  margin-bottom: 0;
+}
+.presonal-account .pro-detailes h4 {
+  font-family: "bold";
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+.presonal-account .pro-detailes p {
+  font-family: "regular";
+  margin-bottom: 0;
+}
+.presonal-account .pro-detailes img {
+  width: 35%;
+}
+.presonal-account .nav-link-tab {
+  padding: 1rem;
+  font-family: "regular";
+}
+.presonal-account .nav-link-tab.active {
+  background-color: #c571163b;
+  border-right: 5px solid #e48825;
+  color: #c57016;
+}
+.presonal-account .tab-content {
+  border-radius: 16px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  border: 1px solid #0000003b;
+  width: 100%;
+  height: 648px;
+}
+.header-content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  padding: 0.8rem;
+  border-radius: 15px 15px 0 0;
+  border-bottom: 0;
+}
+.header-content .img {
+  border: 3px solid #e48825;
+  border-radius: 50%;
+  width: 81px;
+  height: 81px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-content .btn-upload {
+  border: 1px solid #e48825;
+  text-align: center;
+  background-color: #e48825;
+  padding: 0.6rem;
+  color: white;
+  font-family: "regular";
+  border-radius: 15px;
+}
+.btn-content .btn-upload:hover {
+  background-color: #532807;
+  border: 1px solid #532807;
+}
+.btn-content .btdelet {
+  border: 1px solid rgb(255, 0, 0);
+  text-align: center;
+  color: red;
+  font-family: "regular";
+  border-radius: 15px;
+}
+.btn-content .btdelet:hover {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+}
+.presonal-account .btn-content {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0.5rem;
+}
+.presonal-account .text-conetnt p {
+  color: #576b74;
+  font-family: "regular";
+  margin-bottom: 0;
+  font-size: 0.7rem;
+  margin-top: 17px;
+}
+.presonal-account .text-conetnt {
+  width: 25%;
+}
+.presonal-account .name {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+.presonal-account .name h4 {
+  font-size: 0.9rem;
+  font-family: "regular";
+  text-align: start;
+}
+.accordion-button::after {
+  margin-right: auto;
+  margin-left: 10px;
+  content: "تعديل";
+  background-image: unset !important;
+  transform: unset !important;
+  font-family: "regular";
+  color: #e5890a;
+}
+.presonal-account .name p {
+  margin-bottom: 0;
+  font-family: "regular";
+  text-align: start;
+}
+.presonal-account svg.svg-inline--fa.fa-upload {
+  margin-right: 10px;
+}
+.presonal-account .accordion-button:not(.collapsed) {
+  color: #000000;
+  background-color: white !important;
+  box-shadow: unset !important;
+  border: 0;
+}
+.presonal-account .accordion-button:focus {
+  box-shadow: unset !important;
+  border-color: unset !important ;
+}
+.presonal-account .form-control {
+  border: 1px solid rgba(0, 0, 0, 0.233);
+  height: 40px;
+  width: 50%;
+  border-radius: 12px;
+}
+.presonal-account .save {
+  background-color: #e5890a;
+  padding: 0.8rem;
+  width: 50%;
+  border: 1px solid #e5890a;
+  border-radius: 15px;
+  color: white;
+  font-family: "regular";
+  margin-top: 15px;
+}
+
+.presonal-account .save:hover {
+  background-color: #532807;
+  border: 1px solid #532807;
+}
+.presonal-account .accordion-body {
+  border: 0;
+}
+.presonal-account .form-control input {
+  border: 0;
+  outline: 0;
+  background-color: unset !important;
+  width: 91%;
+}
+.presonal-account .password-group {
+  padding: 1rem;
+}
+.presonal-account h5.color-forget {
+  color: #e5890a;
+  font-family: "regular";
+  font-size: 0.9rem;
+  margin-top: 10px;
+  border-bottom: 1px solid #e5890a;
+  width: fit-content;
+}
+.presonal-account .password-group label {
+  color: #546881;
+}
+.presonal-account .fliter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.presonal-account .seclect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.presonal-account .seclect h4 {
+  font-size: 0.7rem;
+  width: 61%;
+  margin-bottom: 0;
+}
+.presonal-account .pags {
+  padding: 1rem;
+}
+/* personal */
 /* responsive */
 @media (min-width: 1600px) and (max-width: 2600px) {
   .container,
@@ -3242,6 +3521,7 @@ button.btn.btn-addrate {
   }
   .bace-bags .img-sub img {
     width: 100%;
+    height: 100%;
   }
 
   .lastcard-sup {
@@ -3408,6 +3688,7 @@ button.btn.btn-addrate {
   }
   .img-sub img {
     width: 100%;
+    height: 100%;
   }
   .adress {
     flex-wrap: wrap;
@@ -3428,6 +3709,7 @@ button.btn.btn-addrate {
 
   .card-subject {
     flex-wrap: wrap;
+    justify-content: center;
   }
   #hid {
     top: 100%;
@@ -3438,6 +3720,7 @@ button.btn.btn-addrate {
   }
   .img-sub img {
     width: 100%;
+    height: 100%;
   }
   .card_introduction {
     width: 100%;
@@ -3736,6 +4019,7 @@ button.btn.btn-addrate {
   }
   .img-sub img {
     width: 100%;
+    height: 100%;
   }
   .adress {
     flex-wrap: wrap;
@@ -4141,6 +4425,41 @@ button.btn.btn-addrate {
   }
   .who-we .card-teacher::after {
     display: none;
+  }
+  .presonal-account .all-tabs {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .presonal-account .right-nav {
+    width: 100%;
+  }
+  .header-content {
+    display: block;
+  }
+  .presonal-account .btn-content {
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .btn-content .btn-upload {
+    width: 100%;
+  }
+  .presonal-account .text-conetnt {
+    width: 100%;
+  }
+  .btn-content .btdelet {
+    padding: 0.5rem;
+  }
+  .presonal-account .form-control {
+    width: 100%;
+  }
+  .presonal-account .save {
+    width: 100%;
+  }
+  .presonal-account .name {
+    gap: 10px;
+  }
+  .presonal-account .form-control input {
+    width: 80%;
   }
 }
 /* responsive */

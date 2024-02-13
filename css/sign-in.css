@@ -1,0 +1,395 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.7s;
+}
+@font-face {
+  font-family: "light";
+  src: url("../fonts/alfont_com_Somar-Light.otf");
+}
+
+@font-face {
+  font-family: "regular";
+  src: url("../fonts/alfont_com_Somar-Regular.otf");
+}
+
+@font-face {
+  font-family: "Medium";
+  src: url("../fonts/alfont_com_Somar-Medium.otf");
+}
+
+@font-face {
+  font-family: "bold";
+  src: url("../fonts/alfont_com_Somar-Bold.otf");
+}
+a {
+  text-decoration: none;
+}
+body {
+  direction: rtl;
+  background-color: white;
+  counter-reset: section;
+}
+
+.register .head {
+  background-image: url(../photo/ml.png);
+  padding: 3rem;
+}
+.register .head h6 {
+  color: white;
+  font-size: 1rem;
+  font-family: "light";
+}
+.register .head h6 span {
+  color: #cecece;
+  font-size: 1rem;
+  font-family: "light";
+}
+.register form .title h4 {
+  color: #2e2c34;
+  font-size: 1.4rem;
+  font-family: "bold";
+}
+.register form .title h4 span {
+  color: #e5890a;
+  font-size: 1.4rem;
+  font-family: "bold";
+}
+.register form {
+  margin-bottom: 1rem;
+}
+.register form .title {
+  margin: 3rem 0 2rem;
+}
+.register form .title p {
+  color: #707070;
+  font-size: 1.2rem;
+  font-family: "light";
+}
+.register form .form-group label {
+  color: #546881;
+  font-size: 1.1rem;
+  font-family: "light";
+}
+.register form .form-group .email {
+  height: 50px;
+  border: 1px solid #d0d2d7;
+  border-radius: 10px;
+  width: 90%;
+  padding: 0.6rem 0.5rem 0.6rem;
+}
+.register form .form-group .email .auth {
+  outline: unset;
+  border: 0;
+  width: 90%;
+  font-size: 1.1rem;
+  font-family: "light";
+}
+.register form .form-group {
+  margin-bottom: 1rem;
+}
+.register form .form-group .password-icon {
+  height: 3rem;
+  border: 1px solid #d0d2d7;
+  border-radius: 10px;
+  width: 90%;
+  padding: 0.6rem 0.5rem 0.6rem;
+  color: #909dad;
+}
+.register form .form-group .password-icon .auth {
+  outline: unset;
+  border: 0;
+  width: 85%;
+  font-size: 1.1rem;
+  font-family: "light";
+}
+.register form a h5 {
+  color: #909dad;
+  font-size: 1rem;
+  font-family: "light";
+}
+.register form .sign a h5 {
+  color: #909dad;
+  font-size: 1rem;
+  font-family: "light";
+}
+.register form .sign a h6 {
+  color: #909dad;
+  font-size: 1rem;
+  font-family: "light";
+  text-align: center;
+  width: 90%;
+}
+.register form .sign a h6 span {
+  color: #e5890a;
+  font-size: 1rem;
+  font-family: "light";
+  text-align: center;
+  width: 90%;
+}
+.register form .sign .btn-primary {
+  width: 90%;
+  padding: 0.8rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  border: none;
+  background-color: #e5890a;
+  color: white;
+  font-size: 0.8rem;
+  font-family: "regular";
+  box-shadow: none;
+}
+.register form .sign .btn-warning {
+  width: 90%;
+}
+.register form .modal .modal-content {
+  width: 80%;
+  text-align: center;
+  border-radius: 23px;
+  padding: 2rem;
+}
+.register form .modal .modal-content h4 {
+  font-size: 1.2rem;
+  font-family: "bold";
+  margin-top: 2rem;
+}
+.register .img {
+  margin-top: 4rem;
+  text-align: end;
+}
+.register .img-pass {
+  text-align: end;
+  margin-top: 2rem;
+}
+.register .img-newaccount {
+    text-align: end;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.register .img-newaccount img {
+  width: 70%;
+}
+.register .img-pass img {
+  width: 60%;
+}
+.register .img img {
+  width: 85%;
+}
+button.swal2-confirm.swal2-styled {
+  display: none !important;
+}
+.swal2-popup.swal2-modal.swal2-show {
+  border-radius: 23px;
+}
+.register .mail-error {
+  background-color: rgb(238 37 39 / 10%);
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  width: 90%;
+  display: none;
+}
+.register .mail-error h4 {
+  color: #ee2527;
+  font-size: 14px;
+  font-family: "light";
+  margin: 0 0.5rem;
+}
+.register .password-error {
+  background-color: rgb(238 37 39 / 10%);
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  width: 90%;
+  margin: 0.5rem 0;
+  display: none;
+}
+.register .password-error h4 {
+  color: #ee2527;
+  font-size: 14px;
+  font-family: "light";
+  margin: 0 0.5rem;
+}
+.register .email-error {
+  background-color: #fef0c7;
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  width: 90%;
+  margin: 0.5rem 0;
+  display: none;
+}
+.register .email-error h4 {
+  color: #b54708;
+  font-size: 14px;
+  font-family: "light";
+  margin: 0 0.5rem;
+}
+.page-recover .title h4 {
+  color: #2e2c34;
+  font-size: 1.4rem;
+  font-family: "bold";
+}
+.page-recover .title h4 span {
+  color: #e5890a;
+  font-size: 1.4rem;
+  font-family: "bold";
+}
+.page-recover .title {
+  margin: 3rem 0 2rem;
+}
+.page-recover .title p {
+  color: #707070;
+  font-size: 1.2rem;
+  font-family: "light";
+}
+.page-recover .head {
+  background-image: url(../photo/ml.png);
+  padding: 3rem;
+}
+.page-recover.head h6 {
+  color: white;
+  font-size: 1rem;
+  font-family: "light";
+}
+.page-recover .head h6 span {
+  color: #cecece;
+  font-size: 1rem;
+  font-family: "light";
+}
+/* start forgetpass */
+.page-recover .head h6 {
+  color: white;
+  font-size: 1rem;
+  font-family: "light";
+}
+.forgetpass {
+  display: flex;
+  width: 100%;
+}
+.style-bord {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.forgetpass .head-forget {
+  padding: 2rem 1.5rem 0;
+}
+.forgetpass .style-bord form::placeholder {
+  color: rgba(129, 131, 135, 1);
+  font-size: 15px;
+  font-family: "regular";
+}
+.forgetpass .style-bord form .form-control {
+  padding-right: 2rem;
+  border-color: rgba(154, 158, 164, 1);
+}
+.forgetpass .style-bord form .btn-primary {
+  width: 100%;
+  color: white;
+  background-color: #e5890a;
+  border: none;
+  margin: 2rem 0;
+  padding: 0.5rem;
+}
+.forgetpass .style-bord form a {
+  text-decoration: none;
+}
+.forgetpass .head-forget form p {
+  color: #10162e;
+  font-size: 1rem;
+  font-family: "light";
+  margin-bottom: 0.5rem;
+}
+.forgetpass .head-forget form p span {
+  color: #e5890a;
+  font-size: 1rem;
+  font-family: "light";
+}
+.forgetpass .style-bord form .code-input {
+  width: 80px;
+  height: 80px;
+  margin: 0.1rem;
+  background-color: #f7f7f7;
+  border: none;
+  text-align: center;
+  border-radius: 8px;
+}
+.page-recover .img-pass {
+  text-align: end;
+  margin-top: 3rem;
+}
+.page-recover .img-pass img {
+  width: 65%;
+}
+/* end forgetpass */
+
+@media only screen and (min-width: 1300px) {
+  .register form .form-group .password-icon .auth {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .register .img {
+    margin-top: 8rem;
+  }
+  .register .img img {
+    width: 100%;
+  }
+  .page-recover .img-pass img {
+    width: 100%;
+  }
+  .page-recover .img-pass {
+    margin-top: 8rem;
+  }
+  .register .img-newaccount img {
+    width: 100%;
+  }
+  .register .img-pass img {
+    width: 100%;
+  }
+  .register .img-pass {
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .register .img {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .register .img img {
+    width: 70%;
+  }
+  .register .head {
+    padding: 2rem;
+  }
+  .page-recover .img-pass {
+    text-align: center;
+    margin-top: 0;
+  }
+  .page-recover .img-pass img {
+    width: 60%;
+  }
+  .register .img-newaccount img {
+    width: 60%;
+  }
+  .register .img-newaccount {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .register .img-pass {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}

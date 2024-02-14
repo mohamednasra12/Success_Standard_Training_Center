@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 @font-face {
   font-family: "light";
@@ -623,7 +623,7 @@ button.btn.btn-warning.more:hover {
 button#dropdownMenuButton1 {
   border-radius: 50%;
   margin-top: 20px;
-  font-family: "bold";
+  font-family: "regular";
   letter-spacing: 1.8px;
   background-color: #eff0f1;
   color: #000000;
@@ -3226,6 +3226,8 @@ button.btn.btn-addrate {
 .presonal-account .pags {
   padding: 1rem;
 }
+
+
 /* personal */
 /* responsive */
 @media (min-width: 1600px) and (max-width: 2600px) {
@@ -3404,8 +3406,37 @@ button.btn.btn-addrate {
   .rate-bags {
     width: fit-content;
   }
+  .presonal-account .text-conetnt {
+    width: 39%;
+}
+.presonal-account .right-nav {width: 30%;}
+.presonal-account .save{
+padding: 0.5rem;
+}
+.presonal-account .form-control input {
+  width: 80%;
+}
 }
 @media only screen and (max-width: 1024px) {
+  .img-sub img {
+    height: 565px;
+  }
+  .top_nav {
+    height: 56px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    margin-left: 0;
+  }
+  .presonal-account .text-conetnt {
+    width: 39%;
+}
+.presonal-account .right-nav {width: 32%;}
+.presonal-account .save{
+padding: 0.5rem;
+}
+.presonal-account .form-control input {
+  width: 80%;
+}
   .Buy-the-course {
     width: 259px;
   }
@@ -3431,7 +3462,7 @@ button.btn.btn-addrate {
 }
 @media only screen and (max-width: 1200px) {
   .top_nav {
-    height: 98px;
+    height: 56px;
     padding: 0.5rem;
   }
   .top_nav_detlies {
@@ -3924,6 +3955,44 @@ button.btn.btn-addrate {
   }
   .who-we .adsss {
     background-size: cover;
+  }
+  .presonal-account .all-tabs {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .presonal-account .right-nav {
+    width: 100%;
+  }
+  .header-content {
+    display: block;
+  }
+  .presonal-account .btn-content {
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .btn-content .btn-upload {
+    width: 100%;
+  }
+  .presonal-account .text-conetnt {
+    width: 100%;
+  }
+  .btn-content .btdelet {
+    padding: 0.5rem;
+  }
+  .presonal-account .form-control {
+    width: 100%;
+  }
+  .presonal-account .save {
+    width: 100%;
+  }
+  .presonal-account .name {
+    gap: 10px;
+  }
+  .presonal-account .form-control input {
+    width: 90%;
+  }
+  .presonal-account .pro-detailes img {
+    width: 10%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -4461,5 +4530,7 @@ button.btn.btn-addrate {
   .presonal-account .form-control input {
     width: 80%;
   }
+  
+  
 }
 /* responsive */

@@ -165,12 +165,12 @@ body {
   margin-top: 2rem;
 }
 .register .img-newaccount {
-    text-align: end;
-    margin-top: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
+  text-align: end;
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
 }
 .register .img-newaccount img {
   width: 70%;
@@ -334,6 +334,158 @@ button.swal2-confirm.swal2-styled {
   width: 65%;
 }
 /* end forgetpass */
+/* if user dont chose anything invoice */
+.tab-pane .invoice-error {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 60vh;
+  display: none;
+}
+.tab-pane .invoice-error h4 {
+  font-size: 20px;
+  font-family: "bold";
+  color: #10162e;
+  margin: 1rem 0;
+}
+.tab-pane .invoice-error p {
+  font-size: 15px;
+  font-family: "light";
+  color: #656b78;
+  width: 60%;
+  text-align: center;
+}
+/* if user dont chose anything invoice */
+/* table invoice */
+.invoice-table {
+  padding: 0.8rem;
+}
+.invoice-table form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.invoice-table form .form-group .email {
+  height: 50px;
+  border: 1px solid #d0d2d7;
+  border-radius: 10px;
+  width: 60%;
+  padding: 0.6rem 0.5rem 0.6rem;
+}
+.invoice-table form .form-group {
+  width: 50%;
+}
+.invoice-table form .form-group .email .auth {
+  outline: unset;
+  border: 0;
+  width: 90%;
+  font-size: 1.1rem;
+  font-family: "light";
+}
+.invoice-table form .form-group .email ::placeholder {
+  font-size: 1.1rem;
+  font-family: "light";
+  color: #47586e;
+}
+.invoice-table form .form-group .slect-subject {
+  padding: 0.6rem 0.5rem 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.invoice-table form .form-group .slect-subject .auth {
+  outline: unset;
+  height: 50px;
+  border: 1px solid #d0d2d7;
+  border-radius: 10px;
+  padding: 0.5rem;
+  width: 30%;
+  font-size: 1.1rem;
+  font-family: "light";
+}
+.invoice-table form .form-group .slect-subject p {
+  margin: 0 0.5rem;
+  font-size: 0.8rem;
+  font-family: "light";
+  color: #656b78;
+}
+
+/* table */
+.invoice-table .table thead {
+  background-color: rgb(178 187 198 / 30%);
+  padding: 1rem;
+}
+.invoice-table .table thead tr {
+  border: none;
+}
+.invoice-table .table thead tr th {
+  font-size: 0.8rem;
+  font-family: "light";
+  border: none;
+
+}
+.invoice-table .table tbody tr .td {
+width: 35%;
+}
+
+.invoice-table .content_page .chose .form-row {
+  display: flex;
+}
+
+.invoice-table table thead th {
+  background-color: rgba(176, 188, 193, 0.19);
+  color: rgba(87, 107, 116, 1);
+  text-align: center;
+  font-family: "regular";
+}
+
+
+.invoice-table  .table-bordered {
+  /* border: 1px solid rgba(163, 174, 178, 1); */
+  border-radius: 10px;
+}
+.invoice-table table td {
+  text-align: center;
+  font-family: "regular";
+  padding: 1rem 0.5rem;
+}
+.invoice-table table tbody .td {
+  color: rgba(87, 107, 116, 1);
+  background-color: white;
+}
+.invoice-table table tbody .price-table {
+width: 82px;
+height: 36px;
+border-radius: 60px;
+background-color: rgb(21 179 134 / 10%);
+color: #15B386;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.invoice-table table tbody .price-table h6{
+margin-bottom: 0;
+font-size: 1rem;
+font-family: "regular";
+color: #15B386;
+}
+.invoice-table table tbody .dropdown .btn-table{
+  margin-top: 0.5rem !important;
+background-color: transparent !important;
+text-align: center !important;
+}
+.invoice-table table tbody .dropdown .btn-table:hover{
+
+    background-color: #e5890a;
+    color: white !important;
+
+}
+
+
+
+
+/* table invoice */
 
 @media only screen and (min-width: 1300px) {
   .register form .form-group .password-icon .auth {

@@ -38,7 +38,8 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  transition: background-color 0.7s ease; /* Add transition property */
+  z-index: 100000;
 }
 /* top_nav */
 .top_nav {
@@ -3042,12 +3043,13 @@ button.btn.btn-addrate {
 }
 .presonal-account .pro-detailes h4 {
   font-family: "bold";
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 0;
 }
 .presonal-account .pro-detailes p {
   font-family: "regular";
   margin-bottom: 0;
+  font-size: 0.8rem;
 }
 .presonal-account .pro-detailes img {
   width: 35%;
@@ -3055,6 +3057,7 @@ button.btn.btn-addrate {
 .presonal-account .nav-link-tab {
   padding: 1rem;
   font-family: "regular";
+  font-size: 0.8rem;
 }
 .presonal-account .nav-link-tab.active {
   background-color: #c571163b;
@@ -3067,6 +3070,7 @@ button.btn.btn-addrate {
   margin-bottom: 2rem;
   width: 100%;
   border: 1px solid #0000003b;
+  overflow: hidden;
 }
 .header-content {
   display: flex;
@@ -3269,12 +3273,192 @@ button.btn.btn-addrate {
 }
 .presonal-account .dropdown-item img {
   width: 20%;
- 
 }
 .presonal-account .dropdown-item {
   text-align: right !important;
 }
+.presonal-account .all-massage {
+  display: flex;
+  align-items: start;
+}
+.presonal-account .right-massage {
+  width: 25%;
+  padding: 0.5rem 0.2rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.178);
+  height: 650px;
+  overflow-y: scroll;
+}
+.presonal-account .left-massage {
+  width: 75%;
+  padding: 0.5rem;
+  height: 650px;
+  overflow-y: scroll;
+}
+.presonal-account .chat {
+  display: flex;
+  gap: 10px;
+  align-items: start;
+  border-bottom: 1px solid #0000002e;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.presonal-account .chat:last-child {
+  border-bottom: 0px solid #0000002e;
+}
+.presonal-account .chat:hover {
+  background-color: #e58a0a17;
+}
+.presonal-account .text-chat h4 {
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  font-family: "bold";
+}
+.presonal-account .text-chat p {
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  font-family: "regular";
+  color: #47586e;
+}
+.green {
+  color: green;
+  font-size: 0.5rem;
+}
 
+.presonal-account .right-massage .form-control {
+  border: 1px solid rgba(0, 0, 0, 0.233);
+  height: 40px;
+  width: 100%;
+  border-radius: 12px;
+}
+.presonal-account .right-massage .form-control input {
+  width: 85%;
+}
+.presonal-account .right-massage .hed h4 {
+  font-size: 1.2rem;
+  color: #000000;
+  font-family: "regular";
+  margin-bottom: 1rem;
+}
+.presonal-account .right-massage .hed {
+  background-color: white;
+  position: sticky;
+  top: -8px;
+  padding: 0 !important;
+  border-radius: 1px;
+}
+.presonal-account .top .chat {
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+}
+.presonal-account .top {
+  background-color: white;
+  position: sticky;
+  top: -8px;
+  border-radius: 1px;
+  padding: 0px !important;
+}
+.presonal-account .top .chat:hover {
+  background-color: white;
+}
+.presonal-account .top .chat h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+.presonal-account .mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.presonal-account .mid .today {
+  background-color: transparent;
+  padding: 0.2rem 2rem;
+  color: white;
+  width: fit-content;
+  margin-top: 10px;
+  border-radius: 13px;
+  color: #7a797a;
+  border: 1px solid #7a797a;
+  font-family: "regular";
+  font-size: 0.8rem;
+}
+.presonal-account .today p {
+  margin-bottom: 0;
+}
+.presonal-account .right-chat {
+  background-color: #f7f7f7;
+  width: 50%;
+  padding: 1rem;
+  border-radius: 15px;
+  margin-top: 2rem;
+  font-family: "regular";
+  font-size: 1rem;
+}
+
+.presonal-account .left-chat {
+  background-color: #e5890a;
+  width: 50%;
+  padding: 1rem;
+  border-radius: 15px;
+  margin-top: 2rem;
+  font-family: "regular";
+  margin-right: auto;
+  color: white;
+  font-size: 1rem;
+}
+.presonal-account .left-chat p {
+  margin-bottom: 0;
+}
+.presonal-account .right-chat p {
+  margin-bottom: 0;
+}
+.presonal-account .right-chat .send-massage {
+  width: 90%;
+}
+.presonal-account .right-chat .send-massage .text-a input {
+  width: 90%;
+}
+
+.presonal-account .text-a {
+  width: 95%;
+  border: 1px solid rgba(0, 0, 0, 0.151);
+  margin-top: 1rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.presonal-account .bottom {
+  position: sticky;
+  bottom: -8px;
+  background-color: white;
+}
+.presonal-account .text-a input {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 94%;
+  outline: unset;
+  border: 0;
+  padding: 0 0.5rem;
+}
+.presonal-account .accordion-item {
+  border: 0 !important;
+}
+
+.presonal-account .send-massage {
+  /* margin-bottom: 0.5rem; */
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.presonal-account .send-massage svg {
+  color: #e5890a;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.presonal-account .text-a svg {
+  margin-top: 0;
+}
 /* personal */
 /* responsive */
 @media (min-width: 1600px) and (max-width: 2600px) {
@@ -3465,6 +3649,12 @@ button.btn.btn-addrate {
   .presonal-account .form-control input {
     width: 80%;
   }
+  .presonal-account .right-massage .form-control input {
+    width: 78%;
+}
+.presonal-account .right-massage {
+  width: 35%;
+}
 }
 @media only screen and (max-width: 1024px) {
   .img-sub img {
@@ -3510,6 +3700,9 @@ button.btn.btn-addrate {
   .listmode div#core {
     display: block !important;
   }
+  .presonal-account .right-massage .form-control input {
+    width: 90%;
+}
 }
 @media only screen and (max-width: 1200px) {
   .top_nav {
@@ -3677,6 +3870,25 @@ button.btn.btn-addrate {
   }
   .who-we .text-icontran p {
     font-size: 0.9rem;
+  }
+  .presonal-account .all-massage {
+    flex-wrap: wrap;
+  }
+  .presonal-account .right-massage {
+    width: 100%;
+  }
+  .presonal-account .left-massage {
+    width: 100%;
+  }
+  .presonal-account .right-chat {
+    width: 100%;
+  }
+  .presonal-account .left-chat {
+    width: 100%;
+  }
+  .presonal-account .top .chat {
+    margin-top: 1rem;
+    background-color: #06042e11;
   }
 }
 
@@ -4580,6 +4792,25 @@ button.btn.btn-addrate {
   }
   .presonal-account .form-control input {
     width: 80%;
+  }
+  .presonal-account .all-massage {
+    flex-wrap: wrap;
+  }
+  .presonal-account .right-massage {
+    width: 100%;
+  }
+  .presonal-account .left-massage {
+    width: 100%;
+  }
+  .presonal-account .right-chat {
+    width: 100%;
+  }
+  .presonal-account .left-chat {
+    width: 100%;
+  }
+  .presonal-account .top .chat {
+    margin-top: 1rem;
+    background-color: #06042e11;
   }
 }
 /* responsive */

@@ -675,12 +675,14 @@ button#dropdownMenuButton1 {
   justify-content: start;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
 .star-rat {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
 .star-rat span {
   color: white;
@@ -3065,8 +3067,6 @@ button.btn.btn-addrate {
   margin-bottom: 2rem;
   width: 100%;
   border: 1px solid #0000003b;
-  width: 100%;
-  height: 648px;
 }
 .header-content {
   display: flex;
@@ -3222,11 +3222,58 @@ button.btn.btn-addrate {
   font-size: 0.7rem;
   width: 61%;
   margin-bottom: 0;
+  font-family: "regular";
+  color: #656b78;
 }
 .presonal-account .pags {
   padding: 1rem;
 }
 
+.presonal-account .card-subject {
+  display: block;
+}
+.presonal-account .adress h4 {
+  margin-bottom: 0.9rem;
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 0;
+}
+.presonal-account .all-lastsub {
+  width: 80%;
+}
+.presonal-account .deta-pro {
+  display: block;
+}
+.presonal-account .small-box {
+  font-family: "regular";
+  font-size: 0.8rem;
+}
+.presonal-account .profile {
+  border: 0;
+}
+.presonal-account .love {
+  border-radius: 0;
+  background-color: transparent;
+}
+.presonal-account .presonal {
+  border-radius: 7px !important;
+  width: 30px;
+  height: 30px;
+  margin-top: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.presonal-account .accordion-item:last-child {
+  border-bottom: 0;
+}
+.presonal-account .dropdown-item img {
+  width: 20%;
+ 
+}
+.presonal-account .dropdown-item {
+  text-align: right !important;
+}
 
 /* personal */
 /* responsive */
@@ -3408,14 +3455,16 @@ button.btn.btn-addrate {
   }
   .presonal-account .text-conetnt {
     width: 39%;
-}
-.presonal-account .right-nav {width: 30%;}
-.presonal-account .save{
-padding: 0.5rem;
-}
-.presonal-account .form-control input {
-  width: 80%;
-}
+  }
+  .presonal-account .right-nav {
+    width: 30%;
+  }
+  .presonal-account .save {
+    padding: 0.5rem;
+  }
+  .presonal-account .form-control input {
+    width: 80%;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .img-sub img {
@@ -3429,14 +3478,16 @@ padding: 0.5rem;
   }
   .presonal-account .text-conetnt {
     width: 39%;
-}
-.presonal-account .right-nav {width: 32%;}
-.presonal-account .save{
-padding: 0.5rem;
-}
-.presonal-account .form-control input {
-  width: 80%;
-}
+  }
+  .presonal-account .right-nav {
+    width: 32%;
+  }
+  .presonal-account .save {
+    padding: 0.5rem;
+  }
+  .presonal-account .form-control input {
+    width: 80%;
+  }
   .Buy-the-course {
     width: 259px;
   }
@@ -4530,7 +4581,5 @@ padding: 0.5rem;
   .presonal-account .form-control input {
     width: 80%;
   }
-  
-  
 }
 /* responsive */

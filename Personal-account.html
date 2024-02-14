@@ -528,35 +528,911 @@
                 aria-labelledby="v-pills-messages-tab"
               >
                 <div class="pags">
-                    <div class="fliter">
-                        <div class="form-control">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="search" placeholder="بحث باسم الحقيبة">
-
+                  <div class="fliter">
+                    <div class="form-control">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <input type="search" placeholder="بحث باسم الحقيبة" />
+                    </div>
+                    <div class="seclect">
+                      <h4>تصنيف حسب :</h4>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>المادة العلمية</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>الفئة المستهدفة</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <div class="card-subject">
+                        <div class="img-sub">
+                          <img src="photo/one.png" alt="" />
+                          <h4>اللغة العربيه</h4>
+                          <div class="love">
+                            <div class="dropdown">
+                              <button
+                                class="presonal"
+                                type="button"
+                                id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </button>
+                              <ul
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownMenuButton1"
+                              >
+                                <li>
+                                  <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >Another action</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >Something else here</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
-                        <div class="seclect">
-                          <h4>تصنيف حسب :</h4>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>المادة العلمية</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>الفئة المستهدفة</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
+                        <div class="text-sub">
+                          <div class="adress">
+                            <h4>
+                              البرنامج التدريبي لتأهيل معلمي اللغة العربية
+                              للحصول علي الرخصة المهنية
+                            </h4>
+                          </div>
+                          <div class="star">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <div class="small-box">5.9</div>
+                            <span>( 220 تقييم )</span>
+                          </div>
+                          <div class="profile">
+                            <div class="deta-pro">
+                              <a href="page-detalis.html">
+                                <img
+                                  onmouseover="bigImgv()"
+                                  onmouseout="normalImgv()"
+                                  src="photo/samllpro.png"
+                                  alt=""
+                                />
+                              </a>
+                              <a href="page-detalis.html">
+                                <img
+                                  onmouseover="bigImgf()"
+                                  onmouseout="normalImgf()"
+                                  src="photo/pro1.png"
+                                  alt=""
+                                />
+                              </a>
+                              <a href="page-detalis.html">
+                                <img
+                                  onmouseover="bigImgg()"
+                                  onmouseout="normalImgg()"
+                                  src="photo/pro2.png"
+                                  alt=""
+                                />
+                              </a>
+
+                              <div id="hid-1" style="display: none">
+                                <div class="pro-hid">
+                                  <img src="photo/samllpro.png" alt="" />
+                                  <h4>DR. Ahmed Fathy Abo Zaid</h4>
+                                  <h5>
+                                    أنا مطور ولدي شغف بالتدريس. أنا المدرب
+                                    الرئيسي في London App Brewery، وهو معسكر
+                                    تدريب البرمجة الرائد في لندن. لقد ساعدت مئات
+                                    الآلاف من الطلاب على تعلم البرمجة وتغيير
+                                    حياتهم من خلال أن أصبح مطورًا. لقد تمت دعوتي
+                                    من قبل شركات مثل Twitter وFacebook وGoogle
+                                    لتعليم موظفيها.
+                                  </h5>
+                                </div>
+                                <div class="icons-hid">
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n1.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n2.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n3.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n4.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="hid-na-1" style="display: none">
+                                <div class="pro-hid">
+                                  <img src="photo/pro1.png" alt="" />
+                                  <h4>DR. Ahmed Fathy Abo Zaid</h4>
+                                  <h5>
+                                    أنا مطور ولدي شغف بالتدريس. أنا المدرب
+                                    الرئيسي في London App Brewery، وهو معسكر
+                                    تدريب البرمجة الرائد في لندن. لقد ساعدت مئات
+                                    الآلاف من الطلاب على تعلم البرمجة وتغيير
+                                    حياتهم من خلال أن أصبح مطورًا. لقد تمت دعوتي
+                                    من قبل شركات مثل Twitter وFacebook وGoogle
+                                    لتعليم موظفيها.
+                                  </h5>
+                                </div>
+                                <div class="icons-hid">
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n1.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n2.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n3.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n4.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="hid-nas-1" style="display: none">
+                                <div class="pro-hid">
+                                  <img src="photo/pro2.png" alt="" />
+                                  <h4>DR. Ahmed Fathy Abo Zaid</h4>
+                                  <h5>
+                                    أنا مطور ولدي شغف بالتدريس. أنا المدرب
+                                    الرئيسي في London App Brewery، وهو معسكر
+                                    تدريب البرمجة الرائد في لندن. لقد ساعدت مئات
+                                    الآلاف من الطلاب على تعلم البرمجة وتغيير
+                                    حياتهم من خلال أن أصبح مطورًا. لقد تمت دعوتي
+                                    من قبل شركات مثل Twitter وFacebook وGoogle
+                                    لتعليم موظفيها.
+                                  </h5>
+                                </div>
+                                <div class="icons-hid">
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n1.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n2.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n3.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n4.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="all-lastsub">
+                            <div class="lastcard-sup">
+                              <img src="photo/icons/celender.svg" alt="" />
+                              <p>
+                                2024-05-30
+                                <span class="arrwo"
+                                  ><i class="fa-solid fa-arrow-left-long"></i>
+                                  <i class="fa-solid fa-arrow-left-long"></i>
+                                </span>
+                                2024-02-24
+                              </p>
+                            </div>
+                            <div class="lastcard-sup">
+                              <img src="photo/icons/hat.svg" alt="" />
+                              <p>25 محاضرات عن بُعد</p>
+                            </div>
+                            <div class="lastcard-sup">
+                              <img src="photo/icons/hore.svg" alt="" />
+                              <p>1520 ساعة</p>
+                            </div>
+
+                            <div class="lastcard-sup">
+                              <img src="photo/icons/day.svg" alt="" />
+                              <p>85 يوم</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <div class="card-subject">
+                        <div class="img-sub">
+                          <img src="photo/one.png" alt="" />
+                          <h4>اللغة العربيه</h4>
+                          <div class="love">
+                            <div class="dropdown">
+                              <button
+                                class="presonal"
+                                type="button"
+                                id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </button>
+                              <ul
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownMenuButton1"
+                              >
+                                <li>
+                                  <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >Another action</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >Something else here</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-sub">
+                          <div class="adress">
+                            <h4>
+                              البرنامج التدريبي لتأهيل معلمي اللغة العربية
+                              للحصول علي الرخصة المهنية
+                            </h4>
+                          </div>
+                          <div class="star">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <div class="small-box">5.9</div>
+                            <span>( 220 تقييم )</span>
+                          </div>
+                          <div class="profile">
+                            <div class="deta-pro">
+                              <a href="page-detalis.html">
+                                <img
+                                  onmouseover="bigImgz()"
+                                  onmouseout="normalImgz()"
+                                  src="photo/samllpro.png"
+                                  alt=""
+                                />
+                              </a>
+                              <a href="page-detalis.html">
+                                <img
+                                  onmouseover="bigImgnac()"
+                                  onmouseout="normalImgnac()"
+                                  src="photo/pro1.png"
+                                  alt=""
+                                />
+                              </a>
+                              <a href="page-detalis.html">
+                                <img
+                                  onmouseover="bigImgnasv()"
+                                  onmouseout="normalImgnasv()"
+                                  src="photo/pro2.png"
+                                  alt=""
+                                />
+                              </a>
+                              <div id="hid-jj" style="display: none">
+                                <div class="pro-hid">
+                                  <img src="photo/samllpro.png" alt="" />
+                                  <h4>DR. Ahmed Fathy Abo Zaid</h4>
+                                  <h5>
+                                    أنا مطور ولدي شغف بالتدريس. أنا المدرب
+                                    الرئيسي في London App Brewery، وهو معسكر
+                                    تدريب البرمجة الرائد في لندن. لقد ساعدت مئات
+                                    الآلاف من الطلاب على تعلم البرمجة وتغيير
+                                    حياتهم من خلال أن أصبح مطورًا. لقد تمت دعوتي
+                                    من قبل شركات مثل Twitter وFacebook وGoogle
+                                    لتعليم موظفيها.
+                                  </h5>
+                                </div>
+                                <div class="icons-hid">
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n1.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n2.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n3.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n4.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="hid-na-kk" style="display: none">
+                                <div class="pro-hid">
+                                  <img src="photo/pro1.png" alt="" />
+                                  <h4>DR. Ahmed Fathy Abo Zaid</h4>
+                                  <h5>
+                                    أنا مطور ولدي شغف بالتدريس. أنا المدرب
+                                    الرئيسي في London App Brewery، وهو معسكر
+                                    تدريب البرمجة الرائد في لندن. لقد ساعدت مئات
+                                    الآلاف من الطلاب على تعلم البرمجة وتغيير
+                                    حياتهم من خلال أن أصبح مطورًا. لقد تمت دعوتي
+                                    من قبل شركات مثل Twitter وFacebook وGoogle
+                                    لتعليم موظفيها.
+                                  </h5>
+                                </div>
+                                <div class="icons-hid">
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n1.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n2.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n3.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n4.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="hid-nas-oo" style="display: none">
+                                <div class="pro-hid">
+                                  <img src="photo/pro2.png" alt="" />
+                                  <h4>DR. Ahmed Fathy Abo Zaid</h4>
+                                  <h5>
+                                    أنا مطور ولدي شغف بالتدريس. أنا المدرب
+                                    الرئيسي في London App Brewery، وهو معسكر
+                                    تدريب البرمجة الرائد في لندن. لقد ساعدت مئات
+                                    الآلاف من الطلاب على تعلم البرمجة وتغيير
+                                    حياتهم من خلال أن أصبح مطورًا. لقد تمت دعوتي
+                                    من قبل شركات مثل Twitter وFacebook وGoogle
+                                    لتعليم موظفيها.
+                                  </h5>
+                                </div>
+                                <div class="icons-hid">
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n1.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n2.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n3.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n4.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="all-lastsub">
+                            <div class="lastcard-sup">
+                              <img src="photo/icons/celender.svg" alt="" />
+                              <p>
+                                2024-05-30
+                                <span class="arrwo"
+                                  ><i class="fa-solid fa-arrow-left-long"></i>
+                                  <i class="fa-solid fa-arrow-left-long"></i>
+                                </span>
+                                2024-02-24
+                              </p>
+                            </div>
+                            <div class="lastcard-sup">
+                              <img src="photo/icons/hat.svg" alt="" />
+                              <p>25 محاضرات عن بُعد</p>
+                            </div>
+                            <div class="lastcard-sup">
+                              <img src="photo/icons/hore.svg" alt="" />
+                              <p>1520 ساعة</p>
+                            </div>
+
+                            <div class="lastcard-sup">
+                              <img src="photo/icons/day.svg" alt="" />
+                              <p>85 يوم</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <div class="card-subject">
+                        <div class="img-sub">
+                          <img src="photo/one.png" alt="" />
+                          <h4>اللغة العربيه</h4>
+                          <div class="love">
+                            <div class="dropdown">
+                              <button
+                                class="presonal"
+                                type="button"
+                                id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </button>
+                              <ul
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownMenuButton1"
+                              >
+                                <li>
+                                  <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >Another action</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >Something else here</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-sub">
+                          <div class="adress">
+                            <h4>
+                              البرنامج التدريبي لتأهيل معلمي اللغة العربية
+                              للحصول علي الرخصة المهنية
+                            </h4>
+                          </div>
+                          <div class="star">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <div class="small-box">5.9</div>
+                            <span>( 220 تقييم )</span>
+                          </div>
+                          <div class="profile">
+                            <div class="deta-pro">
+                              <a href="page-detalis.html">
+                                <img
+                                  onmouseover="bigImg()"
+                                  onmouseout="normalImg()"
+                                  src="photo/samllpro.png"
+                                  alt=""
+                                />
+                              </a>
+                              <a href="page-detalis.html">
+                                <img
+                                  onmouseover="bigImgna()"
+                                  onmouseout="normalImgna()"
+                                  src="photo/pro1.png"
+                                  alt=""
+                                />
+                              </a>
+                              <a href="page-detalis.html">
+                                <img
+                                  onmouseover="bigImgnas()"
+                                  onmouseout="normalImgnas()"
+                                  src="photo/pro2.png"
+                                  alt=""
+                                />
+                              </a>
+
+                              <div id="hid" style="display: none">
+                                <div class="pro-hid">
+                                  <img src="photo/samllpro.png" alt="" />
+                                  <h4>DR. Ahmed Fathy Abo Zaid</h4>
+                                  <h5>
+                                    أنا مطور ولدي شغف بالتدريس. أنا المدرب
+                                    الرئيسي في London App Brewery، وهو معسكر
+                                    تدريب البرمجة الرائد في لندن. لقد ساعدت مئات
+                                    الآلاف من الطلاب على تعلم البرمجة وتغيير
+                                    حياتهم من خلال أن أصبح مطورًا. لقد تمت دعوتي
+                                    من قبل شركات مثل Twitter وFacebook وGoogle
+                                    لتعليم موظفيها.
+                                  </h5>
+                                </div>
+                                <div class="icons-hid">
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n1.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n2.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n3.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n4.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="hid-na" style="display: none">
+                                <div class="pro-hid">
+                                  <img src="photo/pro1.png" alt="" />
+                                  <h4>DR. Ahmed Fathy Abo Zaid</h4>
+                                  <h5>
+                                    أنا مطور ولدي شغف بالتدريس. أنا المدرب
+                                    الرئيسي في London App Brewery، وهو معسكر
+                                    تدريب البرمجة الرائد في لندن. لقد ساعدت مئات
+                                    الآلاف من الطلاب على تعلم البرمجة وتغيير
+                                    حياتهم من خلال أن أصبح مطورًا. لقد تمت دعوتي
+                                    من قبل شركات مثل Twitter وFacebook وGoogle
+                                    لتعليم موظفيها.
+                                  </h5>
+                                </div>
+                                <div class="icons-hid">
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n1.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n2.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n3.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n4.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="hid-nas" style="display: none">
+                                <div class="pro-hid">
+                                  <img src="photo/pro2.png" alt="" />
+                                  <h4>DR. Ahmed Fathy Abo Zaid</h4>
+                                  <h5>
+                                    أنا مطور ولدي شغف بالتدريس. أنا المدرب
+                                    الرئيسي في London App Brewery، وهو معسكر
+                                    تدريب البرمجة الرائد في لندن. لقد ساعدت مئات
+                                    الآلاف من الطلاب على تعلم البرمجة وتغيير
+                                    حياتهم من خلال أن أصبح مطورًا. لقد تمت دعوتي
+                                    من قبل شركات مثل Twitter وFacebook وGoogle
+                                    لتعليم موظفيها.
+                                  </h5>
+                                </div>
+                                <div class="icons-hid">
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n1.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n2.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n3.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n4.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="all-lastsub">
+                            <div class="lastcard-sup">
+                              <img src="photo/icons/celender.svg" alt="" />
+                              <p>
+                                2024-05-30
+                                <span class="arrwo"
+                                  ><i class="fa-solid fa-arrow-left-long"></i>
+                                  <i class="fa-solid fa-arrow-left-long"></i>
+                                </span>
+                                2024-02-24
+                              </p>
+                            </div>
+                            <div class="lastcard-sup">
+                              <img src="photo/icons/hat.svg" alt="" />
+                              <p>25 محاضرات عن بُعد</p>
+                            </div>
+                            <div class="lastcard-sup">
+                              <img src="photo/icons/hore.svg" alt="" />
+                              <p>1520 ساعة</p>
+                            </div>
+
+                            <div class="lastcard-sup">
+                              <img src="photo/icons/day.svg" alt="" />
+                              <p>85 يوم</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <div class="card-subject">
+                        <div class="img-sub">
+                          <img src="photo/one.png" alt="" />
+                          <h4>اللغة العربيه</h4>
+                          <div class="love">
+                            <div class="dropdown">
+                              <button
+                                class="presonal"
+                                type="button"
+                                id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </button>
+                              <ul
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownMenuButton1"
+                              >
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img
+                                      src="photo/icons/drop1.svg"
+                                      alt=""
+                                    />عرض الفاتورة</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img
+                                      src="photo/icons/drop2.svg"
+                                      alt=""
+                                    />مشاركة</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-sub">
+                          <div class="adress">
+                            <h4>
+                              البرنامج التدريبي لتأهيل معلمي اللغة العربية
+                              للحصول علي الرخصة المهنية
+                            </h4>
+                          </div>
+                          <div class="star">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <div class="small-box">5.9</div>
+                            <span>( 220 تقييم )</span>
+                          </div>
+
+                          <div class="profile">
+                            <div class="deta-pro">
+                              <a href="page-detalis.html">
+                                <img
+                                  onmouseover="bigImg1()"
+                                  onmouseout="normalImg1()"
+                                  src="photo/samllpro.png"
+                                  alt=""
+                                />
+                              </a>
+                              <a href="page-detalis.html">
+                                <img
+                                  onmouseover="bigI()"
+                                  onmouseout="normalI()"
+                                  src="photo/pro1.png"
+                                  alt=""
+                                />
+                              </a>
+                              <a href="page-detalis.html">
+                                <img
+                                  onmouseover="bi()"
+                                  onmouseout="nor()"
+                                  src="photo/pro2.png"
+                                  alt=""
+                                />
+                              </a>
+
+                              <div id="hiden" style="display: none">
+                                <div class="pro-hid">
+                                  <img src="photo/samllpro.png" alt="" />
+                                  <h4>DR. Ahmed Fathy Abo Zaid</h4>
+                                  <h5>
+                                    أنا مطور ولدي شغف بالتدريس. أنا المدرب
+                                    الرئيسي في London App Brewery، وهو معسكر
+                                    تدريب البرمجة الرائد في لندن. لقد ساعدت مئات
+                                    الآلاف من الطلاب على تعلم البرمجة وتغيير
+                                    حياتهم من خلال أن أصبح مطورًا. لقد تمت دعوتي
+                                    من قبل شركات مثل Twitter وFacebook وGoogle
+                                    لتعليم موظفيها.
+                                  </h5>
+                                </div>
+                                <div class="icons-hid">
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n1.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n2.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n3.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n4.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="hidens" style="display: none">
+                                <div class="pro-hid">
+                                  <img src="photo/pro1.png" alt="" />
+                                  <h4>DR. Ahmed Fathy Abo Zaid</h4>
+                                  <h5>
+                                    أنا مطور ولدي شغف بالتدريس. أنا المدرب
+                                    الرئيسي في London App Brewery، وهو معسكر
+                                    تدريب البرمجة الرائد في لندن. لقد ساعدت مئات
+                                    الآلاف من الطلاب على تعلم البرمجة وتغيير
+                                    حياتهم من خلال أن أصبح مطورًا. لقد تمت دعوتي
+                                    من قبل شركات مثل Twitter وFacebook وGoogle
+                                    لتعليم موظفيها.
+                                  </h5>
+                                </div>
+                                <div class="icons-hid">
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n1.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n2.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n3.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n4.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="hideng" style="display: none">
+                                <div class="pro-hid">
+                                  <img src="photo/pro2.png" alt="" />
+                                  <h4>DR. Ahmed Fathy Abo Zaid</h4>
+                                  <h5>
+                                    أنا مطور ولدي شغف بالتدريس. أنا المدرب
+                                    الرئيسي في London App Brewery، وهو معسكر
+                                    تدريب البرمجة الرائد في لندن. لقد ساعدت مئات
+                                    الآلاف من الطلاب على تعلم البرمجة وتغيير
+                                    حياتهم من خلال أن أصبح مطورًا. لقد تمت دعوتي
+                                    من قبل شركات مثل Twitter وFacebook وGoogle
+                                    لتعليم موظفيها.
+                                  </h5>
+                                </div>
+                                <div class="icons-hid">
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n1.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n2.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n3.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                  <div class="text-ico">
+                                    <img src="photo/icons/n4.svg" alt="" />
+                                    <p>4.9 اجمالي التقييمات</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="all-lastsub">
+                            <div class="lastcard-sup">
+                              <img src="photo/icons/celender.svg" alt="" />
+                              <p>
+                                2024-05-30
+                                <span class="arrwo"
+                                  ><i class="fa-solid fa-arrow-left-long"></i>
+                                  <i class="fa-solid fa-arrow-left-long"></i>
+                                </span>
+                                2024-02-24
+                              </p>
+                            </div>
+                            <div class="lastcard-sup">
+                              <img src="photo/icons/hat.svg" alt="" />
+                              <p>25 محاضرات عن بُعد</p>
+                            </div>
+                            <div class="lastcard-sup">
+                              <img src="photo/icons/hore.svg" alt="" />
+                              <p>1520 ساعة</p>
+                            </div>
+
+                            <div class="lastcard-sup">
+                              <img src="photo/icons/day.svg" alt="" />
+                              <p>85 يوم</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <!-- محمود فواتيري -->
               <div
                 class="tab-pane fade"
                 id="v-pills-settings"
                 role="tabpanel"
                 aria-labelledby="v-pills-settings-tab"
+              >
+                ...
+              </div>
+              <!-- محمود فواتيري -->
+              <div
+                class="tab-pane fade"
+                id="v-pills-love"
+                role="tabpanel"
+                aria-labelledby="v-pills-love-tab"
+              >
+                ...
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-mass"
+                role="tabpanel"
+                aria-labelledby="v-pills-mass"
+              >
+                ...
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-go"
+                role="tabpanel"
+                aria-labelledby="v-pills-go"
               >
                 ...
               </div>

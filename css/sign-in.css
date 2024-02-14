@@ -423,10 +423,9 @@ button.swal2-confirm.swal2-styled {
   font-size: 0.8rem;
   font-family: "light";
   border: none;
-
 }
 .invoice-table .table tbody tr .td {
-width: 35%;
+  width: 35%;
 }
 
 .invoice-table .content_page .chose .form-row {
@@ -440,8 +439,7 @@ width: 35%;
   font-family: "regular";
 }
 
-
-.invoice-table  .table-bordered {
+.invoice-table .table-bordered {
   /* border: 1px solid rgba(163, 174, 178, 1); */
   border-radius: 10px;
 }
@@ -455,35 +453,30 @@ width: 35%;
   background-color: white;
 }
 .invoice-table table tbody .price-table {
-width: 82px;
-height: 36px;
-border-radius: 60px;
-background-color: rgb(21 179 134 / 10%);
-color: #15B386;
-display: flex;
-align-items: center;
-justify-content: center;
+  width: 82px;
+  height: 36px;
+  border-radius: 60px;
+  background-color: rgb(21 179 134 / 10%);
+  color: #15b386;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.invoice-table table tbody .price-table h6{
-margin-bottom: 0;
-font-size: 1rem;
-font-family: "regular";
-color: #15B386;
+.invoice-table table tbody .price-table h6 {
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-family: "regular";
+  color: #15b386;
 }
-.invoice-table table tbody .dropdown .btn-table{
+.invoice-table table tbody .dropdown .btn-table {
   margin-top: 0.5rem !important;
-background-color: transparent !important;
-text-align: center !important;
+  background-color: transparent !important;
+  text-align: center !important;
 }
-.invoice-table table tbody .dropdown .btn-table:hover{
-
-    background-color: #e5890a;
-    color: white !important;
-
+.invoice-table table tbody .dropdown .btn-table:hover {
+  background-color: #e5890a;
+  color: white !important;
 }
-
-
-
 
 /* table invoice */
 
@@ -514,6 +507,12 @@ text-align: center !important;
   .register .img-pass {
     margin-top: 3rem;
   }
+  .invoice-table form .form-group .email {
+    width: 90%;
+  }
+  .invoice-table form .form-group .slect-subject .auth {
+    width: 60%;
+  }
 }
 @media only screen and (max-width: 600px) {
   .register .img {
@@ -543,5 +542,23 @@ text-align: center !important;
   .register .img-pass {
     text-align: center;
     margin-top: 1rem;
+  }
+  .invoice-table form {
+    flex-wrap: wrap;
+  }
+  .invoice-table form .form-group {
+    width: 100%;
+  }
+  .invoice-table form .form-group .slect-subject {
+    flex-wrap: wrap;
+  }
+  .invoice-table form .form-group .slect-subject .auth {
+    width: 50%;
+  }
+  .invoice-table form .form-group .email {
+    width: 100%;
+  }
+  .invoice-table .table-bordered {
+    min-width: 1000px;
   }
 }

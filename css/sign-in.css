@@ -415,14 +415,23 @@ button.swal2-confirm.swal2-styled {
 .invoice-table .table thead {
   background-color: rgb(178 187 198 / 30%);
   padding: 1rem;
+  border-radius: 8px;
 }
 .invoice-table .table thead tr {
   border: none;
+  border-radius: 10px;
 }
 .invoice-table .table thead tr th {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-family: "light";
+  color: #546881;
   border: none;
+}
+.invoice-table .table thead tr .th {
+  border-top-right-radius: 8px;
+}
+.invoice-table .table thead tr .thh {
+  border-top-left-radius: 8px;
 }
 .invoice-table .table tbody tr .td {
   width: 35%;
@@ -444,13 +453,15 @@ button.swal2-confirm.swal2-styled {
   border-radius: 10px;
 }
 .invoice-table table td {
-  text-align: center;
+  font-size: .7rem;
   font-family: "regular";
+  border: none;
+  text-align: center;
   padding: 1rem 0.5rem;
 }
 .invoice-table table tbody .td {
-  color: rgba(87, 107, 116, 1);
-  background-color: white;
+  font-size: .7rem;
+  font-family: "regular";
 }
 .invoice-table table tbody .price-table {
   width: 82px;
@@ -461,12 +472,14 @@ button.swal2-confirm.swal2-styled {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 .invoice-table table tbody .price-table h6 {
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: .7rem;
   font-family: "regular";
   color: #15b386;
+  
 }
 .invoice-table table tbody .dropdown .btn-table {
   margin-top: 0.5rem !important;
@@ -476,6 +489,11 @@ button.swal2-confirm.swal2-styled {
 .invoice-table table tbody .dropdown .btn-table:hover {
   background-color: #e5890a;
   color: white !important;
+}
+.invoice-table table tbody .dropdown ul li{
+  font-size: .8rem;
+  font-family: "light";
+  color: black;
 }
 
 /* table invoice */
@@ -513,6 +531,9 @@ button.swal2-confirm.swal2-styled {
   .invoice-table form .form-group .slect-subject .auth {
     width: 60%;
   }
+  .invoice-table .table-bordered {
+    min-width: 1000px;
+}
 }
 @media only screen and (max-width: 600px) {
   .register .img {

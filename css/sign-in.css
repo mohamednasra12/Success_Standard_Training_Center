@@ -453,14 +453,14 @@ button.swal2-confirm.swal2-styled {
   border-radius: 10px;
 }
 .invoice-table table td {
-  font-size: .7rem;
+  font-size: 0.7rem;
   font-family: "regular";
   border: none;
   text-align: center;
   padding: 1rem 0.5rem;
 }
 .invoice-table table tbody .td {
-  font-size: .7rem;
+  font-size: 0.7rem;
   font-family: "regular";
 }
 .invoice-table table tbody .price-table {
@@ -476,10 +476,9 @@ button.swal2-confirm.swal2-styled {
 }
 .invoice-table table tbody .price-table h6 {
   margin-bottom: 0;
-  font-size: .7rem;
+  font-size: 0.7rem;
   font-family: "regular";
   color: #15b386;
-  
 }
 .invoice-table table tbody .dropdown .btn-table {
   margin-top: 0.5rem !important;
@@ -490,12 +489,71 @@ button.swal2-confirm.swal2-styled {
   background-color: #e5890a;
   color: white !important;
 }
-.invoice-table table tbody .dropdown ul li{
-  font-size: .8rem;
+.invoice-table table tbody .dropdown ul li {
+  font-size: 0.8rem;
   font-family: "light";
   color: black;
 }
-
+.tab-favourite .card-subject {
+  display: flex;
+  /* border: 1px solid #00000031; */
+  padding: 0.5rem;
+  margin-top: 0rem !important;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 1rem auto;
+  gap: 10px;
+  transition: 0.7s;
+}
+.tab-favourite .love {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  padding: 0.4rem;
+  border-radius: 50%;
+}
+.tab-favourite .love svg {
+  color: red;
+}
+.tab-favourite .adress h4 {
+  margin-bottom: 0.9rem;
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 2rem !important;
+}
+.tab-favourite .star svg {
+  color: #e5890a;
+}
+.tab-favourite .star span {
+  color: #656b78;
+  font-family: "regular";
+  font-size: 0.7rem;
+}
+.tab-favourite .text-true p {
+  margin-bottom: 0;
+  color: #656b7871;
+  font-family: "light";
+  font-size: 0.9rem;
+}
+.tab-favourite .profile {
+  border-top: 1px dashed #a3adbb !important;
+}
+.presonal-account .tab-content.tab-favourite {
+  border: none;
+}
+.presonal-account .delet-tab-favourite {
+  padding: 1rem;
+  background-color: #f9e8d9;
+  text-align: center;
+  margin: 0 auto;
+  display: none;
+}
+.presonal-account .delet-tab-favourite h5 {
+  color: #e5890a;
+  font-size: 0.9rem;
+  font-family: "regular";
+}
 /* table invoice */
 
 @media only screen and (min-width: 1300px) {
@@ -533,7 +591,7 @@ button.swal2-confirm.swal2-styled {
   }
   .invoice-table .table-bordered {
     min-width: 1000px;
-}
+  }
 }
 @media only screen and (max-width: 600px) {
   .register .img {

@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 @font-face {
   font-family: "light";
@@ -1728,11 +1728,11 @@ img.pro-reta {
 /* .our-blog-page .head {
   margin-top: 2rem;
 } */
-.our-blog-page .head p {
+.our-blog-page .asi p {
   font-size: 16px;
   font-family: "light";
 }
-.our-blog-page .head p span {
+.our-blog-page .asi p span {
   font-size: 16px;
   font-family: "light";
   color: #3c1d05;
@@ -1862,8 +1862,10 @@ img.pro-reta {
   display: flex;
   justify-content: start;
   align-items: center;
-  flex-wrap: wrap;
+ overflow: scroll;
+
 }
+
 .our-blog-page .Tags h4 {
   font-size: 24px;
   font-family: "Medium";
@@ -1951,7 +1953,6 @@ img.pro-reta {
 .our-blog-page .contant-page .contantt .Tags .head {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
 }
 .our-blog-page .contant-page .contantt .Tags .head .one-tag {
   width: 93px;
@@ -3480,7 +3481,7 @@ button.btn.btn-addrate {
 
 @media only screen and (max-width: 1440px) {
   .who-we .all-teacher-card {
-    flex-wrap: wrap;
+    overflow: scroll;
   }
 
   #hid {
@@ -3583,9 +3584,7 @@ button.btn.btn-addrate {
   .Category-usedbag h5 {
     width: 60%;
   }
-  .pro-bag {
-    flex-wrap: wrap;
-  }
+  
   .last-global {
     flex-wrap: wrap;
   }
@@ -3818,9 +3817,7 @@ button.btn.btn-addrate {
   .Category-usedbag h5 {
     width: 100%;
   }
-  .pro-bag {
-    flex-wrap: wrap;
-  }
+  
   .last-global {
     flex-wrap: wrap;
   }
@@ -3853,8 +3850,7 @@ button.btn.btn-addrate {
     flex-wrap: wrap;
   }
   .who-we .all-teacher-card {
-    flex-wrap: wrap;
-  }
+overflow: scroll;  }
   .who-we .arrows {
     display: none;
   }
@@ -4024,9 +4020,7 @@ button.btn.btn-addrate {
   .Category-usedbag h5 {
     width: 100%;
   }
-  .pro-bag {
-    flex-wrap: wrap;
-  }
+  
   .last-global {
     flex-wrap: wrap;
   }
@@ -4198,8 +4192,7 @@ button.btn.btn-addrate {
     width: 100% !important;
   }
   .who-we .all-teacher-card {
-    flex-wrap: wrap;
-    gap: 20px;
+    overflow: scroll;
   }
   .who-we .arrows {
     display: none;
@@ -4333,6 +4326,7 @@ button.btn.btn-addrate {
   }
   .footer-main {
     height: 100%;
+    padding: 0.7rem;
   }
   .end-page {
     flex-wrap: wrap;
@@ -4391,9 +4385,7 @@ button.btn.btn-addrate {
   .Category-usedbag h5 {
     width: 100%;
   }
-  .pro-bag {
-    flex-wrap: wrap;
-  }
+  
   .last-global {
     flex-wrap: wrap;
   }
@@ -4481,6 +4473,7 @@ button.btn.btn-addrate {
   .bace-bags .seclect {
     flex-wrap: wrap;
     justify-content: start;
+    width: 100%;
   }
   .list-bags .seclect {
     flex-wrap: wrap;
@@ -4713,8 +4706,7 @@ button.btn.btn-addrate {
     flex-wrap: wrap;
   }
   .who-we .all-teacher-card {
-    flex-wrap: wrap;
-    gap: 10px;
+   overflow: scroll;
   }
   .who-we .arrows {
     display: none;
@@ -4723,7 +4715,7 @@ button.btn.btn-addrate {
     flex-wrap: wrap;
   }
   .who-we .all-Trainees {
-    height: 273px;
+    height: 134px;
   }
   .who-we .trainees-icon {
     margin-top: 10px;
@@ -4830,24 +4822,46 @@ button.btn.btn-addrate {
 }
   #card-blogress {
     width: 100%;
-    height: 88px;
+    height: 183px;
     padding: 0;
-    margin: auto;
 }
   #card-blogres h4 {
+    display: none;
+  }
+  #card-blogress h4 {
     display: none;
   }
   #card-blogres p {
     display: none;
   }
-  #card-blogres .cle {
+  #card-blogress p {
     display: none;
   }
+  #card-blogres .cle {
+    width: 49px;
+    height: 37px;
+    font-size: 0.7rem;
+}
+  
+  #card-blogress .cle {
+    width: 49px;
+    height: 37px;
+    font-size: 0.7rem;
+}
+  
   #card-blogres .more_than h5{
     font-size: 0.5rem;
     display: none;
   }
+  #card-blogress.more_than h5{
+    font-size: 0.5rem;
+    display: none;
+  }
   #card-blogres .more_than svg{
+    font-size: 0.5rem;
+    display: none;
+  }
+  #card-blogress .more_than svg{
     font-size: 0.5rem;
     display: none;
   }
@@ -4866,6 +4880,75 @@ width: 7%;
 #res-icn svg {
   width: 10px;
   height: 10px;
+}
+.alila {
+  display: flex;
+}
+.alila .sections{
+ width: 50%;
+ margin-top: 3rem;
+}
+#card-mou h4{
+font-size: 0.7rem;
+}
+#card-mou p{
+font-size: 0.6rem;
+}
+#card-mou h6{
+font-size: 0.6rem;
+}
+ .our-blog-page .card-plog .img .date{
+  width: 30px;
+  height: 30px;
+font-size: 0.6rem;
+border-radius: 5px;
+}
+.our-blog-page .Tags .head .one-tag {
+  margin: 0;
+  
+}
+.imd-bag {
+  display: block;
+}
+.pro-bag h4 {
+  font-size: 0.7rem;
+}
+.Educational_bags .accordion-button::after {
+  margin-left: 14px;
+}
+.all-descri {
+  display: flex;
+  overflow-x: scroll;
+}
+.all-descri .text-ratedes {
+  width: 24rem;
+  height: 16rem;
+
+}
+.Buy-the-course .all-lastsub {
+  display: flex;
+}
+.Buy-the-course .lastcard-sup {
+  margin-bottom: 0;
+}
+.btn-buy {
+  width: 100%;
+}
+.Educational_bags .all-lastsub {
+  display: flex;
+  width: 100%;
+}
+.our-blog-page .head{
+
+    height: 352px;
+    overflow: scroll;
+
+}
+.our-blog-page .Tags .head {
+  height: 100%;
+}
+.share .head {
+  height: 100%;
 }
 
 }

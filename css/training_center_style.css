@@ -3141,7 +3141,7 @@ button.btn.btn-addrate {
   font-family: "regular";
   text-align: start;
 }
-.accordion-button::after {
+.presonal-account .accordion-button::after {
   margin-right: auto;
   margin-left: 10px;
   content: "تعديل";
@@ -3241,7 +3241,6 @@ button.btn.btn-addrate {
   margin-bottom: 0.9rem;
   width: 100%;
   font-size: 1.2rem;
-  line-height: 0;
 }
 .presonal-account .all-lastsub {
   width: 80%;
@@ -4950,6 +4949,17 @@ border-radius: 5px;
 .share .head {
   height: 100%;
 }
-
+.presonal-account .fliter {
+  display: block;
+}
+.presonal-account .seclect {
+  margin-top: 10px;
+}
+.presonal-account .right-massage .form-control input {
+  width: 87%;
+}
+ul.btn {
+  justify-content: start;
+}
 }
 /* responsive */

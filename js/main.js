@@ -183,3 +183,31 @@ function myFunctiona() {
     x.type = "password";
   }
 }
+
+function triggerFileInput() {
+  // Trigger click on the hidden file input
+  document.getElementById('fileInput').click();
+}
+
+function displaySelectedPhoto(input) {
+  // Assuming you want to display the selected photo immediately
+  // You can replace this with your actual logic for handling the selected file
+  if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+          document.getElementById('uploadedPhoto').src = e.target.result;
+      };
+
+      reader.readAsDataURL(input.files[0]);
+  }
+}
+
+function deletePhoto() {
+  // Assuming you have some code to delete the uploaded photo
+  // You can replace this with your actual logic
+  document.getElementById('uploadedPhoto').src = ''; // Clears the image source
+  // Optionally, you can reset the file input as well
+  document.getElementById('fileInput').value = '';
+  
+}

@@ -3090,6 +3090,7 @@ button.btn.btn-addrate {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .btn-content .btn-upload {
   border: 1px solid #e48825;
@@ -3458,6 +3459,10 @@ button.btn.btn-addrate {
 }
 .presonal-account .text-a svg {
   margin-top: 0;
+}
+img#uploadedPhoto {
+  width: 100%;
+
 }
 /* personal */
 /* responsive */

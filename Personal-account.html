@@ -372,20 +372,21 @@
                 role="tabpanel"
                 aria-labelledby="v-pills-home-tab"
               >
-                <div class="header-content">
-                  <div class="img">
-                    <img src="photo/El.png" alt="" />
-                  </div>
-                  <div class="text-conetnt">
+              <div class="header-content">
+                <div class="img">
+                    <img id="uploadedPhoto" src="photo/El.png" alt="" />
+                </div>
+                <div class="text-conetnt">
                     <div class="btn-content">
-                      <button type="button" class="btn-upload">
-                        اضافة صورة<i class="fa-solid fa-upload"></i>
-                      </button>
-                      <button type="button" class="btdelet">حذف</button>
+                        <button type="button" class="btn-upload" onclick="triggerFileInput()">
+                            اضافة صورة<i class="fa-solid fa-upload"></i>
+                        </button>
+                        <input type="file" id="fileInput" style="display: none" onchange="displaySelectedPhoto(this)">
+                        <button type="button" class="btdelet" onclick="deletePhoto()">حذف</button>
                     </div>
                     <p>قم بأرفاق صورة لا تتجاوز عن 3.5 ميغا بايت</p>
-                  </div>
                 </div>
+            </div>
                 <div class="accordion" id="accordionExample">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
@@ -500,7 +501,7 @@
                         alt=""
                       />
                     </div>
-                    <a href="#"
+                    <a href="forget-pass.html"
                       ><h5 class="color-forget">نسيت كلمة المرور ؟</h5></a
                     >
                     <label>كلمه المرور الجديده </label>

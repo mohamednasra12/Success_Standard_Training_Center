@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="css/sign-in.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos-anmite.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
+    integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
     <!-- ? Custom CSS -->
     <!-- ? Main JavaScript -->
@@ -179,10 +186,10 @@
                     aria-expanded="false"
                   >
                     <div class="profile-sin">
-                      <img src="photo/samllpro.png" alt="" />
+                      <img id="uploadedPhotof" src="photo/samllpro.png" alt="" />
                       <div class="text-profi">
                         <div class="aro">
-                          <h4>احمد حوام السيد</h4>
+                          <h4 id="inner1">احمد حوام السيد</h4>
                           <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <p>طالب جامعي</p>
@@ -261,9 +268,9 @@
               aria-orientation="vertical"
             >
               <div class="pro-detailes">
-                <img src="photo/Ellipse.png" alt="" />
-                <h4>احمد حوام السيد</h4>
-                <p>example22@gmail.com</p>
+                <img id="change" src="photo/Ellipse.png" alt="" />
+                <h4 id="inner2">احمد حوام السيد</h4>
+                <p id="prag1">example22@gmail.com</p>
                 <p class="color">تعديل الملف الشخصي</p>
               </div>
 
@@ -359,12 +366,14 @@
                 role="tab"
                 aria-controls="v-pills-go"
                 aria-selected="false"
+                onclick="addrate()"
               >
                 <img src="photo/icons/sit5.svg" alt="" />
 
                 تسجيل الخروج
               </button>
             </div>
+          
             <div class="tab-content" id="v-pills-tabContent">
               <div
                 class="tab-pane fade show active"
@@ -374,14 +383,30 @@
               >
                 <div class="header-content">
                   <div class="img">
-                    <img src="photo/El.png" alt="" />
+                    <img id="uploadedPhoto" src="photo/El.png" alt="" />
                   </div>
                   <div class="text-conetnt">
                     <div class="btn-content">
-                      <button type="button" class="btn-upload">
+                      <button
+                        type="button"
+                        class="btn-upload"
+                        onclick="triggerFileInput()"
+                      >
                         اضافة صورة<i class="fa-solid fa-upload"></i>
                       </button>
-                      <button type="button" class="btdelet">حذف</button>
+                      <input
+                        type="file"
+                        id="fileInput"
+                        style="display: none"
+                        onchange="displaySelectedPhoto(this)"
+                      />
+                      <button
+                        type="button"
+                        class="btdelet"
+                        onclick="deletePhoto()"
+                      >
+                        حذف
+                      </button>
                     </div>
                     <p>قم بأرفاق صورة لا تتجاوز عن 3.5 ميغا بايت</p>
                   </div>
@@ -399,7 +424,7 @@
                       >
                         <div class="name">
                           <h4>الاسم</h4>
-                          <p>ahmed hawwam</p>
+                          <p id="inner">mohamed</p>
                         </div>
                       </button>
                     </h2>
@@ -412,8 +437,8 @@
                       <div class="accordion-body">
                         <div class="form-group">
                           <label>الاسم بالكامل *</label>
-                          <input type="text" class="form-control" />
-                          <input class="save" type="submit" value="حفظ" />
+                          <input id="names" type="text" class="form-control" />
+                          <input onclick="saveAndUpdateInner()" id="saveon" class="save" type="submit" value="حفظ" />
                         </div>
                       </div>
                     </div>
@@ -430,7 +455,7 @@
                       >
                         <div class="name">
                           <h4>رقم الهاتف</h4>
-                          <p>01124447451</p>
+                          <p id="pra">01124447451</p>
                         </div>
                       </button>
                     </h2>
@@ -443,8 +468,9 @@
                       <div class="accordion-body">
                         <div class="form-group">
                           <label>رقم الهاتف *</label>
-                          <input type="text" class="form-control" />
-                          <input class="save" type="submit" value="حفظ" />
+                          <input id="phons" type="number" class="form-control" />
+                          <input onclick="saveAndUpdateInner1()" class="save" type="submit" value="حفظ" />
+
                         </div>
                       </div>
                     </div>
@@ -461,7 +487,7 @@
                       >
                         <div class="name">
                           <h4>البريد الالكتروني</h4>
-                          <p>example22@gmail.com</p>
+                          <p id="prag">example22@gmail.com</p>
                         </div>
                       </button>
                     </h2>
@@ -474,8 +500,8 @@
                       <div class="accordion-body">
                         <div class="form-group">
                           <label>البريد الالكتروني *</label>
-                          <input type="text" class="form-control" />
-                          <input class="save" type="submit" value="حفظ" />
+                          <input id="email"  type="text" class="form-control" />
+                          <input onclick="saveAndUpdateInner2()" class="save" type="submit" value="حفظ" />
                         </div>
                       </div>
                     </div>
@@ -500,7 +526,7 @@
                         alt=""
                       />
                     </div>
-                    <a href="#"
+                    <a href="forget-pass.html"
                       ><h5 class="color-forget">نسيت كلمة المرور ؟</h5></a
                     >
                     <label>كلمه المرور الجديده </label>
@@ -3246,10 +3272,100 @@
                     <div class="bottom">
                       <div class="send-massage">
                         <div class="text-a">
-                          <input type="text" placeholder="اكتب رسالتك هنا" />
-                          <i class="fa-solid fa-circle-plus"></i>
+                          <input
+                            type="text"
+                            id="messageInput"
+                            placeholder="اكتب رسالتك هنا"
+                          />
+                          <i
+                            class="fa-solid fa-circle-plus"
+                            style="cursor: pointer"
+                            id="uploadIcon"
+                            onclick="triggerFileInput()"
+                          ></i>
+                          <i
+                            class="fa-regular fa-paper-plane"
+                            id="sendIcon"
+                            style="display: none; cursor: pointer"
+                            onclick="sendMessage()"
+                          ></i>
                         </div>
-                        <i class="fa-solid fa-face-grin-beam"></i>
+                        <div
+                          class="emoji-list"
+                          id="emojiList"
+                          style="display: none"
+                        >
+                          <!-- Your list of emojis goes here -->
+                          <span>😀</span>
+                          <span>😃</span>
+                          <span>😄</span>
+                          <span>😀</span>
+                          <span>😃</span>
+                          <span>😄</span>
+                          <span>😀</span>
+                          <span>😃</span>
+                          <span>😄</span>
+                          <span>😀</span>
+                          <span>😃</span>
+                          <span>😄</span>
+                          <span>😀</span>
+                          <span>😃</span>
+                          <span>😄</span>
+                          <span>😀</span>
+                          <span>😃</span>
+                          <span>😄</span>
+                          <span>😀</span>
+                          <span>😃</span>
+                          <span>😄</span>
+                          <span>😀</span>
+                          <span>😃</span>
+                          <span>😄</span>
+                          <span>😀</span>
+                          <span>😃</span>
+                          <span>😄</span>
+                          <span>😀</span>
+                          <span>😃</span>
+                          <span>😄</span>
+                          <span>😀</span>
+                          <span>😃</span>
+                          <span>😄</span>
+                          <span>😀</span>
+                          <span>😃</span>
+                          <span>😄</span>
+                          <span>😀</span>
+                          <span>😃</span>
+                          <span>😄</span>
+                          <span>😀</span>
+                          <span>😃</span>
+                          <span>😄</span>
+                          <span>😀</span>
+                          <span>😃</span>
+                          <span>😄</span>
+                          <span>😀</span>
+                          <span>😃</span>
+                          <span>😄</span>
+                          <span>😀</span>
+                          <span>😃</span>
+                          <span>😄</span>
+                          <span>😀</span>
+                          <span>😃</span>
+                          <span>😄</span>
+                          <span>😀</span>
+                          <span>😃</span>
+                          <span>😄</span>
+                          <span>😀</span>
+                          <span>😃</span>
+                          <span>😄</span>
+                          <span>😀</span>
+                          <span>😃</span>
+                          <span>😄</span>
+                          <!-- Add more emojis as needed -->
+                        </div>
+                        <i
+                          class="fa-solid fa-face-grin-beam"
+                          style="cursor: pointer"
+                          onclick="toggleEmojiList()"
+                        ></i>
                       </div>
                     </div>
                   </div>
@@ -3261,7 +3377,7 @@
                 role="tabpanel"
                 aria-labelledby="v-pills-go"
               >
-                ...
+              
               </div>
             </div>
           </div>
@@ -3364,6 +3480,29 @@
       </section>
       <!-- endpage(footer) -->
     </div>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
+    integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+    <script>
+      function addrate() {
+        Swal.fire({
+          html:
+            '<h5 class="swal2-title">   هل أنت متأكد من تسجيل الخروج؟ </h5>' +
+            '<p class="swal2-html-container">  </p>',
+
+          showCancelButton: true,
+          focusConfirm: false,
+          confirmButtonText: "نعم",
+          confirmButtonAriaLabel: "Thumbs up, great!",
+          cancelButtonText: "الغاء",
+          cancelButtonAriaLabel: "Thumbs down",
+        });
+      }
+    </script>
 
     <script src="js/aos-anmite.js"></script>
     <script>

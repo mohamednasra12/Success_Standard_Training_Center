@@ -164,7 +164,7 @@
         <div class="content">
           <div class="container">
             <div class="all-frist">
-              <div class="text-fristsec" data-aos="fade-right">
+              <div class="text-fristsec" data-aos="fade-right"   data-aos-duration="2000">
                 <p class="welcome">مرحبا بك في مركز معيار النجاح للتدريب</p>
                 <h4 class="growup">تنمية مهاراتك معنا ستحدد مستقبلك</h4>
                 <p class="weekup">
@@ -181,8 +181,8 @@
               <div class="img-fristsec" data-aos="fade-left">
                 <div class="box_one"></div>
                 <div class="box_two">
-                  <!-- الصوره الي جوه المربع -->
-                  <img src="photo/khalegy.png" alt="" />
+                  <!-- Image -->
+                  <img id="myImage" src="photo/khalegy.png" alt="Current Photo" />
                 </div>
               </div>
             </div>
@@ -191,7 +191,7 @@
       </section>
       <!-- firstsec -->
       <!-- secondsec -->
-      <section class="second_sec" data-aos="zoom-in">
+      <section class="second_sec" data-aos="zoom-in"   data-aos-duration="2000">
         <div class="header">
           <h5>“ماذا نقدم لك”</h5>
           <h4>تعلم مهارات جديدة متى وأين تريد</h4>
@@ -249,7 +249,7 @@
       </section>
       <!-- secondsec -->
       <!-- thirdsec -->
-      <section class="fourd_sec" data-aos="fade-left">
+      <section class="fourd_sec" data-aos="fade-left"   data-aos-duration="2000">
         <div class="header">
           <h5>“حقائبنا التعليمية”</h5>
           <h4>ابحث عن البرامج التدريبية لبناء حياتك المهنية</h4>
@@ -830,7 +830,7 @@
       </section>
       <!-- thirdsec -->
       <!-- ads -->
-      <section class="ads" data-aos="zoom-in-up">
+      <section class="ads" data-aos="zoom-in-up"   data-aos-duration="2000">
         <div class="all-ads">
           <div class="img-ads">
             <img src="photo/person.png" alt="" />
@@ -1124,6 +1124,22 @@
       </section>
       <!-- endpage(footer) -->
     </div>
+    <script>
+      const myImage = document.getElementById('myImage');
+const photoPaths = ["photo/khalegy.png", "photo/Image.png", "photo/sss.png"]; // Add more photo paths as needed
+let currentPhotoIndex = 0;
+
+function changePhoto() {
+  myImage.src = photoPaths[currentPhotoIndex];
+  currentPhotoIndex = (currentPhotoIndex + 1) % photoPaths.length;
+}
+
+// Change photo every 3 seconds (adjust as needed)
+setInterval(changePhoto, 3000);
+
+// Initial photo display
+changePhoto();
+    </script>
 
     <script src="js/aos-anmite.js"></script>
     <script>

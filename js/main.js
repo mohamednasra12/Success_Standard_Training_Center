@@ -141,6 +141,7 @@ function listView() {
   container.classList.remove("grid");
   container.classList.add("listmode");
 }
+
 $(document).ready(function () {
   var topNav = $(".top_nav");
   var navBar = $(".nav-bar");
@@ -158,6 +159,7 @@ $(document).ready(function () {
     }
   });
 });
+
 
 function myFunction() {
   var x = document.getElementById("myInputs");
@@ -273,7 +275,7 @@ document.getElementById("messageInput").addEventListener("blur", function () {
 function saveAndUpdateInner() {
   // Get the value from the input with id "names"
   var inputValue = document.getElementById("names").value;
-  
+
   // Update the content of the paragraph with id "inner"
   document.getElementById("inner").innerText = inputValue;
   document.getElementById("inner1").innerText = inputValue;
@@ -285,7 +287,7 @@ function saveAndUpdateInner() {
 function saveAndUpdateInner1() {
   // Get the value from the input with id "names"
   var inputValue = document.getElementById("phons").value;
-  
+
   // Update the content of the paragraph with id "inner"
   document.getElementById("pra").innerText = inputValue;
 
@@ -295,7 +297,7 @@ function saveAndUpdateInner1() {
 function saveAndUpdateInner2() {
   // Get the value from the input with id "names"
   var inputValue = document.getElementById("email").value;
-  
+
   // Update the content of the paragraph with id "inner"
   document.getElementById("prag").innerText = inputValue;
   document.getElementById("prag1").innerText = inputValue;
@@ -303,3 +305,6 @@ function saveAndUpdateInner2() {
   // Clear the input field
   document.getElementById("email").value = "";
 }
+
+
+

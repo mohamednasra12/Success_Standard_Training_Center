@@ -514,44 +514,30 @@
                 role="tabpanel"
                 aria-labelledby="v-pills-profile-tab"
               >
-                <form action="">
-                  <div class="password-group">
-                    <label>كلمه المرور الحالية </label>
-                    <div class="form-control">
-                      <img src="photo/icons/pass.svg" alt="" />
-                      <input type="password" id="myInputs" />
-                      <img
-                        onclick="myFunction()"
-                        src="photo/icons/eye.svg"
-                        alt=""
-                      />
-                    </div>
-                    <a href="forget-pass.html"
-                      ><h5 class="color-forget">نسيت كلمة المرور ؟</h5></a
-                    >
-                    <label>كلمه المرور الجديده </label>
-                    <div class="form-control">
-                      <img src="photo/icons/pass.svg" alt="" />
-                      <input type="password" id="myInputd" />
-                      <img
-                        onclick="myFunctiona()"
-                        src="photo/icons/eye.svg"
-                        alt=""
-                      />
-                    </div>
-                    <label>تاكيد كلمه المرور </label>
-                    <div class="form-control">
-                      <img src="photo/icons/pass.svg" alt="" />
-                      <input type="password" id="myInputa" />
-                      <img
-                        onclick="myFunctions()"
-                        src="photo/icons/eye.svg"
-                        alt=""
-                      />
-                    </div>
-                    <input class="save" type="submit" value="حفظ التغيرات" />
+              <form action="" onsubmit="return validateForm()">
+                <div class="password-group">
+                  <label>كلمه المرور الحالية</label>
+                  <div class="form-control">
+                    <img src="photo/icons/pass.svg" alt="" />
+                    <input type="password" id="currentPassword" required />
                   </div>
-                </form>
+                  <a href="forget-pass.html"><h5 class="color-forget">نسيت كلمة المرور ؟</h5></a>
+            
+                  <label>كلمه المرور الجديده</label>
+                  <div class="form-control">
+                    <img src="photo/icons/pass.svg" alt="" />
+                    <input type="password" id="newPassword" required />
+                  </div>
+            
+                  <label>تاكيد كلمه المرور</label>
+                  <div class="form-control">
+                    <img src="photo/icons/pass.svg" alt="" />
+                    <input type="password" id="confirmPassword" required />
+                  </div>
+            
+                  <input class="save" type="submit" value="حفظ التغيرات" />
+                </div>
+              </form>
               </div>
               <div
                 class="tab-pane fade"
@@ -3507,6 +3493,64 @@
     <script src="js/aos-anmite.js"></script>
     <script>
       AOS.init({ disable: "mobile" });
+    </script>
+     <script>
+      function validateForm() {
+        // Reset previous errors
+        resetErrors();
+  
+        // Get input values
+        var currentPassword = document.getElementById("currentPassword").value;
+        var newPassword = document.getElementById("newPassword").value;
+        var confirmPassword = document.getElementById("confirmPassword").value;
+  
+        // Validation logic
+        var isValid = true;
+  
+        if (currentPassword.trim() === "") {
+          showError("currentPassword", "يرجى إدخال كلمة المرور الحالية");
+          isValid = false;
+        }
+  
+        if (newPassword.trim() === "") {
+          showError("newPassword", "يرجى إدخال كلمة المرور الجديدة");
+          isValid = false;
+        }
+  
+        if (confirmPassword.trim() === "") {
+          showError("confirmPassword", "يرجى تأكيد كلمة المرور");
+          isValid = false;
+        }
+  
+        if (newPassword !== confirmPassword) {
+          showError("confirmPassword", "كلمة المرور غير متطابقة");
+          isValid = false;
+        }
+  
+        return isValid;
+      }
+  
+      function showError(field, message) {
+        document.getElementById(field + "Error").innerText = message;
+      }
+  
+      function resetErrors() {
+        document.getElementById("currentPasswordError").innerText = "";
+        document.getElementById("newPasswordError").innerText = "";
+        document.getElementById("confirmPasswordError").innerText = "";
+      }
+  
+      function togglePasswordVisibility(inputId) {
+        var input = document.getElementById(inputId);
+        var icon = input.nextElementSibling;
+        if (input.type === "password") {
+          input.type = "text";
+          icon.src = "photo/icons/eye-off.svg";
+        } else {
+          input.type = "password";
+          icon.src = "photo/icons/eye.svg";
+        }
+      }
     </script>
     <script src="js/main.js"></script>
   </body>

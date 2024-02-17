@@ -5002,5 +5002,11 @@ img#uploadedPhoto {
   ul.btn {
     justify-content: start;
   }
+  .presonal-account .pro-detailes img {
+    width: 17%;
+    height: 69px;
+    border-radius: 100%;
+}
+  
 }
 /* responsive */

@@ -182,7 +182,7 @@ body {
   width: 85%;
 }
 button.swal2-confirm.swal2-styled {
-  display: none !important;
+  display: none ;
 }
 .swal2-popup.swal2-modal.swal2-show {
   border-radius: 23px;

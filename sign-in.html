@@ -27,6 +27,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/fontawesome.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <!-- ? Main JavaScript -->
     <!-- ? Custom JavaScript -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -204,6 +205,7 @@
                 <div class="password-icon">
                   <img src="photo/icons/lock.svg" alt="" />
                   <input type="password" class="auth" id="password-now" />
+                  <i class="fa-solid fa-eye"></i>
                 </div>
               </div>
               <div class="sign">
@@ -261,6 +263,20 @@
     <!--  sweetalert2 -->
 
     <!-- eye -->
+    <script>
+      $(document).ready(function () {
+        $(".fa-eye").on("click", function () {
+          var passwordInput = $("#password-now");
+          var type = passwordInput.attr("type");
+    
+          if (type === "password") {
+            passwordInput.attr("type", "text");
+          } else {
+            passwordInput.attr("type", "password");
+          }
+        });
+      });
+    </script>
 
     <!-- eye -->
 

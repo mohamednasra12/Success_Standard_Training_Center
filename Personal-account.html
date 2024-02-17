@@ -523,6 +523,7 @@
                     <div class="password-icon">
                       <img src="photo/icons/lock.svg" alt="" />
                       <input type="password" class="auth" id="password-now" />
+                      <i class="fa-solid fa-eye n"></i>
                     </div>
                   </div>
                   <a href="forget-pass.html"><h5 class="color-forget">نسيت كلمة المرور ؟</h5></a>
@@ -531,7 +532,8 @@
                   <div class="form-control">
                 <div class="password-icon">
                   <img src="photo/icons/lock.svg" alt="" />
-                  <input type="password" class="auth" id="password-now" />
+                  <input type="password" class="auth" id="password-now1" />
+                  <i class="fa-solid fa-eye a"></i>
                 </div>
                   </div>
             
@@ -539,7 +541,8 @@
                   <div class="form-control">
                     <div class="password-icon">
                       <img src="photo/icons/lock.svg" alt="" />
-                      <input type="password" class="auth" id="password-now" />
+                      <input type="password" class="auth" id="password-now2" />
+                      <i class="fa-solid fa-eye s"></i>
                     </div>
                   </div>
                   <!-- sss -->
@@ -3502,6 +3505,48 @@
     <script src="js/aos-anmite.js"></script>
     <script>
       AOS.init({ disable: "mobile" });
+    </script>
+     <script>
+      $(document).ready(function () {
+        $(".n").on("click", function () {
+          var passwordInput = $("#password-now");
+          var type = passwordInput.attr("type");
+    
+          if (type === "password") {
+            passwordInput.attr("type", "text");
+          } else {
+            passwordInput.attr("type", "password");
+          }
+        });
+      });
+    </script>
+     <script>
+      $(document).ready(function () {
+        $(".a").on("click", function () {
+          var passwordInput = $("#password-now1");
+          var type = passwordInput.attr("type");
+    
+          if (type === "password") {
+            passwordInput.attr("type", "text");
+          } else {
+            passwordInput.attr("type", "password");
+          }
+        });
+      });
+    </script>
+     <script>
+      $(document).ready(function () {
+        $(".s").on("click", function () {
+          var passwordInput = $("#password-now2");
+          var type = passwordInput.attr("type");
+    
+          if (type === "password") {
+            passwordInput.attr("type", "text");
+          } else {
+            passwordInput.attr("type", "password");
+          }
+        });
+      });
     </script>
      <script>
       function validateForm() {

@@ -176,44 +176,36 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-8 col-12">
-            <form action="">
+            <form action="" onsubmit="return validateForm()">
+              <div class="email-error general-error" style="display: none;"></div>
+  <div class="password-error general-error" style="display: none;"></div>
               <div class="title">
                 <h4>مرحباً بك في مركز <span>معيار النجاح للتدريب</span></h4>
                 <p>من فضلك قم بأدخال البيانات التالية للأستمرار</p>
               </div>
               <!-- if user information erroe -->
-              <div class="email-error">
-                <img src="photo/icons/warning-2.svg" alt="" />
-                <h4>
-                  البريد الالكترونى الذى ادخلته موجود بالفعل قم بالذهاب الي
-                  تسجيل الدخول
-                </h4>
-              </div>
-              <div class="password-error">
-                <img src="photo/icons/error.svg" alt="" />
-                <h4>كلمتا المرور غير متطابقاين</h4>
-              </div>
+             
               <!-- if user information erroe -->
 
               <div class="form-group">
                 <label for="">الاسم بالكامل</label>
                 <div class="email">
                   <img src="photo/icons/user.svg" alt="" />
-                  <input type="text" class="auth" />
+                  <input type="text" class="auth" id="full-name" />
                 </div>
               </div>
               <div class="form-group">
                 <label for="">رقم الهاتف</label>
                 <div class="email">
                   <img src="photo/icons/phone.svg" alt="" />
-                  <input type="number" class="auth" />
+                  <input type="number" class="auth" id="phone-number" />
                 </div>
               </div>
               <div class="form-group">
                 <label for="">البريد الالكتروني</label>
                 <div class="email">
                   <img src="photo/icons/mail.svg" alt="" />
-                  <input type="email" class="auth" />
+                  <input type="email" class="auth" id="email" />
                 </div>
               </div>
 
@@ -222,12 +214,7 @@
                 <div class="password-icon">
                   <img src="photo/icons/lock.svg" alt="" />
                   <input type="password" class="auth" id="password-now" />
-                  <span
-                    class="lock-icon"
-                    onclick="togglePasswordVisibilitynow()"
-                  >
-                    <i id="lockIcon-now" class="fa-solid fa-eye"></i>
-                  </span>
+                  
                 </div>
               </div>
               <div class="form-group">
@@ -235,27 +222,17 @@
                 <div class="password-icon">
                   <img src="photo/icons/lock.svg" alt="" />
                   <input type="password" class="auth" id="password-new" />
-                  <span
-                    class="lock-icon"
-                    onclick="togglePasswordVisibilitynew()"
-                  >
-                    <i id="lockIcon-now" class="fa-solid fa-eye"></i>
-                  </span>
+                 
                 </div>
               </div>
 
               <div class="sign">
-                <!-- Button trigger modal -->
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  onclick="addrate()"
-                >
+                <button type="submit" class="btn btn-primary">
                   انشاء حساب
                 </button>
                 <a href="sign-in.html">
-                  <h6>لديك حساب بالفعل؟ <span> تسجيل الدخول</span></h6></a
-                >
+                  <h6>لديك حساب بالفعل؟ <span> تسجيل الدخول</span></h6>
+                </a>
               </div>
             </form>
           </div>
@@ -297,37 +274,57 @@
       }
     </script>
 
-    <!-- eye -->
+   
+
     <script>
-      function togglePasswordVisibilitynow() {
-        var passwordInput = document.getElementById("password-now");
-        var lockIcon = document.getElementById("lockIcon-now");
-
-        if (passwordInput.type === "password") {
-          passwordInput.type = "text";
-          lockIcon.classList.remove("fa-eye");
-          lockIcon.classList.add("fa-eye-slash");
-        } else {
-          passwordInput.type = "password";
-          lockIcon.classList.remove("fa-eye-slash");
-          lockIcon.classList.add("fa-eye");
+      function validateForm() {
+        // Reset error messages
+        document.querySelector('.email-error').style.display = 'none';
+        document.querySelector('.password-error').style.display = 'none';
+    
+        // Get form inputs
+        var fullName = document.querySelector('#full-name').value.trim();
+        var phoneNumber = document.querySelector('#phone-number').value.trim();
+        var email = document.querySelector('#email').value.trim();
+        var password = document.querySelector('#password-now').value.trim();
+        var confirmPassword = document.querySelector('#password-new').value.trim();
+    
+        // Validate inputs
+        if (!fullName || !phoneNumber || !email || !password || !confirmPassword) {
+          displayError('يرجى ملء جميع الحقول');
+          return false;
         }
+    
+        // Validate email format
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          displayError('يرجى إدخال بريد إلكتروني صحيح');
+          return false;
+        }
+    
+        // Validate phone number format (you may need to adjust this based on your requirements)
+        var phoneRegex = /^\d{11}$/;
+        if (!phoneRegex.test(phoneNumber)) {
+          displayError('يرجى إدخال رقم هاتف صحيح');
+          return false;
+        }
+    
+        // Validate password match
+        if (password !== confirmPassword) {
+          displayError('كلمتا المرور غير متطابقتين');
+          return false;
+        }
+    
+        // Additional validation can be added based on your requirements
+    
+        return true;
       }
-      function togglePasswordVisibilitynew() {
-        var passwordInput = document.getElementById("password-new");
-        var lockIcon = document.getElementById("lockIcon-new");
-
-        if (passwordInput.type === "password") {
-          passwordInput.type = "text";
-          lockIcon.classList.remove("fa-eye");
-          lockIcon.classList.add("fa-eye-slash");
-        } else {
-          passwordInput.type = "password";
-          lockIcon.classList.remove("fa-eye-slash");
-          lockIcon.classList.add("fa-eye");
-        }
+    
+      function displayError(message) {
+        var errorElement = document.querySelector('.general-error');
+        errorElement.style.display = 'block';
+        errorElement.innerHTML = '<img src="photo/icons/error.svg" alt="" /><h4>' + message + '</h4>';
       }
     </script>
-    <!-- eye -->
   </body>
 </html>

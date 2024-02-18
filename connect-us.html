@@ -9,6 +9,7 @@
     <!-- ? Custom CSS -->
     <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
     <link rel="stylesheet" href="css/training_center_style.css" />
+    <link rel="stylesheet" href="css/sign-in.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos-anmite.css" />
 
@@ -195,52 +196,55 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-7 col-12">
-            <form>
+            <form action="" onsubmit="return validateForm()">
               <h4>اترك رسالتك هنا</h4>
-              <p>هل لديك أسئلة او اقتراحات ؟</p>
-              <p>دعنا نتحدث !</p>
+              <p>هل لديك أسئلة أو اقتراحات؟</p>
+              <p>دعنا نتحدث!</p>
+          
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-12">
                   <div class="form-group">
-                    <label for="formGroupExampleInput">الاسم</label>
-                    <input type="text" class="form-control" placeholder="" />
+                    <label for="name">الاسم</label>
+                    <input type="text" id="name" class="form-control" placeholder="" />
+                    <div id="nameError" class="error-message"></div>
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
                   <div class="form-group">
-                    <label for="formGroupExampleInput">الهاتف </label>
-                    <input type="number" class="form-control" />
+                    <label for="phone">الهاتف</label>
+                    <input type="number" id="phone" class="form-control" />
+                    <div id="phoneError" class="error-message"></div>
                   </div>
                 </div>
-
-                <div class="col-lg-12 col-md-12 col-12"></div>
+          
                 <div class="col-lg-12 col-md-12 col-12">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">البريد الالكتروني</label>
+                    <label for="email">البريد الإلكتروني</label>
                     <input
                       type="email"
+                      id="email"
                       class="form-control"
-                      id="exampleInputEmail1"
                       aria-describedby="emailHelp"
                       placeholder=""
                     />
+                    <div id="emailError" class="error-message"></div>
                   </div>
                 </div>
-
+          
                 <div class="col-lg-12 col-md-12 col-12">
                   <div class="form-group">
-                    <label for="exampleFormControlTextarea1"
-                      >اكتب رسالتك...</label
-                    >
+                    <label for="message">اكتب رسالتك...</label>
                     <textarea
+                      id="message"
                       class="form-control"
-                      id="exampleFormControlTextarea1"
                       rows="3"
                     ></textarea>
+                    <div id="messageError" class="error-message"></div>
                   </div>
                 </div>
+                
                 <div class="Submit">
-                  <button type="button" class="btn btn-primary">
+                  <button type="submit" class="btn btn-primary">
                     ارسل الان
                   </button>
                 </div>
@@ -359,6 +363,62 @@
     <script>
       AOS.init({ disable: "mobile" });
     </script>
+     <script>
+      function validateForm() {
+        // Reset previous errors
+        resetErrors();
+  
+        // Get input values
+        var name = document.getElementById("name").value;
+        var phone = document.getElementById("phone").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+  
+        // Validation logic
+        var isValid = true;
+  
+        if (name.trim() === "") {
+          showError("name", "يرجى إدخال الاسم");
+          isValid = false;
+        }
+  
+        if (phone.trim() === "") {
+          showError("phone", "يرجى إدخال رقم الهاتف");
+          isValid = false;
+        }
+  
+        if (email.trim() === "" || !isValidEmail(email)) {
+          showError("email", "البريد الإلكتروني غير صحيح");
+          isValid = false;
+        }
+  
+        if (message.trim() === "") {
+          showError("message", "يرجى إدخال رسالتك");
+          isValid = false;
+        }
+  
+        return isValid;
+      }
+  
+      function showError(field, message) {
+        document.getElementById(field + "Error").innerText = message;
+      }
+  
+      function resetErrors() {
+        document.getElementById("nameError").innerText = "";
+        document.getElementById("phoneError").innerText = "";
+        document.getElementById("emailError").innerText = "";
+        document.getElementById("messageError").innerText = "";
+      }
+  
+      function isValidEmail(email) {
+        // Add your email validation logic here
+        // For simplicity, a basic email format check is performed
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+    </script>
     <script src="js/main.js"></script>
+
   </body>
 </html>

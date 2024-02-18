@@ -176,7 +176,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-8 col-12">
-            <form action="">
+            <form action="" onsubmit="return validateForm()" >
               <div class="title">
                 <h4>مرحباً بك في مركز <span> معيار النجاح للتدريب</span></h4>
                 <p>من فضلك قم بأدخال البيانات التالية للأستمرار</p>
@@ -207,7 +207,6 @@
                     class="lock-icon"
                     onclick="togglePasswordVisibilitynow()"
                   >
-                    <i id="lockIcon-now" class="fa-solid fa-eye"></i>
                   </span>
                 </div>
               </div>
@@ -217,9 +216,9 @@
                 </a>
                 <!-- Button trigger modal -->
                 <button
-                  type="button"
+                  type="submit"
                   class="btn btn-primary"
-                  onclick="addrate()"
+      
                 >
                   تسجيل الدخول
                 </button>
@@ -270,22 +269,46 @@
     <!--  sweetalert2 -->
 
     <!-- eye -->
-    <script>
-      function togglePasswordVisibilitynow() {
-        var passwordInput = document.getElementById("password-now");
-        var lockIcon = document.getElementById("lockIcon-now");
-
-        if (passwordInput.type === "password") {
-          passwordInput.type = "text";
-          lockIcon.classList.remove("fa-eye");
-          lockIcon.classList.add("fa-eye-slash");
-        } else {
-          passwordInput.type = "password";
-          lockIcon.classList.remove("fa-eye-slash");
-          lockIcon.classList.add("fa-eye");
-        }
-      }
-    </script>
+  
     <!-- eye -->
+
+    <script>
+      function validateForm() {
+        // Reset error messages
+        document.querySelector('.mail-error').style.display = 'none';
+        document.querySelector('.password-error').style.display = 'none';
+    
+        // Get values from the form
+        var email = document.querySelector('.email input').value.trim();
+        var password = document.getElementById('password-now').value.trim();
+    
+        // Validate email
+        if (email === '' || !validateEmail(email)) {
+          document.querySelector('.mail-error').style.display = 'block';
+          return false;
+        }
+    
+        // Validate password
+        if (password === '') {
+          document.querySelector('.password-error').style.display = 'block';
+          return false;
+        }
+    
+        // If all validations pass, you can submit the form or perform other actions
+        // For now, let's just return true
+        return true;
+      }
+    
+      function validateEmail(email) {
+        // Simple email validation
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+    
+      function togglePasswordVisibilitynow() {
+        // Implement password visibility toggle if needed
+      }
+     
+    </script>
   </body>
 </html>

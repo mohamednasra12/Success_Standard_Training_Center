@@ -514,25 +514,33 @@
                 role="tabpanel"
                 aria-labelledby="v-pills-profile-tab"
               >
+             
               <form action="" onsubmit="return validateForm()">
                 <div class="password-group">
                   <label>كلمه المرور الحالية</label>
                   <div class="form-control">
-                    <img src="photo/icons/pass.svg" alt="" />
-                    <input type="password" id="currentPassword" required />
+                  
+                    <div class="password-icon">
+                      <img src="photo/icons/lock.svg" alt="" />
+                      <input type="password" class="auth" id="password-now" />
+                    </div>
                   </div>
                   <a href="forget-pass.html"><h5 class="color-forget">نسيت كلمة المرور ؟</h5></a>
             
                   <label>كلمه المرور الجديده</label>
                   <div class="form-control">
-                    <img src="photo/icons/pass.svg" alt="" />
-                    <input type="password" id="newPassword" required />
+                <div class="password-icon">
+                  <img src="photo/icons/lock.svg" alt="" />
+                  <input type="password" class="auth" id="password-now" />
+                </div>
                   </div>
             
                   <label>تاكيد كلمه المرور</label>
                   <div class="form-control">
-                    <img src="photo/icons/pass.svg" alt="" />
-                    <input type="password" id="confirmPassword" required />
+                    <div class="password-icon">
+                      <img src="photo/icons/lock.svg" alt="" />
+                      <input type="password" class="auth" id="password-now" />
+                    </div>
                   </div>
             
                   <input class="save" type="submit" value="حفظ التغيرات" />

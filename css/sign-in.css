@@ -607,9 +607,11 @@ button.swal2-confirm.swal2-styled {
 
 @media only screen and (min-width: 1300px) {
   .register form .form-group .password-icon .auth {
-    width: 90%;
+    width: 88%;
   }
 }
+
+
 @media only screen and (max-width: 950px) {
   .register .img {
     margin-top: 8rem;

@@ -141,6 +141,17 @@ function listView() {
   container.classList.remove("grid");
   container.classList.add("listmode");
 }
+function gridViewLib() {
+  var container = document.getElementById("containerlip");
+  container.classList.remove("listmodelip");
+  container.classList.add("gridlip");
+}
+
+function listViewLib() {
+  var container = document.getElementById("containerlip");
+  container.classList.remove("gridlip");
+  container.classList.add("listmodelip");
+}
 
 $(document).ready(function () {
   var topNav = $(".top_nav");
@@ -305,6 +316,11 @@ function saveAndUpdateInner2() {
   // Clear the input field
   document.getElementById("email").value = "";
 }
+
+
+
+
+
 
 
 

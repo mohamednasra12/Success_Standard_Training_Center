@@ -19,7 +19,7 @@ let hidnakk = document.getElementById("hid-na-kk");
 let hidnasoo = document.getElementById("hid-nas-oo");
 let hidna1 = document.getElementById("hid-na-1");
 let gohid = document.getElementById("go-hid");
-function bigImg() {
+function bigImg() { 
   hid.style.display = "block";
 }
 function normalImg() {

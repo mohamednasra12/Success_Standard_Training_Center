@@ -9,6 +9,7 @@
     <!-- ? Custom CSS -->
     <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
     <link rel="stylesheet" href="css/training_center_style.css" />
+    <link rel="stylesheet" href="css/sign-in.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos-anmite.css" />
     <link
@@ -173,15 +174,46 @@
                 <i class="fa-solid fa-arrow-right"></i> اختبار من بنك الاسئلة
               </h4>
             </div>
-    
           </div>
         </div>
       </div>
       <div class="container">
-        
+        <!-- chose standard  اختر المعيار -->
+        <div class="chose-standard">
+          <form action="">
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="form-group">
+                <label for="">اختر المعيار</label>
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  name="قم باختيار معاير او اكثر"
+                >
+                  <option selected>قم باختيار معاير او اكثر</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="">اختر المؤشر</label>
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  name="قم باختيار المؤشر"
+                >
+                  <option selected>قم باختيار المؤشر</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <button type="button" class="btn btn-warning">استكمال</button>
+            </div>
+          </form>
+        </div>
+        <!-- chose standard -->
       </div>
-
-     
     </div>
 
     <!-- endpage(footer) -->
@@ -279,7 +311,6 @@
     <script>
       AOS.init({ disable: "mobile" });
     </script>
-
 
     <script src="js/main.js"></script>
   </body>

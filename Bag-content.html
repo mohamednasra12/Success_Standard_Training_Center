@@ -22,6 +22,7 @@
     <!-- ? Custom CSS -->
     <!-- ? Main JavaScript -->
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/fontawesome.min.js"></script>
@@ -173,8 +174,16 @@
                 معلمي اللغة العربية للحصول علي الرخصة المهنية
               </h4>
             </div>
-            <div class="progres">
-              <h4>معدل الانتهاء</h4>
+            <div class="date">
+              <div class="progress_bar">
+                <div class="progress_bar_item">
+                  <h4>معدل الأنتهاء</h4>
+                  <div class="item_value cell shrink">0%</div>
+                  <div class="item_bar cell">
+                    <div class="progress" data-progress="22"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -182,8 +191,24 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-9 col-md-12 col-12">
+            <!-- لما يكون في لايف الجزء ده هيظهر -->
+            <div class="now">
+              <div class="looty">
+                <lottie-player
+                  src="photo/icons/Animation - 1708421263757.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 50px; height: 50px"
+                  loop
+                  autoplay
+                ></lottie-player>
+                <h4>محاضرة حالية : الاساليب في اللغة العربية</h4>
+              </div>
+              <img src="photo/icons/out.svg" alt="" />
+            </div>
+            <!-- لما يكون في لايف الجزء ده هيظهر -->
             <div class="head">
-              <a href="#" id="look"> نظرة عامة</a>
+              <a href="#" id="look" class="this"> نظرة عامة</a>
               <a href="#" id="content"> محتوي الحقيبة</a>
             </div>
             <div class="all-icons">
@@ -320,10 +345,12 @@
                       <div class="text-bodyacco">
                         <div class="im-acco">
                           <img src="photo/icons/sah.svg" alt="" />
-                          <h4>
-                            لماذا نتعلم النحو ؟
-                            <u><a href="#">اختبر نفسك</a></u>
-                          </h4>
+                          <a class="why" href="#">
+                            <h4>
+                              لماذا نتعلم النحو ؟
+                              <u><a href="#">اختبر نفسك</a></u>
+                            </h4>
+                          </a>
                         </div>
                         <div class="date">
                           <div class="progress_bar">
@@ -339,10 +366,12 @@
                       <div class="text-bodyacco">
                         <div class="im-acco">
                           <img src="photo/icons/ghalt.svg" alt="" />
-                          <h4>
-                            الاسم و الفعل و الحرف
-                            <u><a href="#">اختبر نفسك</a></u>
-                          </h4>
+                          <a href="#" class="why">
+                            <h4>
+                              الاسم و الفعل و الحرف
+                              <u><a href="#">اختبر نفسك</a></u>
+                            </h4>
+                          </a>
                         </div>
                         <div class="date">
                           <div class="progress_bar">
@@ -358,10 +387,12 @@
                       <div class="text-bodyacco">
                         <div class="im-acco">
                           <img src="photo/icons/sah.svg" alt="" />
-                          <h4>
-                            المفرد و المثني و الجمع
-                            <u><a href="#">اختبر نفسك</a></u>
-                          </h4>
+                          <a href="#" class="why">
+                            <h4>
+                              المفرد و المثني و الجمع
+                              <u><a href="#">اختبر نفسك</a></u>
+                            </h4>
+                          </a>
                         </div>
                         <div class="date">
                           <div class="progress_bar">
@@ -377,20 +408,46 @@
                       <div class="text-bodyacco">
                         <div class="im-acco">
                           <img src="photo/icons/sah.svg" alt="" />
-                          <h4>
-                            اسماء الاشارة <u><a href="#">اختبر نفسك</a></u>
-                          </h4>
+                          <a href="#" class="why">
+                            <h4>
+                              اسماء الاشارة <u><a href="#">اختبر نفسك</a></u>
+                            </h4>
+                          </a>
                         </div>
                         <div class="date">
                           <h4>الاحد 9 فبراير 12 م : 04 م</h4>
                         </div>
                       </div>
+                      <!-- لما يكون في لايف -->
+                      <div class="text-bodyacco-golive">
+                        <div class="im-acco">
+                          <img src="photo/icons/sah.svg" alt="" />
+                          <a href="#" class="why">
+                            <h4>اسماء الاشارة</h4>
+                          </a>
+                          <lottie-player
+                            src="photo/icons/sss.json"
+                            background="transparent"
+                            speed="1"
+                            style="width: 30px; height: 30px"
+                            loop
+                            autoplay
+                          ></lottie-player>
+                        </div>
+                        <div class="date">
+                          <h4>بدأت منذ 00:46:22</h4>
+                        </div>
+                      </div>
+                      <!-- لما يكون في لايف -->
+
                       <div class="text-bodyacco">
                         <div class="im-acco">
                           <img src="photo/icons/ghalt.svg" alt="" />
-                          <h4>
-                            الضمائر <u><a href="#">اختبر نفسك</a></u>
-                          </h4>
+                          <a href="#" class="why">
+                            <h4>
+                              الضمائر <u><a href="#">اختبر نفسك</a></u>
+                            </h4>
+                          </a>
                         </div>
                         <div class="date">
                           <h4>الثلاثاء 4 فبراير 12 م : 04 م</h4>
@@ -399,9 +456,11 @@
                       <div class="text-bodyacco">
                         <div class="im-acco">
                           <img src="photo/icons/ghalt.svg" alt="" />
-                          <h4>
-                            الاسماء الموصولة <u><a href="#">اختبر نفسك</a></u>
-                          </h4>
+                          <a href="#" class="why">
+                            <h4>
+                              الاسماء الموصولة <u><a href="#">اختبر نفسك</a></u>
+                            </h4>
+                          </a>
                         </div>
                         <div class="date">
                           <h4>الاربعاء 5 فبراير 06 م : 08 م</h4>
@@ -410,10 +469,12 @@
                       <div class="text-bodyacco">
                         <div class="im-acco">
                           <img src="photo/icons/video-circle.svg" alt="" />
-                          <h4>
-                            الاساليب في اللغة العربية
-                            <u><a href="#">اختبر نفسك</a></u>
-                          </h4>
+                          <a href="#" class="why">
+                            <h4>
+                              الاساليب في اللغة العربية
+                              <u><a href="#">اختبر نفسك</a></u>
+                            </h4>
+                          </a>
                         </div>
                         <div class="date">
                           <h4>الخميس 6 فبراير 12 م : 04 م</h4>
@@ -422,10 +483,12 @@
                       <div class="text-bodyacco">
                         <div class="im-acco">
                           <img src="photo/icons/video-circle.svg" alt="" />
-                          <h4>
-                            مراجعة على الأدوات والأساليب
-                            <u><a href="#">اختبر نفسك</a></u>
-                          </h4>
+                          <a href="#" class="why">
+                            <h4>
+                              مراجعة على الأدوات والأساليب
+                              <u><a href="#">اختبر نفسك</a></u>
+                            </h4>
+                          </a>
                         </div>
                         <div class="date">
                           <h4>الاحد 9 فبراير 12 م : 04 م</h4>
@@ -692,7 +755,9 @@
                     الاسئة بداخل اللايف
                   </p>
                 </div>
-                <div class="circle-rate"></div>
+                <div class="circle-rate">
+                  <img src="photo/ff.png" alt="" />
+                </div>
               </div>
               <div class="icon-text-top">
                 <img src="photo/icons/cr1.svg" alt="" />
@@ -715,9 +780,51 @@
                 <p>جميع الاختبارات <span>: 3 اختبارات</span></p>
               </div>
               <div class="btn-buy">
-                <button type="button" class="btn btn-warning">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
                   تدرب مع بنك الاسئلة
                 </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+
+                      <div class="modal-body">
+                        <img src="photo/sweet.png" alt="" />
+                        <h4>تدرب الان مع بنك الاسئلة الخاص بك</h4>
+                        <p>
+                          يمكنك بكل سهولة طلب اختبار من بنك الاسئلة علي المعايير
+                          و المؤشرات التي تريد اختبار نفسك عليها
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">
+                          ابدأ الان
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="teacher">
@@ -966,30 +1073,7 @@
       </div>
     </section>
     <!-- endpage(footer) -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
-      integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
 
-    <script>
-      function blockAlert() {
-        Swal.fire({
-          html: ' <video src="photo/icons/Countdown 5 seconds timer (1).mp4" controls></video>',
-        });
-      }
-    </script>
-
-    <script>
-      function addrate() {
-        Swal.fire({
-          html:
-            '<img src="photo/finger.png" alt="">' +
-            " <h4>تم ارسال تقييمك بنجاح</h4>",
-        });
-      }
-    </script>
     <script src="js/aos-anmite.js"></script>
     <script>
       AOS.init({ disable: "mobile" });
@@ -1036,6 +1120,19 @@
           }, speed);
         });
       }
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#content").on("click", function (e) {
+          e.preventDefault();
+          $("html, body").animate(
+            {
+              scrollTop: $(".head-bags").offset().top,
+            },
+           
+          );
+        });
+      });
     </script>
 
     <script src="js/main.js"></script>

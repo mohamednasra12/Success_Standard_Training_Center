@@ -3751,14 +3751,20 @@ img#uploadedPhoto {
 .bag-content .head {
   margin: 10px 0;
   border-bottom: 1px solid #e58a0a23;
+  position: sticky;
+  top: 88px;
+  z-index: 100;
+  background-color: white;
+  padding: 0.5rem 0;
 }
 .bag-content .head a {
-  color: #e5890a;
+  color: black;
   margin-left: 36px;
   font-family: "regular";
 }
 .this {
   border-bottom: 2px solid #e5890a;
+  color: #e58a0a !important;
 }
 .bag-content .accordion-button::after {
   margin-right: auto !important;
@@ -3844,7 +3850,6 @@ img#uploadedPhoto {
 .bag-content .icon-text-top img {
   animation: koko 2s ease infinite;
   width: 10%;
-
 }
 .bag-content .icon-text-top p {
   margin-bottom: 0;
@@ -3910,6 +3915,73 @@ img#uploadedPhoto {
   font-family: "bold";
   font-size: 1.1rem;
 }
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.circle-rate h4 {
+  font-family: "regular";
+  font-size: 0.7rem;
+}
+.bag-content .now {
+  background-image: url(../photo/now.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  margin-top: 10px;
+  color: white;
+  font-family: "regular";
+}
+.bag-content .now h4 {
+  font-size: 1.3rem;
+}
+.bag-content .looty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bag-content .looty h4 {
+  margin-bottom: 0;
+}
+.bag-content .text-bodyacco-golive {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 0, 0, 0.089);
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+}
+.bag-content .text-bodyacco-golive h4 {
+  font-size: 1rem;
+  font-family: "regular";
+  margin-bottom: 0;
+  color: red;
+}
+.bag-content a.why {
+  color: #656B78!important;
+}
+.bag-content .modal.show .modal-dialog {
+  top: 20%;
+}
+.bag-content .modal-body {
+  text-align: center;
+}
+.bag-content .modal-body h4 {
+  font-family: "bold";
+}
+.bag-content .modal-body p {
+  font-family: "regular";
+}
+.bag-content .btn-close {
+  width: 5%;
+  height: 19px;
+  border-radius: 50%;
+}
 /* personal */
 /* responsive */
 @media (min-width: 1600px) and (max-width: 2600px) {
@@ -3933,7 +4005,6 @@ img#uploadedPhoto {
   .who-we .all-teacher-card {
     overflow: scroll;
   }
-
 
   #hid {
     background-color: white;
@@ -4012,7 +4083,7 @@ img#uploadedPhoto {
     top: 39px;
     border-radius: 10px;
   }
-  
+
   .all-lastsub {
     width: 80%;
   }
@@ -4059,7 +4130,6 @@ img#uploadedPhoto {
     width: 308px;
   }
   .lang-arab h4 {
-  
     padding: 0.5rem;
   }
   #go-hid {
@@ -4099,15 +4169,11 @@ img#uploadedPhoto {
   .bag-content .icon-text {
     width: 36%;
   }
- 
-  
+
   .btn-buy button {
     padding: 0.5rem;
   }
- 
 
-
- 
   html {
     font-size: 0.8rem;
   }
@@ -4119,11 +4185,10 @@ img#uploadedPhoto {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.footer-main {
-  height: 259px;
- 
-}
+  }
+  .footer-main {
+    height: 259px;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .img-sub img {
@@ -4154,8 +4219,7 @@ img#uploadedPhoto {
     flex-wrap: wrap;
     justify-content: start;
   }
- 
-  
+
   .help-card {
     width: 259px;
   }
@@ -4181,19 +4245,16 @@ img#uploadedPhoto {
   .bag-content .total-rate {
     padding: 0.5rem;
   }
- 
- 
+
   .bag-content .icon-text-top img {
     width: 10%;
   }
   .bag-content .btn-buy button {
     padding: 0.5rem;
-    
   }
   html {
     font-size: 0.9rem;
   }
- 
 }
 @media only screen and (max-width: 1200px) {
   .top_nav {
@@ -4385,7 +4446,7 @@ img#uploadedPhoto {
   }
   .bag-content .icon-text-top img {
     width: 5%;
-}
+  }
   .top_nav {
     height: 98px;
     padding: 0.5rem;
@@ -4780,6 +4841,9 @@ img#uploadedPhoto {
   }
 }
 @media only screen and (max-width: 600px) {
+  .bag-content .head {
+    top: 79px;
+  }
   .top_nav {
     height: 68px;
     padding: 0.5rem;
@@ -5574,6 +5638,26 @@ img#uploadedPhoto {
   }
   .bag-content .teacher {
     margin-bottom: 1rem;
+  }
+  .bag-content .now h4 {
+    font-size: 0.9rem;
+  }
+  .bag-content .date {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .text-bodyacco {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  .bag-content .now img {
+    width: 8%;
+  }
+  .bag-content .modal.show .modal-dialog {
+    min-width: 100px;
+  }
+  .bag-content .text-bodyacco-golive {
+    flex-wrap: wrap;
   }
 }
 /* responsive */

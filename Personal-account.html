@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos-anmite.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
-    integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
+      integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- ? Custom CSS -->
     <!-- ? Main JavaScript -->
@@ -35,7 +35,7 @@
 
     <!-- ? Custom JavaScript -->
 
-    <title>الرئيسية</title>
+    <title>الحساب الشخصي</title>
   </head>
   <body>
     <!-- top_nav -->
@@ -186,7 +186,11 @@
                     aria-expanded="false"
                   >
                     <div class="profile-sin">
-                      <img id="uploadedPhotof" src="photo/samllpro.png" alt="" />
+                      <img
+                        id="uploadedPhotof"
+                        src="photo/samllpro.png"
+                        alt=""
+                      />
                       <div class="text-profi">
                         <div class="aro">
                           <h4 id="inner1">احمد حوام السيد</h4>
@@ -373,7 +377,7 @@
                 تسجيل الخروج
               </button>
             </div>
-          
+
             <div class="tab-content" id="v-pills-tabContent">
               <div
                 class="tab-pane fade show active"
@@ -438,7 +442,13 @@
                         <div class="form-group">
                           <label>الاسم بالكامل *</label>
                           <input id="names" type="text" class="form-control" />
-                          <input onclick="saveAndUpdateInner()" id="saveon" class="save" type="submit" value="حفظ" />
+                          <input
+                            onclick="saveAndUpdateInner()"
+                            id="saveon"
+                            class="save"
+                            type="submit"
+                            value="حفظ"
+                          />
                         </div>
                       </div>
                     </div>
@@ -468,9 +478,17 @@
                       <div class="accordion-body">
                         <div class="form-group">
                           <label>رقم الهاتف *</label>
-                          <input id="phons" type="number" class="form-control" />
-                          <input onclick="saveAndUpdateInner1()" class="save" type="submit" value="حفظ" />
-
+                          <input
+                            id="phons"
+                            type="number"
+                            class="form-control"
+                          />
+                          <input
+                            onclick="saveAndUpdateInner1()"
+                            class="save"
+                            type="submit"
+                            value="حفظ"
+                          />
                         </div>
                       </div>
                     </div>
@@ -500,8 +518,13 @@
                       <div class="accordion-body">
                         <div class="form-group">
                           <label>البريد الالكتروني *</label>
-                          <input id="email"  type="text" class="form-control" />
-                          <input onclick="saveAndUpdateInner2()" class="save" type="submit" value="حفظ" />
+                          <input id="email" type="text" class="form-control" />
+                          <input
+                            onclick="saveAndUpdateInner2()"
+                            class="save"
+                            type="submit"
+                            value="حفظ"
+                          />
                         </div>
                       </div>
                     </div>
@@ -514,42 +537,50 @@
                 role="tabpanel"
                 aria-labelledby="v-pills-profile-tab"
               >
-             
-              <form action="" onsubmit="return validateForm()">
-                <div class="password-group">
-                  <label>كلمه المرور الحالية</label>
-                  <div class="form-control">
-                  
-                    <div class="password-icon">
-                      <img src="photo/icons/lock.svg" alt="" />
-                      <input type="password" class="auth" id="password-now" />
-                      <i class="fa-solid fa-eye n"></i>
+                <form action="" onsubmit="return validateForm()">
+                  <div class="password-group">
+                    <label>كلمه المرور الحالية</label>
+                    <div class="form-control">
+                      <div class="password-icon">
+                        <img src="photo/icons/lock.svg" alt="" />
+                        <input type="password" class="auth" id="password-now" />
+                        <i class="fa-solid fa-eye n"></i>
+                      </div>
                     </div>
-                  </div>
-                  <a href="forget-pass.html"><h5 class="color-forget">نسيت كلمة المرور ؟</h5></a>
-            
-                  <label>كلمه المرور الجديده</label>
-                  <div class="form-control">
-                <div class="password-icon">
-                  <img src="photo/icons/lock.svg" alt="" />
-                  <input type="password" class="auth" id="password-now1" />
-                  <i class="fa-solid fa-eye a"></i>
-                </div>
-                  </div>
-            
-                  <label>تاكيد كلمه المرور</label>
-                  <div class="form-control">
-                    <div class="password-icon">
-                      <img src="photo/icons/lock.svg" alt="" />
-                      <input type="password" class="auth" id="password-now2" />
-                      <i class="fa-solid fa-eye s"></i>
+                    <a href="forget-pass.html"
+                      ><h5 class="color-forget">نسيت كلمة المرور ؟</h5></a
+                    >
+
+                    <label>كلمه المرور الجديده</label>
+                    <div class="form-control">
+                      <div class="password-icon">
+                        <img src="photo/icons/lock.svg" alt="" />
+                        <input
+                          type="password"
+                          class="auth"
+                          id="password-now1"
+                        />
+                        <i class="fa-solid fa-eye a"></i>
+                      </div>
                     </div>
+
+                    <label>تاكيد كلمه المرور</label>
+                    <div class="form-control">
+                      <div class="password-icon">
+                        <img src="photo/icons/lock.svg" alt="" />
+                        <input
+                          type="password"
+                          class="auth"
+                          id="password-now2"
+                        />
+                        <i class="fa-solid fa-eye s"></i>
+                      </div>
+                    </div>
+                    <!-- sss -->
+
+                    <input class="save" type="submit" value="حفظ التغيرات" />
                   </div>
-                  <!-- sss -->
-            
-                  <input class="save" type="submit" value="حفظ التغيرات" />
-                </div>
-              </form>
+                </form>
               </div>
               <div
                 class="tab-pane fade"
@@ -1849,11 +1880,13 @@
                     </div>
                     <div class="text-sub">
                       <div class="adress">
-                        <h4>
+                        <h4 class="title-languge">
                           البرنامج التدريبي لتأهيل معلمي اللغة العربية للحصول
                           علي الرخصة المهنية
                         </h4>
-                        <a href="#"><h5>اللغة العربيه</h5></a>
+                        <a href="#" class="study-languge"
+                          ><h5>اللغة العربيه</h5></a
+                        >
                       </div>
                       <div class="star">
                         <i class="fa-solid fa-star"></i>
@@ -2068,11 +2101,13 @@
                     </div>
                     <div class="text-sub">
                       <div class="adress">
-                        <h4>
+                        <h4 class="title-languge">
                           البرنامج التدريبي لتأهيل معلمي اللغة العربية للحصول
                           علي الرخصة المهنية
                         </h4>
-                        <a href="#"><h5>اللغة العربيه</h5></a>
+                        <a href="#" class="study-languge"
+                          ><h5>اللغة العربيه</h5></a
+                        >
                       </div>
                       <div class="star">
                         <i class="fa-solid fa-star"></i>
@@ -2287,11 +2322,13 @@
                     </div>
                     <div class="text-sub">
                       <div class="adress">
-                        <h4>
+                        <h4 class="title-languge">
                           البرنامج التدريبي لتأهيل معلمي اللغة العربية للحصول
                           علي الرخصة المهنية
                         </h4>
-                        <a href="#"><h5>اللغة العربيه</h5></a>
+                        <a href="#" class="study-languge"
+                          ><h5>اللغة العربيه</h5></a
+                        >
                       </div>
                       <div class="star">
                         <i class="fa-solid fa-star"></i>
@@ -2506,11 +2543,13 @@
                     </div>
                     <div class="text-sub">
                       <div class="adress">
-                        <h4>
+                        <h4 class="title-languge">
                           البرنامج التدريبي لتأهيل معلمي اللغة العربية للحصول
                           علي الرخصة المهنية
                         </h4>
-                        <a href="#"><h5>اللغة العربيه</h5></a>
+                        <a href="#" class="study-languge"
+                          ><h5>اللغة العربيه</h5></a
+                        >
                       </div>
                       <div class="star">
                         <i class="fa-solid fa-star"></i>
@@ -3374,9 +3413,7 @@
                 id="v-pills-go"
                 role="tabpanel"
                 aria-labelledby="v-pills-go"
-              >
-              
-              </div>
+              ></div>
             </div>
           </div>
         </div>
@@ -3479,11 +3516,11 @@
       <!-- endpage(footer) -->
     </div>
     <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
-    integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
+      src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
+      integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <script>
       function addrate() {
@@ -3502,16 +3539,15 @@
       }
     </script>
 
-    <script src="js/aos-anmite.js"></script>
     <script>
       AOS.init({ disable: "mobile" });
     </script>
-     <script>
+    <script>
       $(document).ready(function () {
         $(".n").on("click", function () {
           var passwordInput = $("#password-now");
           var type = passwordInput.attr("type");
-    
+
           if (type === "password") {
             passwordInput.attr("type", "text");
           } else {
@@ -3520,12 +3556,12 @@
         });
       });
     </script>
-     <script>
+    <script>
       $(document).ready(function () {
         $(".a").on("click", function () {
           var passwordInput = $("#password-now1");
           var type = passwordInput.attr("type");
-    
+
           if (type === "password") {
             passwordInput.attr("type", "text");
           } else {
@@ -3534,12 +3570,12 @@
         });
       });
     </script>
-     <script>
+    <script>
       $(document).ready(function () {
         $(".s").on("click", function () {
           var passwordInput = $("#password-now2");
           var type = passwordInput.attr("type");
-    
+
           if (type === "password") {
             passwordInput.attr("type", "text");
           } else {
@@ -3548,52 +3584,52 @@
         });
       });
     </script>
-     <script>
+    <script>
       function validateForm() {
         // Reset previous errors
         resetErrors();
-  
+
         // Get input values
         var currentPassword = document.getElementById("currentPassword").value;
         var newPassword = document.getElementById("newPassword").value;
         var confirmPassword = document.getElementById("confirmPassword").value;
-  
+
         // Validation logic
         var isValid = true;
-  
+
         if (currentPassword.trim() === "") {
           showError("currentPassword", "يرجى إدخال كلمة المرور الحالية");
           isValid = false;
         }
-  
+
         if (newPassword.trim() === "") {
           showError("newPassword", "يرجى إدخال كلمة المرور الجديدة");
           isValid = false;
         }
-  
+
         if (confirmPassword.trim() === "") {
           showError("confirmPassword", "يرجى تأكيد كلمة المرور");
           isValid = false;
         }
-  
+
         if (newPassword !== confirmPassword) {
           showError("confirmPassword", "كلمة المرور غير متطابقة");
           isValid = false;
         }
-  
+
         return isValid;
       }
-  
+
       function showError(field, message) {
         document.getElementById(field + "Error").innerText = message;
       }
-  
+
       function resetErrors() {
         document.getElementById("currentPasswordError").innerText = "";
         document.getElementById("newPasswordError").innerText = "";
         document.getElementById("confirmPasswordError").innerText = "";
       }
-  
+
       function togglePasswordVisibility(inputId) {
         var input = document.getElementById(inputId);
         var icon = input.nextElementSibling;
@@ -3606,6 +3642,28 @@
         }
       }
     </script>
-    <script src="js/main.js"></script>
+    <script>
+      const myImage = document.getElementById("myImage");
+      const photoPaths = [
+        "photo/khalegy.png",
+        "photo/Image.png",
+        "photo/sss.png",
+      ]; // Add more photo paths as needed
+      let currentPhotoIndex = 0;
+
+      function changePhoto() {
+        myImage.src = photoPaths[currentPhotoIndex];
+        currentPhotoIndex = (currentPhotoIndex + 1) % photoPaths.length;
+      }
+
+      // Change photo every 3 seconds (adjust as needed)
+      setInterval(changePhoto, 3000);
+
+      // Initial photo display
+      changePhoto();
+    </script>
+
+     <script src="js/main.js"></script>
+     <script src="js/aos-anmite.js"></script>
   </body>
 </html>

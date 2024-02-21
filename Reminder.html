@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ? Main CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/training_center_style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos-anmite.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
+      integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ? Custom CSS -->
+    <!-- ? Main JavaScript -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+    <!-- ? Custom JavaScript -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
+
+    <!-- ? Custom JavaScript -->
+
+    <title>الحقائب التعليميه</title>
+  </head>
+  <body>
+    <!-- top_nav -->
+    <section class="top_nav">
+      <div class="container">
+        <div class="top_nav_detlies">
+          <div class="phones">
+            <div class="frist-phone">
+              <img src="photo/icons/sms.svg" alt="" />
+              <a href="#"> <h5>timothy.gilbert@mail.com</h5></a>
+            </div>
+            <span>|</span>
+            <div class="frist-phone">
+              <img src="photo/icons/location.svg" alt="" />
+              <a href="#"> <h5>Cargo Hub, LD 32614, UK</h5> </a>
+            </div>
+            <span>|</span>
+            <div class="frist-phone">
+              <img src="photo/icons/call.svg" alt="" />
+              <a href="#"> <h5>(995)658-5930</h5></a>
+            </div>
+          </div>
+          <div class="soail">
+            <a href="#">
+              <img src="photo/icons/Clip path group.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="photo/icons/linked.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="photo/icons/twetter.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="photo/icons/facebook.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- top_nav -->
+    <!-- NAV -->
+    <section class="nav-bar">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="photo/main_logo.png" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"
+              ><i class="fa-solid fa-bars"></i
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >الرئيسية</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="Educational_bags.html"
+                  >الحقائب التعليمية</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="who-we.html"
+                  >من نحن</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="blog.html"
+                  >المدونة</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="connect-us.html"
+                  >تواصل معنا</a
+                >
+              </li>
+            </ul>
+
+            <ul class="btn">
+              <li>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    EN
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">Arabic</a></li>
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="sign-in.html">
+                  <button type="button" class="btn btn-warning signin">
+                    تسجيل الدخول
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- NAV -->
+    <div class="Indicator-details">
+      <div class="Completion-rate">
+        <div class="container">
+          <div class="sec-comple">
+            <div class="text">
+              <h4>
+                البرنامج التدريبي لتأهيل معلمي اللغة العربية للحصول علي الرخصة
+                المهنية
+                <i class="fa-solid fa-chevron-left"></i>
+                <span>المؤشر الاول</span>
+              </h4>
+            </div>
+            <div class="next-indicator">
+              <button type="button" class="next-indicatorbtn">
+                المؤشر التالي<i class="fa-regular fa-circle-left"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-md-12 col-12">
+            <div class="warrining">
+              <h4>
+                <img src="photo/icons/warrining.svg" alt="" />
+                تذكير :لم يتم حضور اللايف و في حالة عدم الحضور لا يتم وضع تقييم
+                عام لك
+              </h4>
+            </div>
+            <div class="audio-parent">
+              <p>المؤشر الاول</p>
+              <h4>
+                لماذا نتعلم النحو و ما هي الخصائص الهامة به و كيف نطبقها ؟
+              </h4>
+              <audio
+                src="https://actions.google.com/sounds/v1/science_fiction/robot_code.ogg"
+                controls
+              ></audio>
+            </div>
+            <div class="head">
+              <a href="#" id="look" class="this"> نظرة عامة</a>
+              <a href="#" id="content"> اختبارات اللايف</a>
+              <a href="#" id="choosen"> اختباراتي الخاصة</a>
+            </div>
+            <div class="text-underviwe">
+              <h5>
+                تعتبر دراسة النحو في اللغة العربية - وفي لغات أخرى أيضًا - من
+                الجوانب الأساسية والحيوية في فهم وتطوير اللغة. إليك نبذة عن
+                أهمية تعلم <br />النحو:<br />
+                فهم بنية اللغة: يساعد دراسة النحو في فهم بنية <br />الجمل
+                وتركيبها، بما في ذلك أجزاء الكلام وعلاقتها مع بعضها البعض. تحسين
+                التعبير: عندما يتقن الشخص النحو، يمكنه التعبير بوضوح ودقة أكبر.
+                يتعلم كيفية استخدام الكلمات وترتيبها بطريقة تجعل المعنى مفهومًا
+                للآخرين. تحسين المهارات الكتابية والشفهية: يؤثر فهم النحو بشكل
+                إيجابي على قدرة الفرد على التحدث والكتابة بطريقة صحيحة وسلسة.
+              </h5>
+            </div>
+            <div class="all-icons">
+              <div class="icon-text">
+                <img src="photo/icons/celender.svg" alt="" />
+                <p class="date-top">
+                  <span>تاريخ المٌحاضرة</span> : 28-05-2024
+                </p>
+              </div>
+              <div class="icon-text">
+                <img src="photo/icons/gotime.svg" alt="" />
+                <p class="date-top">
+                  <span>وقت المحاضرة</span> : الاحد 9 فبراير 12م : 04م ( 4 ساعات
+                  )
+                </p>
+              </div>
+              <div class="icon-text">
+                <img src="photo/icons/2.svg" alt="" />
+                <p class="date-top">
+                  <span>عدد الاختبارات داخل اللايف</span> : 2 اختبار
+                </p>
+              </div>
+              <div class="icon-text">
+                <img src="photo/icons/dd.svg" alt="" />
+                <p class="date-top">
+                  <span>عدد الاختبارات المطلوبة</span> : 4 اختبار
+                </p>
+              </div>
+              <div class="icon-text">
+                <img src="photo/icons/dowm.svg" alt="" />
+                <p class="date-top">
+                  <span>الملفات المُرفقة</span> : 8 png , 4 pdf
+                </p>
+              </div>
+            </div>
+            <hr />
+
+            <!-- acco -->
+            <div class="text-live">
+              <h4>اختبارات اللايف</h4>
+              <p>4 اختبار . 40 سؤال . 35 اجابة صحيحة . 5 اجابات خاطئة</p>
+            </div>
+            <div class="text-livestart">
+              <div class="text">
+                <h4>الاختبار الاول</h4>
+                <p>10 سؤال . 19 اجابة صحيحة . 1 اجابات خاطئة</p>
+              </div>
+              <div class="btn-sart">
+                <button type="button" class="btn btn-primary">
+                  ابدأ الاختبار
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 col-12">
+            <div class="total-rate">
+              <div class="top">
+                <div class="right-all">
+                  <h4>اجمالي تقييمك</h4>
+                  <p>
+                    يتم حساب تقييمك بناء علي حضورك للمحاضرات و درجة تجاوبك علي
+                    الاسئة بداخل اللايف
+                  </p>
+                </div>
+                <div class="circle-rate">
+                  <img src="photo/ff.png" alt="" />
+                </div>
+              </div>
+
+              <div class="btn-buy">
+                <button type="button" class="btn btn-primary">
+                  اختبر نفسك في هذا المؤشر
+                </button>
+              </div>
+            </div>
+            <div class="teacher">
+              <h4 class="tranining">مٌدربين الحقيبة</h4>
+              <a href="page-detalis.html">
+                <div class="imd-bag">
+                  <div class="det-teacher">
+                    <img src="photo/samllpro.png" alt="" />
+                    <h4>Dr. Ahmed Fathy Abo Zaid</h4>
+                  </div>
+                  <div class="drop">
+                    <div class="dropdown">
+                      <a
+                        class="btn dropdown-toggle"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuLink"
+                      >
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="page-detalis.html">
+                <div class="imd-bag">
+                  <div class="det-teacher">
+                    <img src="photo/samllpro.png" alt="" />
+                    <h4>Dr. Ahmed Fathy Abo Zaid</h4>
+                  </div>
+                  <div class="drop">
+                    <div class="dropdown">
+                      <a
+                        class="btn dropdown-toggle"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuLink"
+                      >
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="page-detalis.html">
+                <div class="imd-bag">
+                  <div class="det-teacher">
+                    <img src="photo/samllpro.png" alt="" />
+                    <h4>Dr. Ahmed Fathy Abo Zaid</h4>
+                  </div>
+                  <div class="drop">
+                    <div class="dropdown">
+                      <a
+                        class="btn dropdown-toggle"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuLink"
+                      >
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="page-detalis.html">
+                <div class="imd-bag">
+                  <div class="det-teacher">
+                    <img src="photo/samllpro.png" alt="" />
+                    <h4>Dr. Ahmed Fathy Abo Zaid</h4>
+                  </div>
+                  <div class="drop">
+                    <div class="dropdown">
+                      <a
+                        class="btn dropdown-toggle"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuLink"
+                      >
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="teacher">
+              <h4 class="tranining">الملفات المُرفقة</h4>
+              <div class="all-rols">
+                <div class="rol-one">
+                  <img src="photo/icons/pdf.svg" alt="" />
+                  <div class="text-one">
+                    <h4>arabic 1 .pdf</h4>
+                    <p>20 MB</p>
+                  </div>
+                </div>
+                <img src="photo/icons/godo.svg" alt="" id="downloadButton" />
+              </div>
+
+              <div class="all-rols">
+                <div class="rol-one">
+                  <img src="photo/icons/pdf.svg" alt="" />
+                  <div class="text-one">
+                    <h4>arabic 1 .pdf</h4>
+                    <p>20 MB</p>
+                  </div>
+                </div>
+                <img src="photo/icons/godo.svg" alt="" id="downloadButton1" />
+              </div>
+              <div class="all-rols">
+                <div class="rol-one">
+                  <img src="photo/icons/pdf.svg" alt="" />
+                  <div class="text-one">
+                    <h4>arabic 1 .pdf</h4>
+                    <p>20 MB</p>
+                  </div>
+                </div>
+                <img src="photo/icons/godo.svg" alt="" id="downloadButton2" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- endpage(footer) -->
+    <section class="footer">
+      <div class="footer-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="end-foter" id="end-res">
+                <div class="logo">
+                  <img src="photo/footerlogo.png" alt="" />
+                </div>
+                <p>
+                  توفّر منصة مركز معيار النجاح للتدريب كورسات تعليمية مجانية
+                  باللّغة العربية لدعم جميع الفئات العمرية. تفضّل بزيارة صفحتنا
+                  الرئيسيه
+                </p>
+              </div>
+              <div class="mida-icons" id="res-icn">
+                <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+                <a href="#"> <i class="fa-brands fa-linkedin"></i> </a>
+                <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+              </div>
+              <div class="side">
+                <a href="#"> <img src="img/side.svg" alt="" /></a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="company" id="com-res">
+                <div class="header-company">
+                  <h4>عن الشركة</h4>
+                </div>
+                <div class="company-link">
+                  <a href="index.html"><h5>الرئيسية ..</h5></a>
+
+                  <a href="Educational_bags.html"><h5>الحقائب التعليميه</h5></a>
+                  <a href="who-we.html"><h5>من نحن</h5></a>
+                  <a href="connect-us.html"><h5>تواصل معنا</h5></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="company" id="com-res">
+                <div class="header-company">
+                  <h4>صفحات اخرى</h4>
+                </div>
+                <div class="company-link">
+                  <a href="privacy-policy.html"><h5>سياسه الخصوصيه ..</h5></a>
+                  <a href="Instructions-use.html"><h5>شروط الاستخدام</h5></a>
+                  <a href="terms-use.html"><h5>الاسئلة الشائعة</h5></a>
+                  <a href="blog.html"><h5>المدونه</h5></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="company" id="com-res">
+                <div class="header-company">
+                  <h4>وسائل التواصل</h4>
+                </div>
+                <div class="company-link">
+                  <h4 class="week">رقم الهاتف</h4>
+                  <div class="last-link">
+                    <img src="photo/icons/footer1.svg" alt="" />
+                    <a href="#"><h5 class="nom">(995)658-5930</h5></a>
+                  </div>
+                  <h4 class="week">البريد الالكتروني</h4>
+                  <div class="last-link">
+                    <img src="photo/icons/footer2.svg" alt="" />
+                    <a href="#"><h5 class="nom">Cargo Hub, LD 32614, UK</h5></a>
+                  </div>
+                  <h4 class="week">موقعنا</h4>
+                  <div class="last-link">
+                    <img src="photo/icons/footer3.svg" alt="" />
+                    <a href="#"
+                      ><h5 class="nom">timothy.gilbert@mail.com</h5></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="end-page">
+        <a href="#"
+          ><h4>© All rights reserved @ Success criterion platform 2024</h4>
+        </a>
+        <a href="#">Made by <span>X</span> Coders coding with expert </a>
+      </div>
+    </section>
+    <!-- endpage(footer) -->
+
+    <script src="js/aos-anmite.js"></script>
+    <script>
+      AOS.init({ disable: "mobile" });
+    </script>
+
+    <script>
+      let look = document.getElementById("look");
+      let content = document.getElementById("content");
+      let choosen = document.getElementById("choosen");
+      look.onclick = function () {
+        look.classList.toggle("this");
+        content.classList.remove("this");
+        choosen.classList.remove("this");
+      };
+      content.onclick = function () {
+        content.classList.toggle("this");
+        look.classList.remove("this");
+        choosen.classList.remove("this");
+      };
+      choosen.onclick = function () {
+        choosen.classList.toggle("this");
+        look.classList.remove("this");
+        content.classList.remove("this");
+      };
+    </script>
+    <script>
+      $(document).ready(function () {
+        progress_bar();
+      });
+
+      function progress_bar() {
+        var speed = 30;
+        var items = $(".progress_bar").find(".progress_bar_item");
+
+        items.each(function () {
+          var item = $(this).find(".progress");
+          var itemValue = item.data("progress");
+          var i = 0;
+          var value = $(this);
+
+          var count = setInterval(function () {
+            if (i <= itemValue) {
+              var iStr = i.toString();
+              item.css({
+                width: iStr + "%",
+              });
+              value.find(".item_value").html(iStr + "%");
+            } else {
+              clearInterval(count);
+            }
+            i++;
+          }, speed);
+        });
+      }
+    </script>
+
+    <script>
+      document
+        .getElementById("downloadButton")
+        .addEventListener("click", function () {
+          // Replace 'path/to/your/file.pdf' with the actual path to your PDF file
+          var fileUrl = "path/to/your/file.pdf";
+
+          // Create a link element
+          var link = document.createElement("a");
+
+          // Set the download attribute with the file name
+          link.download = "arabic 1.pdf";
+
+          // Set the href attribute with the file URL
+          link.href = fileUrl;
+
+          // Append the link to the document
+          document.body.appendChild(link);
+
+          // Trigger a click event on the link to start the download
+          link.click();
+
+          // Remove the link from the document
+          document.body.removeChild(link);
+        });
+    </script>
+    <script>
+      document
+        .getElementById("downloadButton1")
+        .addEventListener("click", function () {
+          // Replace 'path/to/your/file.pdf' with the actual path to your PDF file
+          var fileUrl = "path/to/your/file.pdf";
+
+          // Create a link element
+          var link = document.createElement("a");
+
+          // Set the download attribute with the file name
+          link.download = "arabic 1.pdf";
+
+          // Set the href attribute with the file URL
+          link.href = fileUrl;
+
+          // Append the link to the document
+          document.body.appendChild(link);
+
+          // Trigger a click event on the link to start the download
+          link.click();
+
+          // Remove the link from the document
+          document.body.removeChild(link);
+        });
+    </script>
+    <script>
+      document
+        .getElementById("downloadButton2")
+        .addEventListener("click", function () {
+          // Replace 'path/to/your/file.pdf' with the actual path to your PDF file
+          var fileUrl = "path/to/your/file.pdf";
+
+          // Create a link element
+          var link = document.createElement("a");
+
+          // Set the download attribute with the file name
+          link.download = "arabic 1.pdf";
+
+          // Set the href attribute with the file URL
+          link.href = fileUrl;
+
+          // Append the link to the document
+          document.body.appendChild(link);
+
+          // Trigger a click event on the link to start the download
+          link.click();
+
+          // Remove the link from the document
+          document.body.removeChild(link);
+        });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#content").on("click", function (e) {
+          e.preventDefault();
+          $("html, body").animate({
+            scrollTop: $("#go").offset().top,
+          });
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#choosen").on("click", function (e) {
+          e.preventDefault();
+          $("html, body").animate({
+            scrollTop: $("#priv").offset().top,
+          });
+        });
+      });
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -624,15 +624,38 @@ font-family: "light";
 background-position: left 1rem center;
 box-shadow: none;
 border: none;
+padding: 1rem;
+border-radius: 10px;
 }
 .chose-standard form .btn-warning{
 background-color: #E5890A;
 color: white;
 font-size:.8rem ;
 font-family: "light";
+width: 100%;
+border-radius: 8px;
+margin: 2rem 0;
+padding: .8rem;
 }
-
-
+.total-rate .title h5{
+  font-size:.8rem ;
+  font-family: "bold";
+  color: black;
+  margin: 1rem 0;
+}
+.btn-buy .btn-warning{
+  background-color: rgb(229 137 10 / 10%);
+  color: #E5890A;
+  padding: .6rem;
+  border-radius: 8px;
+}
+.btn-buy .btn-primary {
+  border-radius: 8px;
+  padding: .6rem;
+}
+.icon-text-top p{
+  font-size: .8rem;
+}
 /* table invoice */
 @media only screen and (max-width: 1400px) {
   .presonal-account .img-sub img {

@@ -36,7 +36,7 @@
 
     <!-- ? Custom JavaScript -->
 
-    <title>الحقائب التعليميه</title>
+    <title> اختبار من بك الاسئلة</title>
   </head>
   <body>
     <!-- top_nav -->
@@ -208,7 +208,9 @@
                   <option value="3">Three</option>
                 </select>
               </div>
-              <button type="button" class="btn btn-warning">استكمال</button>
+              <a href="#">
+                <button type="button" onclick="contanue()" class="btn btn-warning">استكمال </button>
+              </a>
             </div>
           </form>
         </div>
@@ -306,12 +308,30 @@
       </div>
     </section>
     <!-- endpage(footer) -->
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
+      integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="js/aos-anmite.js"></script>
     <script>
       AOS.init({ disable: "mobile" });
     </script>
-
     <script src="js/main.js"></script>
+
+
+    <script>
+      function contanue(){
+        Swal.fire({
+      title: "",
+      text: "جاري الان تجهيز الاحتبار لك .. فقط انتظر بضع ثواني",
+      imageUrl: "photo/Frame.png",
+      imageWidth: 200,
+      imageHeight: 200,
+      imageAlt: "Custom image"
+    });
+      }
+    </script>
   </body>
 </html>

@@ -713,14 +713,17 @@ h4.ops {
 .small-box {
   font-family: "bold";
 }
+a.go-now {
+  width: 100%;
+}
 
 .small-box {
   background-color: #e5890a;
   padding: 0.2rem 0.8rem;
   border-radius: 32% 0 22% 0;
   color: white;
-  width: 47px;
-  height: 27px;
+  width: 42px;
+  height: 22px;
 }
 
 .star span {
@@ -5215,7 +5218,15 @@ input[type="range"]::-webkit-slider-thumb {
 }
 @media only screen and (max-width: 1024px) {
   .img-sub img {
-    height: 565px;
+    height: 189px;
+  }
+  .deta-pro img {
+    width: 25px;
+    height: 25px;
+  }
+  .small-box {
+    width: 37px;
+    height: 20px;
   }
   .top_nav {
     height: 56px;

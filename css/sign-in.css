@@ -607,67 +607,201 @@ button.swal2-confirm.swal2-styled {
   width: 30%;
   text-align: center;
 }
-.chose-standard form{
-margin: 3rem 0 8rem;
+.chose-standard form {
+  margin: 3rem 0 8rem;
 }
-.chose-standard form .form-group label{
-color: #47586E;
-font-size:1rem ;
-font-family: "light";
-margin: 1rem 0;
+.chose-standard form .form-group label {
+  color: #47586e;
+  font-size: 1rem;
+  font-family: "light";
+  margin: 1rem 0;
 }
-.chose-standard form .form-group .form-select{
-background-color: #F2F2F2;
-color: #909DAD;
-font-size:.8rem ;
-font-family: "light";
-background-position: left 1rem center;
-box-shadow: none;
-border: none;
-padding: 1rem;
-border-radius: 10px;
+.chose-standard form .form-group .form-select {
+  background-color: #f2f2f2;
+  color: #909dad;
+  font-size: 0.8rem;
+  font-family: "light";
+  background-position: left 1rem center;
+  box-shadow: none;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
 }
-.chose-standard form .btn-warning{
-background-color: #E5890A;
-color: white;
-font-size:.8rem ;
-font-family: "light";
-width: 100%;
-border-radius: 8px;
-margin: 2rem 0;
-padding: .8rem;
+.chose-standard form .btn-warning {
+  background-color: #e5890a;
+  color: white;
+  font-size: 0.8rem;
+  font-family: "light";
+  width: 100%;
+  border-radius: 8px;
+  margin: 2rem 0;
+  padding: 0.8rem;
 }
-.total-rate .title h5{
-  font-size:.8rem ;
+.total-rate .title h5 {
+  font-size: 0.8rem;
   font-family: "bold";
   color: black;
   margin: 1rem 0;
 }
-.btn-buy .btn-warning{
+.btn-buy .btn-warning {
   background-color: rgb(229 137 10 / 10%);
-  color: #E5890A;
-  padding: .6rem;
+  color: #e5890a;
+  padding: 0.6rem;
   border-radius: 8px;
 }
 .btn-buy .btn-primary {
   border-radius: 8px;
-  padding: .6rem;
+  padding: 0.6rem;
 }
-.icon-text-top p{
-  font-size: .8rem;
+.icon-text-top p {
+  font-size: 0.8rem;
 }
+.text-bodyacco h4 {
+  font-size: 0.9rem;
+}
+.bag-content .accordion-button::after {
+  margin-left: 10px !important;
+}
+.bag-content .accordion-button {
+  background-color: #f0f3f6;
+}
+.reset-page .logo-rest {
+  text-align: center;
+}
+.reset-page .logo-rest .imge-two {
+  position: relative;
+}
+.reset-page .logo-rest .imge-two::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 41%;
+  height: 30px;
+  background-color: #e5890a;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.reset-page .logo-rest .imge-two::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 41%;
+  height: 30px;
+  background-color: #e5890a;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.reset-page .contant-reset .head h4 {
+  font-size: 1.5rem;
+  font-family: "bold";
+  text-align: center;
+  margin: 4rem 0 1.5rem;
+  width: 75%;
+}
+.reset-page .contant-reset .head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reset-page .contant-reset {
+  padding: 0 5rem;
+}
+.reset-page .contant-reset .details .name {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+.reset-page .contant-reset .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reset-page .contant-reset .details .name h5 {
+  margin: 0 0.5rem;
+  font-size: 1.1rem;
+  font-family: "light";
+  color: black;
+}
+.reset-page .contant-reset .details .name h5 span {
+  color: #5c5c6b;
+}
+.reset-page .contant-reset .total-reset {
+  border: 1px solid #b2bbc6;
+  border-radius: 6px;
+  /* padding: 1rem; */
+}
+.reset-page .contant-reset .total-reset .price-reset {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 0.5rem;
+}
+.reset-page .contant-reset .total-reset .price-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 0.5rem 0;
+}
+.reset-page .contant-reset .total-reset .price-reset h6 {
+  font-size: 1.1rem;
+  font-family: "regular";
+  color: #29384b;
+}
+.reset-page .contant-reset .total-reset .price-reset p {
+  font-size: 1.1rem;
+  font-family: "regular";
+  color: #29384b;
+}
+.reset-page .contant-reset .total-reset .price-total h4 {
+  font-size: 1.4rem;
+  font-family: "regular";
+  color: #29384b;
+}
+.reset-page .contant-reset .total-reset .price-total h5 {
+  font-size: 1.1rem;
+  font-family: "regular";
+  color: white;
+  background-color: #e5890a;
+  padding: 0.7rem 1rem;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.reset-page .contant-reset .rules h4 {
+  color: #5c5c6b;
+  font-size: 1.4rem;
+  font-family: "regular";
+}
+.reset-page .contant-reset .rules h4 span {
+  color: #111827;
+}
+.reset-page .contant-reset .rules {
+  margin: 1.5rem 0;
+}
+.reset-page .contant-reset .scan {
+  text-align: center;
+}
+.reset-page .contant-reset .scan img {
+  width: 20%;
+}
+.reset-page .end-reset {
+  text-align: end;
+}
+.reset-page .end-reset img {
+  width: 70%;
+  height: 30vh;
+}
+
 /* table invoice */
 @media only screen and (max-width: 1400px) {
- 
 }
 @media only screen and (min-width: 1300px) {
   .register form .form-group .password-icon .auth {
     width: 88%;
   }
- 
 }
 @media only screen and (max-width: 1100px) {
- 
   .tab-favourite .card-subject {
     justify-content: flex-start;
   }
@@ -706,6 +840,9 @@ padding: .8rem;
   }
   .adress a h5 {
     margin-bottom: 0.5rem;
+  }
+  .reset-page .contant-reset {
+    padding: 0 3rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -754,5 +891,33 @@ padding: .8rem;
   }
   .invoice-table .table-bordered {
     min-width: 1000px;
+  }
+  .reset-page .contant-reset .head h4 {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .reset-page .contant-reset {
+    padding: 0 1rem;
+  }
+  .reset-page .contant-reset .details .name h5 {
+    font-size: 0.8rem;
+  }
+  .reset-page .contant-reset .total-reset .price-reset h6 {
+    font-size: 0.8rem;
+  }
+  .reset-page .contant-reset .total-reset .price-total h4 {
+    font-size: 1rem;
+  }
+  .reset-page .contant-reset .total-reset .price-reset p {
+    font-size: 0.9rem;
+  }
+  .reset-page .contant-reset .total-reset .price-total h5 {
+    font-size: 0.9rem;
+  }
+  .reset-page .contant-reset .rules h4 {
+    font-size: 1rem;
+  }
+  .reset-page .end-reset img {  
+    height: 20vh;
   }
 }

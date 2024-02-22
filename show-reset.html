@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ? Main CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/training_center_style.css" />
+    <link rel="stylesheet" href="css/sign-in.css    " />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos-anmite.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
+      integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ? Custom CSS -->
+    <!-- ? Main JavaScript -->
+    <script src="js/jquery-3.5.1.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+    <!-- ? Custom JavaScript -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
+
+    <!-- ? Custom JavaScript -->
+
+    <title>البرنامج التدريبي لتأهيل المعلمين</title>
+  </head>
+  <body>
+    <!-- reset page -->
+    <div class="reset-page">
+      <div class="logo-rest">
+        <div class="imge-one"><img src="photo/fatora.png" alt="" /></div>
+        <div class="imge-two"><img src="photo/logo2.png" alt="" /></div>
+      </div>
+      <div class="contant-reset">
+        <div class="head">
+          <h4>
+            البرنامج التدريبي لتأهيل معلمي اللغة العربية للحصول علي الرخصة
+            المهنية
+          </h4>
+        </div>
+        <div class="details">
+          <div class="details-one">
+            <div class="name">
+              <img src="photo/icons/q1.svg" alt="" />
+              <h5><span>الاسم بالكامل :</span> Ahmed Hawwam</h5>
+            </div>
+            <div class="name">
+              <img src="photo/icons/q2.svg" alt="" />
+              <h5><span>رقم الفاتورة : </span> #201982</h5>
+            </div>
+          </div>
+          <div class="details-two">
+            <div class="name">
+              <img src="photo/icons/q3.svg" alt="" />
+              <h5><span>طريقة الدفع :</span> باي بال Pay Pal</h5>
+            </div>
+            <div class="name">
+              <img src="photo/icons/q4.svg" alt="" />
+              <h5><span>تاريخ اصدار الفاتورة :</span> 22 مارس 2024</h5>
+            </div>
+          </div>
+        </div>
+        <div class="total-reset">
+          <div class="price-reset">
+            <h6>الاجمالي الخاضع للضريبة ( غير شامل ضريبة القيمة المضافة )</h6>
+            <p>550 ر.س</p>
+          </div>
+          <div class="price-reset">
+            <h6>مجموع ضريبة القيمة المضافة</h6>
+            <p>250 ر.س</p>
+          </div>
+          <div class="price-total">
+            <h4>اجمالي المبلغ المستحق</h4>
+            <h5>250 ر.س</h5>
+          </div>
+        </div>
+        <div class="rules">
+          <h4>
+            <span>الشروط و الاحكام :</span>هذا النص هو مثال لنص يمكن أن يستبدل
+            في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+            أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
+            الحروف التى يولدها التطبيق.
+          </h4>
+        </div>
+        <div class="scan">
+            <img src="photo/qur.png" alt="">
+        </div>
+     
+      </div>
+      <div class="end-reset">
+        <img src="photo/Vector.png" alt="">
+    </div>
+    </div>
+    <!-- reset page -->
+
+    <script src="js/aos-anmite.js"></script>
+    <script>
+      AOS.init({ disable: "mobile" });
+    </script>
+
+    <script>
+      let look = document.getElementById("look");
+      let content = document.getElementById("content");
+      look.onclick = function () {
+        look.classList.toggle("this");
+        content.classList.remove("this");
+      };
+      content.onclick = function () {
+        content.classList.toggle("this");
+        look.classList.remove("this");
+      };
+    </script>
+    <script>
+      $(document).ready(function () {
+        progress_bar();
+      });
+
+      function progress_bar() {
+        var speed = 30;
+        var items = $(".progress_bar").find(".progress_bar_item");
+
+        items.each(function () {
+          var item = $(this).find(".progress");
+          var itemValue = item.data("progress");
+          var i = 0;
+          var value = $(this);
+
+          var count = setInterval(function () {
+            if (i <= itemValue) {
+              var iStr = i.toString();
+              item.css({
+                width: iStr + "%",
+              });
+              value.find(".item_value").html(iStr + "%");
+            } else {
+              clearInterval(count);
+            }
+            i++;
+          }, speed);
+        });
+      }
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#content").on("click", function (e) {
+          e.preventDefault();
+          $("html, body").animate({
+            scrollTop: $(".head-bags").offset().top,
+          });
+        });
+      });
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

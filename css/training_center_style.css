@@ -33,7 +33,10 @@ body {
   background-color: white;
   counter-reset: section;
 }
-
+.tab-content > .active {
+  display: block;
+  padding: 1rem !important;
+}
 .fixed-navbar {
   position: fixed;
   top: 0;
@@ -71,6 +74,10 @@ body {
 }
 /* top_nav */
 /* nav */
+a.navbar-brand img {
+  width: 70px;
+  height: 70px;
+}
 nav.navbar.navbar-expand-lg {
   /* position: fixed; */
   height: 88px;
@@ -281,6 +288,8 @@ button.btn.btn-warning.start-now:hover {
 .drow svg {
   color: #e5890a;
   transition: 0.7s;
+  width: 20px;
+  height: 20px;
 }
 .card_introduction:hover {
   background-color: white;
@@ -297,6 +306,10 @@ button.btn.btn-warning.start-now:hover {
   justify-content: center;
   align-items: center;
   gap: 4px;
+}
+.frist-phone img {
+  width: 20px;
+  height: 20px;
 }
 .header h4 {
   background-image: linear-gradient(#fcfdff, #e5890a12);
@@ -378,6 +391,11 @@ button.nav-link:hover {
   align-items: center;
   font-family: "regular";
   margin-bottom: 0.8rem;
+}
+.title-go img {
+  width: 25px;
+  height: 25px;
+  margin-left: 8px;
 }
 .title-go h4 {
   margin-bottom: 0;
@@ -665,6 +683,9 @@ button#dropdownMenuButton1 {
 .img-sub img {
   width: 100%;
 }
+h4.ops {
+  width: 78px !important;
+}
 .adress {
   display: flex;
   justify-content: space-between;
@@ -698,7 +719,10 @@ button#dropdownMenuButton1 {
   padding: 0.2rem 0.8rem;
   border-radius: 32% 0 22% 0;
   color: white;
+  width: 47px;
+  height: 27px;
 }
+
 .star span {
   color: #656b78;
   font-family: "regular";
@@ -802,6 +826,8 @@ button#dropdownMenuButton1 {
 }
 .lastcard-sup img {
   animation: koko 2s ease infinite;
+  width: 30px;
+  height: 30px;
 }
 .lastcard-sup p {
   margin-bottom: 0;
@@ -829,6 +855,10 @@ span.arrwo {
   align-items: center;
   gap: 4px;
   margin-top: 0.5rem;
+}
+.deta-pro img {
+  width: 45px;
+  height: 45px;
 }
 .deta-pro h4 {
   margin-bottom: 0;
@@ -869,6 +899,11 @@ span.arrwo {
   right: 12px;
   border-radius: 15px;
   font-family: "regular";
+  width: 107px;
+  height: 32px;
+}
+.img-ads img {
+  width: 100%;
 }
 .all-teacher-card a {
   color: #000000;
@@ -885,6 +920,8 @@ svg.svg-inline--fa.fa-heart {
   background-color: white;
   padding: 0.4rem;
   border-radius: 50%;
+  width: 36px;
+  height: 36px;
 }
 #hid {
   background-color: white;
@@ -1167,6 +1204,8 @@ h4.week {
   right: 15px;
   padding: 0.5rem 1.5rem;
   text-align: center;
+  width: 65px;
+  height: 50px;
 }
 .cle h4 {
   display: flex;
@@ -1232,6 +1271,10 @@ h4.week {
   gap: 10px;
   color: white;
   margin-top: 1.5rem;
+}
+.imd-bag img {
+  width: 40px;
+  height: 40px;
 }
 .pro-bag {
   display: flex;
@@ -1477,6 +1520,8 @@ img.pro-reta {
   border: 1px double #e5890a;
   border-radius: 50%;
   padding: 0.1rem;
+  width: 42px;
+  height: 42px;
 }
 .Educational_bags .card-subject {
   display: block;
@@ -1563,9 +1608,7 @@ img.pro-reta {
   margin-top: -499px;
   background-color: white;
 }
-.Buy-the-course img {
-  width: 100%;
-}
+
 .price {
   display: flex;
   align-items: center;
@@ -1647,9 +1690,7 @@ img.pro-reta {
 .Buy-the-course .lastcard-sup {
   margin-bottom: 20px;
 }
-.Buy-the-course .all-lastsub img {
-  width: 10%;
-}
+
 .lastcard-sup1 {
   display: flex;
   justify-content: center;
@@ -1670,6 +1711,7 @@ img.pro-reta {
   color: #656b78ad;
   font-size: 0.8rem;
 }
+
 /* .lastcard-sup1 img {
   width: 25% !important;
 } */
@@ -1774,6 +1816,8 @@ img.pro-reta {
   border: 0.5px solid rgb(24 25 69 / 25%);
   border-radius: 10px;
   margin: 2rem 0;
+  overflow: scroll;
+  height: 520px;
 }
 .our-blog-page .card-plog a {
   text-decoration: none;
@@ -2568,6 +2612,9 @@ svg.svg-inline--fa.fa-list-check {
 .video-buy {
   position: relative;
 }
+.video-buy img {
+  width: 100%;
+}
 .video-buy svg {
   font-size: 4rem;
   position: absolute;
@@ -2662,6 +2709,7 @@ video {
 }
 .modal.show .modal-dialog {
   min-width: 566px !important;
+  margin-top: 6rem;
 }
 .genral {
   margin: 1rem 0;
@@ -2762,11 +2810,18 @@ button.btn.btn-addrate {
   font-size: 1rem;
   line-height: 1.3rem;
 }
+
 .who-we .beet-one img {
-  width: 10rem;
+  width: 210px;
+  height: 530px;
+  /* border: 2px solid #c57016; */
+  border-radius: 100px;
 }
 .who-we .beet-two img {
-  width: 10rem;
+  width: 210px;
+  height: 257px;
+  /* border: 2px solid #c57016; */
+  border-radius: 100px;
 }
 .who-we .steps-card {
   text-align: center;
@@ -2798,12 +2853,21 @@ button.btn.btn-addrate {
   display: flex;
   align-items: center;
 }
+
 .who-we .des p {
   margin-bottom: 0;
 }
 .who-we .card-teacher {
   margin-top: 4rem;
   position: relative;
+}
+img.main-photo {
+  width: 239px;
+  height: 248px;
+}
+img.staps1 {
+  width: 72px;
+  height: 56px;
 }
 
 .who-we .card-teacher::after {
@@ -2876,6 +2940,9 @@ button.btn.btn-addrate {
   background-repeat: no-repeat;
   width: 100%;
   height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .who-we .trainees-icon {
   display: flex;
@@ -2898,12 +2965,13 @@ button.btn.btn-addrate {
   background-color: #f1aa47;
   border-radius: 50%;
   padding: 0.5rem;
+  width: 60px;
+  height: 60px;
 }
 .who-we .tranining {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 15vh;
 }
 .who-we .head-what h4 {
   font-family: "bold";
@@ -2917,6 +2985,10 @@ button.btn.btn-addrate {
   justify-content: start;
   align-items: center;
   gap: 10px;
+}
+img.rewve {
+  width: 50px;
+  height: 50px;
 }
 .who-we .head-rate h4 {
   margin-bottom: 0;
@@ -3092,7 +3164,9 @@ button.btn.btn-addrate {
   margin-bottom: 2rem;
   width: 100%;
   border: 1px solid #0000003b;
-  overflow: hidden;
+}
+img.supss {
+  height: 300px;
 }
 .header-content {
   display: flex;
@@ -3400,6 +3474,7 @@ button.btn.btn-warning.start-now.ss:hover {
 .presonal-account .top .chat {
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+  width: 100%;
 }
 .presonal-account .top {
   background-color: white;
@@ -4153,6 +4228,7 @@ img#uploadedPhoto {
   border: 1px solid rgba(0, 0, 0, 0.185);
   border-radius: 10px;
   padding: 0.5rem;
+  margin-bottom: 1rem;
 }
 .bag-content .teacher .tranining {
   font-family: "bold";
@@ -4728,6 +4804,201 @@ audio {
 .btn-sart button:hover {
   background-color: #532807;
 }
+
+input[type="range"] {
+  -webkit-appearance: none !important;
+  background: #e58a0a;
+  height: 7px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background: blue;
+  height: 10px;
+  width: 10px;
+}
+
+#audio {
+  height: 80px;
+  width: 100%;
+  background-color: transparent;
+
+  display: flex;
+  margin-top: -5rem;
+  border: 1px solid #e58a0a;
+  position: relative;
+  overflow: hidden;
+}
+#audio span :nth-child(1) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, #fbedda, #e5890a);
+  animation: animate1 4s linear infinite;
+}
+@keyframes animate1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+#audio span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background: linear-gradient(to bottom, #fbedda, #e5890a);
+  animation: animate2 4s linear infinite;
+  animation-delay: 15s;
+}
+@keyframes animate2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+#audio span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to left, #fbedda, #e5890a);
+  animation: animate3 4s linear infinite;
+}
+
+@keyframes animate3 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+#audio span:nth-child(5) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, #fbedda, #e5890a);
+  animation: animate5 4s linear infinite;
+}
+
+@keyframes animate5 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+#audio span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 1px;
+  background: linear-gradient(to top, #fbedda, #e5890a);
+  animation: animate4 4s linear infinite;
+  animation-delay: 12s;
+}
+
+@keyframes animate4 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+#audio svg {
+  font-size: 2rem;
+  color: white;
+}
+#audio #bar {
+  position: relative;
+  top: 44%;
+  left: 23px;
+  height: 10px;
+  width: 100%;
+  margin: 0px;
+  background-color: rgb(139, 139, 139);
+  border-radius: 50px;
+}
+#audio #line {
+  position: relative;
+  height: 10px;
+  background-color: white;
+  border-radius: 50px;
+  margin-left: 0px;
+}
+#audio #pausebtn {
+  display: none;
+}
+#audio #unmute {
+  display: none;
+  float: left;
+}
+#audio #mute {
+  float: left;
+}
+#buttons {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+#audio button {
+  border: 0px;
+  background-color: transparent;
+  margin: 10px;
+  outline: none;
+}
+
+#audio #currentstat3,
+#audio #currentstat4 {
+  color: white;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 25px;
+  font-size: 25px;
+  font-family: ubuntu;
+  height: 30px;
+  min-width: 80px;
+  background-color: transparent;
+  font-family: "Medium";
+}
+#audio h1 {
+  margin: 14px;
+}
+#audio #volumediv {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+#audio #volumediv:hover #volume {
+  display: block;
+}
+#audio #volume {
+  width: 80px;
+  display: none;
+}
+#audio #volsvgan {
+  display: none;
+}
+
+#audio #tensec {
+  color: #fff;
+}
+
 /* personal */
 /* responsive */
 @media (min-width: 1600px) and (max-width: 2600px) {
@@ -4937,6 +5208,9 @@ audio {
   }
   .footer-main {
     height: 259px;
+  }
+  img.supss {
+    height: 341px;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -5202,6 +5476,13 @@ audio {
 }
 
 @media only screen and (max-width: 991.98px) {
+  img.supss {
+    height: 420px !important;
+  }
+  .small-box {
+    width: 40px;
+    height: 22px;
+  }
   .bag-content .det-teacher h4 {
     font-size: 0.8rem;
   }
@@ -5215,7 +5496,6 @@ audio {
     width: 5%;
   }
   .top_nav {
-    height: 98px;
     padding: 0.5rem;
   }
   .top_nav_detlies {
@@ -5976,7 +6256,7 @@ audio {
     font-size: 13px;
   }
   .our-blog-page .card-plog {
-    height: auto;
+    height: 262px;
     margin: 1.5rem 0;
   }
   .our-blog-page .card-plog h6 {
@@ -6116,6 +6396,7 @@ audio {
   }
   .who-we .all {
     flex-wrap: wrap;
+    margin-top: 8rem;
   }
   .who-we .all-teacher-card {
     overflow: scroll;
@@ -6127,7 +6408,7 @@ audio {
     flex-wrap: wrap;
   }
   .who-we .all-Trainees {
-    height: 134px;
+    height: 57px;
   }
   .who-we .trainees-icon {
     margin-top: 10px;
@@ -6321,6 +6602,10 @@ audio {
   .imd-bag {
     display: block;
   }
+  .imd-bag img {
+    width: 35px;
+    height: 35px;
+  }
   .pro-bag h4 {
     font-size: 0.7rem;
   }
@@ -6463,6 +6748,8 @@ audio {
   }
   .Indicator-details .sec-comple h4 {
     margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
   }
   .bag-content .Completion-rate {
     height: 100%;
@@ -6539,6 +6826,71 @@ audio {
   }
   .im-acco {
     gap: 4px;
+  }
+  .Indicator-details .audio-parent {
+    height: unset;
+  }
+
+  .Indicator-details .warrining h4 {
+    font-size: 0.9rem;
+  }
+  .Indicator-details button.next-indicatorbtn {
+    margin-bottom: 0.9rem;
+  }
+  a.navbar-brand img {
+    width: 50px;
+    height: 50px;
+  }
+  .frist-phone img {
+    width: 15px;
+    height: 15px;
+  }
+  .drow svg {
+    width: 15px;
+    height: 15px;
+  }
+  .love {
+    width: 33px;
+    height: 31px;
+  }
+  .deta-pro img {
+    width: 25px;
+    height: 25px;
+  }
+  .img-sub h4 {
+    width: 87px;
+    height: 27px;
+  }
+  .lastcard-sup img {
+    width: 20px;
+    height: 20px;
+  }
+  .small-box {
+    background-color: #e5890a;
+    padding: 0.2rem 0.8rem;
+    border-radius: 32% 0 22% 0;
+    color: white;
+    width: 40px;
+    height: 20px;
+  }
+  .who-we .beet-one img {
+    width: 154px;
+    height: 359px;
+    /* border: 2px solid #c57016; */
+    border-radius: 100px;
+  }
+  .who-we .beet-two img {
+    width: 132px;
+    height: 173px;
+    /* border: 2px solid #c57016; */
+    border-radius: 100px;
+  }
+  .who-we.who-we .trainees-icon img {
+    width: 30px;
+    height: 30px;
+  }
+  .who-we .text-icontran h4 {
+    font-size: 0.9rem;
   }
 }
 /* responsive */

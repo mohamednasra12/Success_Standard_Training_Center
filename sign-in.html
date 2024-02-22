@@ -177,7 +177,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-8 col-12">
-            <form action="" onsubmit="return validateForm()">
+            <form action="index.html" onsubmit="return validateForm()">
               <div class="title">
                 <h4>مرحباً بك في مركز <span> معيار النجاح للتدريب</span></h4>
                 <p>من فضلك قم بأدخال البيانات التالية للأستمرار</p>
@@ -213,9 +213,11 @@
                   <h5>نسيت كلمة المرور ؟</h5>
                 </a>
                 <!-- Button trigger modal -->
-                <button type="submit" class="btn btn-primary">
-                  تسجيل الدخول
-                </button>
+                
+                  <button type="submit" class="btn btn-primary">
+                    تسجيل الدخول
+                  </button>
+               
                 <a href="new-account.html">
                   <h6>ليس لديك حساب بعد؟ <span>انشاء حساب</span></h6></a
                 >
@@ -268,7 +270,7 @@
         $(".fa-eye").on("click", function () {
           var passwordInput = $("#password-now");
           var type = passwordInput.attr("type");
-    
+
           if (type === "password") {
             passwordInput.attr("type", "text");
           } else {

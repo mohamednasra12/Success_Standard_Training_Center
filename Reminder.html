@@ -131,6 +131,42 @@
             </ul>
 
             <ul class="btn">
+                            <!-- قبل تسجل الدخول -->
+
+              <!-- <li>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    EN
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">Arabic</a></li>
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                  </ul>
+                </div>
+              </li> -->
+              <!-- <li>
+                <a href="sign-in.html">
+                  <a href="sign-in.html">
+                    <button type="button" class="btn btn-warning signin">
+                      تسجيل الدخول
+                    </button>
+                  </a>
+                </a>
+              </li> -->
+               <!-- قبل تسجل الدخول -->
+            </ul>
+
+            <!-- بعد تسجل الدخول -->
+            <ul class="btn">
               <li>
                 <div class="dropdown">
                   <button
@@ -152,13 +188,96 @@
                 </div>
               </li>
               <li>
-                <a href="sign-in.html">
-                  <button type="button" class="btn btn-warning signin">
-                    تسجيل الدخول
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-regular fa-bell"></i>
                   </button>
-                </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle profile"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div class="profile-sin">
+                      <img
+                        id="uploadedPhotof"
+                        src="photo/samllpro.png"
+                        alt=""
+                      />
+                      <div class="text-profi">
+                        <div class="aro">
+                          <h4 id="inner1">احمد حوام السيد</h4>
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <p>طالب جامعي</p>
+                      </div>
+                    </div>
+                  </button>
+                  <ul
+                    class="dropdown-menu sin"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a class="dropdown-item sin" href="Personal-account.html">
+                        <img src="photo/icons/sit.svg" alt="" />اعدادات الملف
+                        الشخصي</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item sin" href="Personal-account.html"
+                        ><img src="photo/icons/sit1.svg" alt="" />حقائبي
+                        التعليمية</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item sin" href="Personal-account.html"
+                        ><img src="photo/icons/sit2.svg" alt="" />فواتيري</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item sin" href="Personal-account.html"
+                        ><img src="photo/icons/sit3.svg" alt="" />الرسائل</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item sin" href="Personal-account.html"
+                        ><img src="photo/icons/sit4.svg" alt="" />المفضلة</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item sin" href="Personal-account.html"
+                        ><img src="photo/icons/sit5.svg" alt="" />تسجيل
+                        الخروج</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </li>
             </ul>
+            <!-- بعد تسجل الدخول -->
           </div>
         </div>
       </nav>
@@ -199,15 +318,46 @@
               <h4>
                 لماذا نتعلم النحو و ما هي الخصائص الهامة به و كيف نطبقها ؟
               </h4>
-              <audio
-                src="https://actions.google.com/sounds/v1/science_fiction/robot_code.ogg"
-                controls
-              ></audio>
+              <div id="buttons"></div>
+
+              <div id="audio">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+           
+                <button id="playbtn" onclick="play()">
+                  <i class="fa-regular fa-circle-play"></i>
+                </button>
+                <button id="pausebtn" onclick="pause()">
+                  <i class="fa-solid fa-pause"></i>
+                </button>
+                <h1 id="currentstat4">0: 0</h1>
+                <div id="bar">
+                  <div id="line"></div>
+                </div>
+                <h1 id="currentstat3">0: 0</h1>
+                <div id="volumediv">
+                  <i class="fa-solid fa-volume-high"></i>
+                  <svg
+                    id="volsvgan"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 7.358v15.642l-8-5v-.785l8-9.857zm3-6.094l-1.548-1.264-3.446 4.247-6.006 3.753v3.646l-2 2.464v-6.11h-4v10h.843l-3.843 4.736 1.548 1.264 18.452-22.736z"
+                    />
+                  </svg>
+                  <input type="range" value="3" id="volume" max="10" min="0" />
+                </div>
+              </div>
             </div>
             <div class="head">
               <a href="#" id="look" class="this"> نظرة عامة</a>
               <a href="#" id="content"> اختبارات اللايف</a>
-              <a href="#" id="choosen"> اختباراتي الخاصة</a>
             </div>
             <div class="text-underviwe">
               <h5>
@@ -258,7 +408,7 @@
             <hr />
 
             <!-- acco -->
-            <div class="text-live">
+            <div class="text-live" id="go">
               <h4>اختبارات اللايف</h4>
               <p>4 اختبار . 40 سؤال . 35 اجابة صحيحة . 5 اجابات خاطئة</p>
             </div>
@@ -729,6 +879,96 @@
           });
         });
       });
+    </script>
+    <script>
+      var audio1 = new Audio(
+        "https://actions.google.com/sounds/v1/science_fiction/robot_code.ogg"
+      );
+
+      function play() {
+        var a = document.getElementById("playbtn");
+        var b = document.getElementById("pausebtn");
+        audio1.play();
+        a.style.display = "none";
+        b.style.display = "block";
+      }
+      function pause() {
+        var a = document.getElementById("playbtn");
+        var b = document.getElementById("pausebtn");
+        audio1.pause();
+        a.style.display = "block";
+        b.style.display = "none";
+      }
+
+      function mute() {
+        var m = document.getElementById("mute");
+        var n = document.getElementById("unmute");
+        audio1.muted = true;
+        m.style.display = "none";
+        n.style.display = "block";
+      }
+      function unmute() {
+        var m = document.getElementById("mute");
+        var n = document.getElementById("unmute");
+        audio1.muted = false;
+        m.style.display = "block";
+        n.style.display = "none";
+      }
+
+      //
+
+      function duration() {
+        if (audio1.readyState > 0) {
+          var minutes = parseInt(audio1.duration / 60, 10);
+          var seconds = parseInt(audio1.duration % 60);
+          document.getElementById("currentstat3").innerHTML =
+            minutes + ": " + seconds;
+        }
+      }
+
+      function curtime() {
+        setInterval(function () {
+          var minutes = parseInt(audio1.currentTime / 60, 10);
+          var seconds = parseInt(audio1.currentTime % 60);
+          document.getElementById("currentstat4").innerHTML =
+            minutes + ": " + seconds;
+        }, 1000);
+      }
+
+      function bar() {
+        setInterval(function () {
+          var totaltime = audio1.duration.toFixed(0);
+          var currenttime = audio1.currentTime.toFixed(0);
+          var time = (currenttime * 100) / totaltime;
+          var line = document.getElementById("line");
+          line.style.width = time + "%";
+        }, 500);
+      }
+
+      function vol() {
+        setInterval(function () {
+          var volume = document.getElementById("volume").value;
+          var vol = volume / 10;
+          audio1.volume = vol;
+          console.log(vol);
+        }, 500);
+      }
+
+      function volbtnm() {
+        setInterval(function () {
+          var volume = document.getElementById("volume").value;
+          var vol = volume / 10;
+          var svg = document.getElementById("volsvg");
+          var ansvg = document.getElementById("volsvgan");
+          if (vol < 0.1) {
+            svg.style.display = "none";
+            ansvg.style.display = "block";
+          } else {
+            ansvg.style.display = "none";
+            svg.style.display = "block";
+          }
+        }, 1000);
+      }
     </script>
 
     <script src="js/main.js"></script>

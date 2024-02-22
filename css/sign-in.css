@@ -658,25 +658,16 @@ padding: .8rem;
 }
 /* table invoice */
 @media only screen and (max-width: 1400px) {
-  .presonal-account .img-sub img {
-    /* height: 252px; */
-    height: 50vh !important;
-  }
+ 
 }
 @media only screen and (min-width: 1300px) {
   .register form .form-group .password-icon .auth {
     width: 88%;
   }
-  .presonal-account .img-sub img {
-    /* height: 252px; */
-    height: 47vh !important;
-  }
+ 
 }
 @media only screen and (max-width: 1100px) {
-  .presonal-account .img-sub img {
-    /* height: 252px; */
-    height: 48vh !important;
-  }
+ 
   .tab-favourite .card-subject {
     justify-content: flex-start;
   }

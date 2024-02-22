@@ -34,7 +34,7 @@
 
     <!-- ? Custom JavaScript -->
 
-    <title>تفاصيل الحقيبة </title>
+    <title>تفاصيل الحقيبة</title>
   </head>
   <body>
     <!-- top_nav -->
@@ -130,6 +130,42 @@
             </ul>
 
             <ul class="btn">
+                            <!-- قبل تسجل الدخول -->
+
+              <!-- <li>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    EN
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">Arabic</a></li>
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                  </ul>
+                </div>
+              </li> -->
+              <!-- <li>
+                <a href="sign-in.html">
+                  <a href="sign-in.html">
+                    <button type="button" class="btn btn-warning signin">
+                      تسجيل الدخول
+                    </button>
+                  </a>
+                </a>
+              </li> -->
+               <!-- قبل تسجل الدخول -->
+            </ul>
+
+            <!-- بعد تسجل الدخول -->
+            <ul class="btn">
               <li>
                 <div class="dropdown">
                   <button
@@ -151,13 +187,96 @@
                 </div>
               </li>
               <li>
-                <a href="sign-in.html">
-                  <button type="button" class="btn btn-warning signin">
-                    تسجيل الدخول
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-regular fa-bell"></i>
                   </button>
-                </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle profile"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div class="profile-sin">
+                      <img
+                        id="uploadedPhotof"
+                        src="photo/samllpro.png"
+                        alt=""
+                      />
+                      <div class="text-profi">
+                        <div class="aro">
+                          <h4 id="inner1">احمد حوام السيد</h4>
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <p>طالب جامعي</p>
+                      </div>
+                    </div>
+                  </button>
+                  <ul
+                    class="dropdown-menu sin"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a class="dropdown-item sin" href="Personal-account.html">
+                        <img src="photo/icons/sit.svg" alt="" />اعدادات الملف
+                        الشخصي</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item sin" href="Personal-account.html"
+                        ><img src="photo/icons/sit1.svg" alt="" />حقائبي
+                        التعليمية</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item sin" href="Personal-account.html"
+                        ><img src="photo/icons/sit2.svg" alt="" />فواتيري</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item sin" href="Personal-account.html"
+                        ><img src="photo/icons/sit3.svg" alt="" />الرسائل</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item sin" href="Personal-account.html"
+                        ><img src="photo/icons/sit4.svg" alt="" />المفضلة</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item sin" href="Personal-account.html"
+                        ><img src="photo/icons/sit5.svg" alt="" />تسجيل
+                        الخروج</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </li>
             </ul>
+            <!-- بعد تسجل الدخول -->
           </div>
         </div>
       </nav>
@@ -676,6 +795,150 @@
                 </div>
               </div>
               <hr />
+            </div>
+            <div class="col-lg-3 col-md-12 col-12">
+              <div class="Buy-the-course">
+                <div class="video-buy">
+                  <img src="photo/video.png" alt="" />
+                  <i class="fa-solid fa-circle-play" onclick="blockAlert()"></i>
+                </div>
+                <div class="price">
+                  <h4>1655 ر.س</h4>
+                  <h4>
+                    <span><del>1855 ر.س</del></span>
+                  </h4>
+
+                  <div class="discount">
+                    <img src="photo/icons/discount-shape.svg" alt="" />
+                    <p>خصم 25%</p>
+                  </div>
+                </div>
+                <div class="allarm">
+                  <img src="photo/icons/allarm.svg" alt="" />
+                  <p>متبقي 4 ايام علي هذا السعر</p>
+                </div>
+                <div class="lang-arab">
+                  <a href="#"> <h4 class="lang-arabhov">اللغة العربية</h4></a>
+                  <h4>متبقي 20 متدرب</h4>
+                  <h4>ذكور - اناث</h4>
+                </div>
+                <div class="all-lastsub">
+                  <div
+                    class="lastcard-sup"
+                    onmouseover="big()"
+                    onmouseout="norma()"
+                  >
+                    <img src="photo/icons/celender.svg" alt="" />
+                    <p>
+                      2024-05-30
+                      <span class="arrwo"
+                        ><i class="fa-solid fa-arrow-left-long"></i>
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                      </span>
+                      2024-02-24
+                    </p>
+                  </div>
+                  <div id="go-hid" style="display: none">
+                    <div class="scools">
+                      <img src="photo/icons/scools.svg" alt="" />
+                      <div class="text-scoo">
+                        <h4>ايام الدراسة الاسبوعية</h4>
+                        <p>من الاحد الي الخميس ( استثناء العطلات الرسمية )</p>
+                      </div>
+                    </div>
+                    <div class="scools">
+                      <img src="photo/icons/holiday.svg" alt="" />
+                      <div class="text-scoo">
+                        <h4>ايام العطلات</h4>
+                        <p>ايام الجمعة و السبت</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lastcard-sup">
+                    <img src="photo/icons/hat.svg" alt="" />
+                    <p>25 محاضرات عن بُعد</p>
+                  </div>
+                  <div class="lastcard-sup">
+                    <img src="photo/icons/hore.svg" alt="" />
+                    <p>1520 ساعة</p>
+                  </div>
+                  <div class="lastcard-sup">
+                    <img src="photo/icons/f.svg" alt="" />
+                    <p>( الحد الادني - الحد الاعلي ) : 10 -30 متدرب</p>
+                  </div>
+                  <div class="lastcard-sup">
+                    <img src="photo/icons/f2.svg" alt="" />
+                    <p>امكانية مراسلة المدربين</p>
+                  </div>
+                  <div class="lastcard-sup">
+                    <img src="photo/icons/f3.svg" alt="" />
+                    <p>اختبارات دورية و بنك اسئلة متكامل</p>
+                  </div>
+                  <div class="lastcard-sup">
+                    <img src="photo/icons/f4.svg" alt="" />
+                    <p>مكتبه مراجع متخصصه</p>
+                  </div>
+                  <div class="lastcard-sup">
+                    <img src="photo/icons/day.svg" alt="" />
+                    <p>85 يوم</p>
+                  </div>
+                  <div class="lastcard-sup">
+                    <img src="photo/icons/f5.svg" alt="" />
+                    <p>1520 اجمالي عدد الساعات</p>
+                  </div>
+                  <div class="lastcard-sup1">
+                    <img src="photo/icons/f6.svg" alt="" />
+                    <div class="lasup">
+                      <h4>شهادات معتمدة من خلالنا</h4>
+                      <p>
+                        تمنح شهادة اتمام البرنامج معتمدة من مركز معيار النجاح
+                        للتدريب و هي شهادة مؤهلة لدخول اختبار الرخصة المهنيةو
+                        ليست شهادة معتمدة من هيئة التقويم و التدريب
+                      </p>
+                    </div>
+                  </div>
+                  <div class="lastcard-sup-2">
+                    <img src="photo/icons/f7.svg" alt="" />
+                    <div class="lasup">
+                      <h4>الدفع عبر:</h4>
+                      <a href="#"
+                        ><img src="photo/Payment Icons.png" alt=""
+                      /></a>
+                      <a href="#"><img src="photo/Payment 1.png" alt="" /></a>
+                      <a href="#"><img src="photo/Payment 2.png" alt="" /></a>
+                      <a href="#"><img src="photo/Payment3.png" alt="" /></a>
+                      <a href="#"><img src="photo/Payment 4s.png" alt="" /></a>
+                    </div>
+                  </div>
+                  <div class="btn-buy">
+                    <a href="Bag-content.html">
+                      <button type="button" class="btn btn-warning">
+                        شراء الكورس
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="help-card">
+                <div class="help-text">
+                  <h4>هل تريد مساعدة ؟؟</h4>
+                  <p>
+                    لا تتردد في الاتصال بنا. نحن فريق من الخبراء ويسعدنا التحدث
+                    معك
+                  </p>
+                </div>
+                <hr />
+                <div class="call-help">
+                  <img src="photo/icons/call.png" alt="" />
+                  <p>+ 61 23 8093 3400</p>
+                </div>
+                <div class="call-help">
+                  <img src="photo/icons/emil.svg" alt="" />
+                  <p>someone22@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-9 col-md-12 col-12">
               <div class="allrate">
                 <div class="rate-bags">
                   <div class="rate-rols">
@@ -878,242 +1141,106 @@
                   </div>
                 </div>
               </div>
-             <div class="all-descri">
-              <div class="rate-description">
-                <div class="img-ratedes">
-                  <img class="pro-reta" src="photo/samllpro.png" alt="" />
-                  <div class="text-ratedes">
-                    <h4>Ahmed Fathy</h4>
-                    <div class="svg">
-                      <i class="fa-solid fa-star" style="color: #ffc635"></i>
-                      <i class="fa-solid fa-star" style="color: #ffc635"></i>
-                      <i class="fa-solid fa-star" style="color: #ffc635"></i>
-                      <i class="fa-solid fa-star" style="color: #ffc635"></i>
-                      <i class="fa-solid fa-star" style="color: #ffc635"></i>
-                      <p>2023,5 April</p>
-                    </div>
-                    <p class="text-under">
-                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
-                      توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
-                      هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
-                      الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد أكبر من
-                      الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما
-                      تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية،
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="rate-description">
-                <div class="img-ratedes">
-                  <img class="pro-reta" src="photo/samllpro.png" alt="" />
-                  <div class="text-ratedes">
-                    <h4>Ahmed Fathy</h4>
-                    <div class="svg">
-                      <i class="fa-solid fa-star" style="color: #ffc635"></i>
-                      <i class="fa-solid fa-star" style="color: #ffc635"></i>
-                      <i class="fa-solid fa-star" style="color: #ffc635"></i>
-                      <i class="fa-solid fa-star" style="color: #ffc635"></i>
-                      <i class="fa-solid fa-star" style="color: #ffc635"></i>
-                      <p>2023,5 April</p>
-                    </div>
-                    <p class="text-under">
-                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
-                      توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
-                      هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
-                      الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد أكبر من
-                      الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما
-                      تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية،
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="rate-description">
-                <div class="img-ratedes">
-                  <img class="pro-reta" src="photo/samllpro.png" alt="" />
-                  <div class="text-ratedes">
-                    <h4>Ahmed Fathy</h4>
-                    <div class="svg">
-                      <i class="fa-solid fa-star" style="color: #ffc635"></i>
-                      <i class="fa-solid fa-star" style="color: #ffc635"></i>
-                      <i class="fa-solid fa-star" style="color: #ffc635"></i>
-                      <i class="fa-solid fa-star" style="color: #ffc635"></i>
-                      <i class="fa-solid fa-star" style="color: #ffc635"></i>
-                      <p>2023,5 April</p>
-                    </div>
-                    <p class="text-under">
-                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
-                      توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
-                      هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
-                      الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد أكبر من
-                      الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما
-                      تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية،
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="rate-description">
-                <div class="img-ratedes">
-                  <img class="pro-reta" src="photo/samllpro.png" alt="" />
-                  <div class="text-ratedes">
-                    <h4>Ahmed Fathy</h4>
-                    <div class="svg">
-                      <i class="fa-solid fa-star" style="color: #ffc635"></i>
-                      <i class="fa-solid fa-star" style="color: #ffc635"></i>
-                      <i class="fa-solid fa-star" style="color: #ffc635"></i>
-                      <i class="fa-solid fa-star" style="color: #ffc635"></i>
-                      <i class="fa-solid fa-star" style="color: #ffc635"></i>
-                      <p>2023,5 April</p>
-                    </div>
-                    <p class="text-under">
-                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
-                      توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
-                      هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
-                      الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد أكبر من
-                      الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما
-                      تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية،
-                    </p>
-                  </div>
-                </div>
-              </div>
-             </div>
-            </div>
-            <div class="col-lg-3 col-md-12 col-12">
-              <div class="Buy-the-course">
-                <div class="video-buy">
-                  <img src="photo/video.png" alt="" />
-                  <i class="fa-solid fa-circle-play" onclick="blockAlert()"></i>
-                </div>
-                <div class="price">
-                  <h4>1655 ر.س</h4>
-                  <h4>
-                    <span><del>1855 ر.س</del></span>
-                  </h4>
-
-                  <div class="discount">
-                    <img src="photo/icons/discount-shape.svg" alt="" />
-                    <p>خصم 25%</p>
-                  </div>
-                </div>
-                <div class="allarm">
-                  <img src="photo/icons/allarm.svg" alt="" />
-                  <p>متبقي 4 ايام علي هذا السعر</p>
-                </div>
-                <div class="lang-arab">
-                  <a href="#"> <h4 class="lang-arabhov">اللغة العربية</h4></a>
-                  <h4>متبقي 20 متدرب</h4>
-                  <h4>ذكور - اناث</h4>
-                </div>
-                <div class="all-lastsub">
-                  <div
-                    class="lastcard-sup"
-                    onmouseover="big()"
-                    onmouseout="norma()"
-                  >
-                    <img src="photo/icons/celender.svg" alt="" />
-                    <p>
-                      2024-05-30
-                      <span class="arrwo"
-                        ><i class="fa-solid fa-arrow-left-long"></i>
-                        <i class="fa-solid fa-arrow-left-long"></i>
-                      </span>
-                      2024-02-24
-                    </p>
-                  </div>
-                  <div id="go-hid" style="display: none">
-                    <div class="scools">
-                      <img src="photo/icons/scools.svg" alt="" />
-                      <div class="text-scoo">
-                        <h4>ايام الدراسة الاسبوعية</h4>
-                        <p>من الاحد الي الخميس ( استثناء العطلات الرسمية )</p>
+              <div class="all-descri">
+                <div class="rate-description">
+                  <div class="img-ratedes">
+                    <img class="pro-reta" src="photo/samllpro.png" alt="" />
+                    <div class="text-ratedes">
+                      <h4>Ahmed Fathy</h4>
+                      <div class="svg">
+                        <i class="fa-solid fa-star" style="color: #ffc635"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc635"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc635"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc635"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc635"></i>
+                        <p>2023,5 April</p>
                       </div>
-                    </div>
-                    <div class="scools">
-                      <img src="photo/icons/holiday.svg" alt="" />
-                      <div class="text-scoo">
-                        <h4>ايام العطلات</h4>
-                        <p>ايام الجمعة و السبت</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="lastcard-sup">
-                    <img src="photo/icons/hat.svg" alt="" />
-                    <p>25 محاضرات عن بُعد</p>
-                  </div>
-                  <div class="lastcard-sup">
-                    <img src="photo/icons/hore.svg" alt="" />
-                    <p>1520 ساعة</p>
-                  </div>
-                  <div class="lastcard-sup">
-                    <img src="photo/icons/f.svg" alt="" />
-                    <p>( الحد الادني - الحد الاعلي ) : 10 -30 متدرب</p>
-                  </div>
-                  <div class="lastcard-sup">
-                    <img src="photo/icons/f2.svg" alt="" />
-                    <p>امكانية مراسلة المدربين</p>
-                  </div>
-                  <div class="lastcard-sup">
-                    <img src="photo/icons/f3.svg" alt="" />
-                    <p>اختبارات دورية و بنك اسئلة متكامل</p>
-                  </div>
-                  <div class="lastcard-sup">
-                    <img src="photo/icons/f4.svg" alt="" />
-                    <p>مكتبه مراجع متخصصه</p>
-                  </div>
-                  <div class="lastcard-sup">
-                    <img src="photo/icons/day.svg" alt="" />
-                    <p>85 يوم</p>
-                  </div>
-                  <div class="lastcard-sup">
-                    <img src="photo/icons/f5.svg" alt="" />
-                    <p>1520 اجمالي عدد الساعات</p>
-                  </div>
-                  <div class="lastcard-sup1">
-                    <img src="photo/icons/f6.svg" alt="" />
-                    <div class="lasup">
-                      <h4>شهادات معتمدة من خلالنا</h4>
-                      <p>
-                        تمنح شهادة اتمام البرنامج معتمدة من مركز معيار النجاح
-                        للتدريب و هي شهادة مؤهلة لدخول اختبار الرخصة المهنيةو
-                        ليست شهادة معتمدة من هيئة التقويم و التدريب
+                      <p class="text-under">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                        تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                        مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة
+                        عدد الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد
+                        أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                        الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء
+                        لغوية،
                       </p>
                     </div>
                   </div>
-                  <div class="lastcard-sup-2">
-                    <img src="photo/icons/f7.svg" alt="" />
-                    <div class="lasup">
-                      <h4>الدفع عبر:</h4>
-                      <a href="#"
-                        ><img src="photo/Payment Icons.png" alt=""
-                      /></a>
-                      <a href="#"><img src="photo/Payment 1.png" alt="" /></a>
-                      <a href="#"><img src="photo/Payment 2.png" alt="" /></a>
-                      <a href="#"><img src="photo/Payment3.png" alt="" /></a>
-                      <a href="#"><img src="photo/Payment 4s.png" alt="" /></a>
+                </div>
+                <div class="rate-description">
+                  <div class="img-ratedes">
+                    <img class="pro-reta" src="photo/samllpro.png" alt="" />
+                    <div class="text-ratedes">
+                      <h4>Ahmed Fathy</h4>
+                      <div class="svg">
+                        <i class="fa-solid fa-star" style="color: #ffc635"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc635"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc635"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc635"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc635"></i>
+                        <p>2023,5 April</p>
+                      </div>
+                      <p class="text-under">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                        تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                        مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة
+                        عدد الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد
+                        أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                        الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء
+                        لغوية،
+                      </p>
                     </div>
                   </div>
-                  <div class="btn-buy">
-                    <button type="button" class="btn btn-warning">
-                      شراء الكورس
-                    </button>
+                </div>
+                <div class="rate-description">
+                  <div class="img-ratedes">
+                    <img class="pro-reta" src="photo/samllpro.png" alt="" />
+                    <div class="text-ratedes">
+                      <h4>Ahmed Fathy</h4>
+                      <div class="svg">
+                        <i class="fa-solid fa-star" style="color: #ffc635"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc635"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc635"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc635"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc635"></i>
+                        <p>2023,5 April</p>
+                      </div>
+                      <p class="text-under">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                        تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                        مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة
+                        عدد الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد
+                        أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                        الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء
+                        لغوية،
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="help-card">
-                <div class="help-text">
-                  <h4>هل تريد مساعدة ؟؟</h4>
-                  <p>
-                    لا تتردد في الاتصال بنا. نحن فريق من الخبراء ويسعدنا التحدث
-                    معك
-                  </p>
-                </div>
-                <hr />
-                <div class="call-help">
-                  <img src="photo/icons/call.png" alt="" />
-                  <p>+ 61 23 8093 3400</p>
-                </div>
-                <div class="call-help">
-                  <img src="photo/icons/emil.svg" alt="" />
-                  <p>someone22@gmail.com</p>
+                <div class="rate-description">
+                  <div class="img-ratedes">
+                    <img class="pro-reta" src="photo/samllpro.png" alt="" />
+                    <div class="text-ratedes">
+                      <h4>Ahmed Fathy</h4>
+                      <div class="svg">
+                        <i class="fa-solid fa-star" style="color: #ffc635"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc635"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc635"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc635"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc635"></i>
+                        <p>2023,5 April</p>
+                      </div>
+                      <p class="text-under">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                        تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                        مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة
+                        عدد الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد
+                        أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                        الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء
+                        لغوية،
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

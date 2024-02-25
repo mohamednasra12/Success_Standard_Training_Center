@@ -6,6 +6,10 @@
     <!-- ? Main CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <!-- ? Custom CSS -->
     <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
     <link rel="stylesheet" href="css/training_center_style.css" />
@@ -23,6 +27,7 @@
     <!-- ? Custom CSS -->
     <!-- ? Main JavaScript -->
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/fontawesome.min.js"></script>
@@ -229,6 +234,11 @@
                     <li>
                       <a class="dropdown-item sin" href="Personal-account.html"
                         ><img src="photo/icons/sit4.svg" alt="" />المفضلة</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item sin" href="library.html"
+                        ><img src="photo/icons/sit1.svg" alt="" />المكتبه</a
                       >
                     </li>
                     <li>
@@ -618,7 +628,7 @@
                   </div>
                   <div class="row">
                     <div class="col-lg-6 col-md-6 col-12">
-                      <a href="Bag-content.html">
+                    
                         <div class="card-subject">
                           <div class="img-sub">
                             <img src="photo/one.png" alt="" />
@@ -638,23 +648,28 @@
                                   class="dropdown-menu"
                                   aria-labelledby="dropdownMenuButton1"
                                 >
-                                  <li>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#"
-                                      >Another action</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#"
-                                      >Something else here</a
-                                    >
-                                  </li>
+                                <li>
+                                  <a class="dropdown-item" href="show-reset.html">
+                                    <img
+                                      src="photo/icons/drop1.svg"
+                                      alt=""
+                                    />عرض الفاتورة</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img
+                                      src="photo/icons/drop2.svg"
+                                      alt=""
+                                    />مشاركة</a
+                                  >
+                                </li>
+                                 
                                 </ul>
                               </div>
                             </div>
                           </div>
+                        <a href="Bag-content.html">
                           <div class="text-sub">
                             <div class="adress">
                               <h4>
@@ -663,15 +678,25 @@
                               </h4>
                             </div>
                             <div class="star">
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
+                              <div class="star" onclick="toggleStar(1)">
+                                <i id="star1" class="fa-regular fa-star"></i>
+                              </div>
+                              <div class="star" onclick="toggleStar(2)">
+                                <i id="star2" class="fa-regular fa-star"></i>
+                              </div>
+                              <div class="star" onclick="toggleStar(3)">
+                                <i id="star3" class="fa-regular fa-star"></i>
+                              </div>
+                              <div class="star" onclick="toggleStar(4)">
+                                <i id="star4" class="fa-regular fa-star"></i>
+                              </div>
+                              <div class="star" onclick="toggleStar(5)">
+                                <i id="star5" class="fa-regular fa-star"></i>
+                              </div>
                               <div class="small-box">5.9</div>
                               <span>( 220 تقييم )</span>
                             </div>
-                            <div class="profile">
+                            <div class="profiles">
                               <div class="deta-pro">
                                 <a href="page-detalis.html">
                                   <img
@@ -826,11 +851,20 @@
                               </div>
                             </div>
                           </div>
+                        </a>
+                          <div class="progress_bar">
+                            <div class="progress_bar_item">
+                              <div class="item_value cell shrink">0%</div>
+                              <div class="item_bar cell">
+                                <div class="progress" data-progress="90"></div>
+                                <h4>مستوي التقدم</h4>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </a>
                     </div>
                     <div class="col-lg-6 col-md-6 col-12">
-                      <a href="Bag-content.html">
+                     
                         <div class="card-subject">
                           <div class="img-sub">
                             <img src="photo/one.png" alt="" />
@@ -850,23 +884,27 @@
                                   class="dropdown-menu"
                                   aria-labelledby="dropdownMenuButton1"
                                 >
-                                  <li>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#"
-                                      >Another action</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#"
-                                      >Something else here</a
-                                    >
-                                  </li>
+                                <li>
+                                  <a class="dropdown-item" href="show-reset.html">
+                                    <img
+                                      src="photo/icons/drop1.svg"
+                                      alt=""
+                                    />عرض الفاتورة</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img
+                                      src="photo/icons/drop2.svg"
+                                      alt=""
+                                    />مشاركة</a
+                                  >
+                                </li>
                                 </ul>
                               </div>
                             </div>
                           </div>
+                         <a href="Bag-content.html">
                           <div class="text-sub">
                             <div class="adress">
                               <h4>
@@ -875,15 +913,25 @@
                               </h4>
                             </div>
                             <div class="star">
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
+                              <div class="star" onclick="toggleStar(6)">
+                                <i id="star6" class="fa-regular fa-star"></i>
+                              </div>
+                              <div class="star" onclick="toggleStar(7)">
+                                <i id="star7" class="fa-regular fa-star"></i>
+                              </div>
+                              <div class="star" onclick="toggleStar(8)">
+                                <i id="star8" class="fa-regular fa-star"></i>
+                              </div>
+                              <div class="star" onclick="toggleStar(9)">
+                                <i id="star9" class="fa-regular fa-star"></i>
+                              </div>
+                              <div class="star" onclick="toggleStar(10)">
+                                <i id="star10" class="fa-regular fa-star"></i>
+                              </div>
                               <div class="small-box">5.9</div>
                               <span>( 220 تقييم )</span>
                             </div>
-                            <div class="profile">
+                            <div class="profiles">
                               <div class="deta-pro">
                                 <a href="page-detalis.html">
                                   <img
@@ -1037,11 +1085,21 @@
                               </div>
                             </div>
                           </div>
+                         </a>
+                          <div class="progress_bar">
+                            <div class="progress_bar_item">
+                              <div class="item_value cell shrink">0%</div>
+                              <div class="item_bar cell">
+                                <div class="progress" data-progress="45"></div>
+                                <h4>مستوي التقدم</h4>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </a>
+                     
                     </div>
                     <div class="col-lg-6 col-md-6 col-12">
-                      <a href="Bag-content.html">
+                    
                         <div class="card-subject">
                           <div class="img-sub">
                             <img src="photo/one.png" alt="" />
@@ -1061,23 +1119,27 @@
                                   class="dropdown-menu"
                                   aria-labelledby="dropdownMenuButton1"
                                 >
-                                  <li>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#"
-                                      >Another action</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#"
-                                      >Something else here</a
-                                    >
-                                  </li>
+                                <li>
+                                  <a class="dropdown-item" href="show-reset.html">
+                                    <img
+                                      src="photo/icons/drop1.svg"
+                                      alt=""
+                                    />عرض الفاتورة</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img
+                                      src="photo/icons/drop2.svg"
+                                      alt=""
+                                    />مشاركة</a
+                                  >
+                                </li>
                                 </ul>
                               </div>
                             </div>
                           </div>
+                         <a href="Bag-content.html">
                           <div class="text-sub">
                             <div class="adress">
                               <h4>
@@ -1086,15 +1148,25 @@
                               </h4>
                             </div>
                             <div class="star">
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
+                              <div class="star" onclick="toggleStar(11)">
+                                <i id="star11" class="fa-regular fa-star"></i>
+                              </div>
+                              <div class="star" onclick="toggleStar(12)">
+                                <i id="star12" class="fa-regular fa-star"></i>
+                              </div>
+                              <div class="star" onclick="toggleStar(13)">
+                                <i id="star13" class="fa-regular fa-star"></i>
+                              </div>
+                              <div class="star" onclick="toggleStar(14)">
+                                <i id="star14" class="fa-regular fa-star"></i>
+                              </div>
+                              <div class="star" onclick="toggleStar(15)">
+                                <i id="star15" class="fa-regular fa-star"></i>
+                              </div>
                               <div class="small-box">5.9</div>
                               <span>( 220 تقييم )</span>
                             </div>
-                            <div class="profile">
+                            <div class="profiles">
                               <div class="deta-pro">
                                 <a href="page-detalis.html">
                                   <img
@@ -1249,11 +1321,20 @@
                               </div>
                             </div>
                           </div>
+                         </a>
+                          <div class="progress_bar">
+                            <div class="progress_bar_item">
+                              <div class="item_value cell shrink">0%</div>
+                              <div class="item_bar cell">
+                                <div class="progress" data-progress="60"></div>
+                                <h4>مستوي التقدم</h4>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </a>
+                  
                     </div>
                     <div class="col-lg-6 col-md-6 col-12">
-                      <a href="Bag-content.html">
                         <div class="card-subject">
                           <div class="img-sub">
                             <img src="photo/one.png" alt="" />
@@ -1274,7 +1355,7 @@
                                   aria-labelledby="dropdownMenuButton1"
                                 >
                                   <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="show-reset.html">
                                       <img
                                         src="photo/icons/drop1.svg"
                                         alt=""
@@ -1293,6 +1374,7 @@
                               </div>
                             </div>
                           </div>
+                        <a href="Bag-content.html">
                           <div class="text-sub">
                             <div class="adress">
                               <h4>
@@ -1301,16 +1383,26 @@
                               </h4>
                             </div>
                             <div class="star">
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
-                              <i class="fa-regular fa-star"></i>
+                              <div class="star" onclick="toggleStar(16)">
+                                <i id="star16" class="fa-regular fa-star"></i>
+                              </div>
+                              <div class="star" onclick="toggleStar(17)">
+                                <i id="star17" class="fa-regular fa-star"></i>
+                              </div>
+                              <div class="star" onclick="toggleStar(18)">
+                                <i id="star18" class="fa-regular fa-star"></i>
+                              </div>
+                              <div class="star" onclick="toggleStar(19)">
+                                <i id="star19" class="fa-regular fa-star"></i>
+                              </div>
+                              <div class="star" onclick="toggleStar(20)">
+                                <i id="star20" class="fa-regular fa-star"></i>
+                              </div>
                               <div class="small-box">5.9</div>
                               <span>( 220 تقييم )</span>
                             </div>
 
-                            <div class="profile">
+                            <div class="profiles">
                               <div class="deta-pro">
                                 <a href="page-detalis.html">
                                   <img
@@ -1465,8 +1557,18 @@
                               </div>
                             </div>
                           </div>
+                        </a>
+                          <div class="progress_bar">
+                            <div class="progress_bar_item">
+                              <div class="item_value cell shrink">0%</div>
+                              <div class="item_bar cell">
+                                <div class="progress" data-progress="50"></div>
+                                <h4>مستوي التقدم</h4>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </a>
+                     
                     </div>
                   </div>
                 </div>
@@ -1566,62 +1668,10 @@
                                 aria-labelledby="dropdownMenuButton1"
                               >
                                 <li>
-                                  <a class="dropdown-item" href="show-reset.html">
-                                    <img src="photo/icons/show.svg" alt="" />
-                                    عرض الفاتورة
-                                  </a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#"
-                                    ><img src="photo/icons/don.svg" alt="" /> 
-                                    طباعة الفاتورة</a
+                                  <a
+                                    class="dropdown-item"
+                                    href="show-reset.html"
                                   >
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#"
-                                    ><img src="photo/icons/share.svg" alt="" />
-                                    مشاركة</a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>#2451</td>
-                          <td class="td">
-                            البرنامج التدريبي لتأهيل معلمي اللغة العربية للحصول
-                            علي الرخصة المهنية
-                          </td>
-                          <td>2024-25-01</td>
-                          <td>
-                            2024-25-01
-                            <img
-                              src="photo/icons/arrow-switch-horizontal.svg"
-                              alt=""
-                            />
-                            2024-25-01
-                          </td>
-                          <td>
-                            <div class="price-table"><h6>250 ر.س</h6></div>
-                          </td>
-                          <td>
-                            <div class="dropdown">
-                              <button
-                                class="btn-table"
-                                type="button"
-                                id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
-                                <img src="photo/icons/menu.svg" alt="" />
-                              </button>
-                              <ul
-                                class="dropdown-menu"
-                                aria-labelledby="dropdownMenuButton1"
-                              >
-                                <li>
-                                  <a class="dropdown-item" href="show-reset.html">
                                     <img src="photo/icons/show.svg" alt="" />
                                     عرض الفاتورة
                                   </a>
@@ -1676,7 +1726,10 @@
                                 aria-labelledby="dropdownMenuButton1"
                               >
                                 <li>
-                                  <a class="dropdown-item" href="show-reset.html">
+                                  <a
+                                    class="dropdown-item"
+                                    href="show-reset.html"
+                                  >
                                     <img src="photo/icons/show.svg" alt="" />
                                     عرض الفاتورة
                                   </a>
@@ -1731,7 +1784,10 @@
                                 aria-labelledby="dropdownMenuButton1"
                               >
                                 <li>
-                                  <a class="dropdown-item" href="show-reset.html">
+                                  <a
+                                    class="dropdown-item"
+                                    href="show-reset.html"
+                                  >
                                     <img src="photo/icons/show.svg" alt="" />
                                     عرض الفاتورة
                                   </a>
@@ -1786,7 +1842,10 @@
                                 aria-labelledby="dropdownMenuButton1"
                               >
                                 <li>
-                                  <a class="dropdown-item" href="show-reset.html">
+                                  <a
+                                    class="dropdown-item"
+                                    href="show-reset.html"
+                                  >
                                     <img src="photo/icons/show.svg" alt="" />
                                     عرض الفاتورة
                                   </a>
@@ -1841,7 +1900,68 @@
                                 aria-labelledby="dropdownMenuButton1"
                               >
                                 <li>
-                                  <a class="dropdown-item" href="show-reset.html">
+                                  <a
+                                    class="dropdown-item"
+                                    href="show-reset.html"
+                                  >
+                                    <img src="photo/icons/show.svg" alt="" />
+                                    عرض الفاتورة
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    ><img src="photo/icons/don.svg" alt="" />
+                                    طباعة الفاتورة</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    ><img src="photo/icons/share.svg" alt="" />
+                                    مشاركة</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>#2451</td>
+                          <td class="td">
+                            البرنامج التدريبي لتأهيل معلمي اللغة العربية للحصول
+                            علي الرخصة المهنية
+                          </td>
+                          <td>2024-25-01</td>
+                          <td>
+                            2024-25-01
+                            <img
+                              src="photo/icons/arrow-switch-horizontal.svg"
+                              alt=""
+                            />
+                            2024-25-01
+                          </td>
+                          <td>
+                            <div class="price-table"><h6>250 ر.س</h6></div>
+                          </td>
+                          <td>
+                            <div class="dropdown">
+                              <button
+                                class="btn-table"
+                                type="button"
+                                id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <img src="photo/icons/menu.svg" alt="" />
+                              </button>
+                              <ul
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownMenuButton1"
+                              >
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="show-reset.html"
+                                  >
                                     <img src="photo/icons/show.svg" alt="" />
                                     عرض الفاتورة
                                   </a>
@@ -1894,11 +2014,21 @@
                         <a href="#"><h5>اللغة العربيه</h5></a>
                       </div>
                       <div class="star">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <div class="star" onclick="toggleStar(44)">
+                          <i id="star44" class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="star" onclick="toggleStar(55)">
+                          <i id="star55" class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="star" onclick="toggleStar(66)">
+                          <i id="star66" class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="star" onclick="toggleStar(77)">
+                          <i id="star77" class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="star" onclick="toggleStar(88)">
+                          <i id="star88" class="fa-regular fa-star"></i>
+                        </div>
                         <div class="small-box">5.9</div>
                         <span>( 220 تقييم )</span>
                       </div>
@@ -2112,11 +2242,21 @@
                         <a href="#"><h5>اللغة العربيه</h5></a>
                       </div>
                       <div class="star">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <div class="star" onclick="toggleStar(445)">
+                          <i id="star445" class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="star" onclick="toggleStar(555)">
+                          <i id="star555" class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="star" onclick="toggleStar(665)">
+                          <i id="star665" class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="star" onclick="toggleStar(775)">
+                          <i id="star775" class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="star" onclick="toggleStar(885)">
+                          <i id="star885" class="fa-regular fa-star"></i>
+                        </div>
                         <div class="small-box">5.9</div>
                         <span>( 220 تقييم )</span>
                       </div>
@@ -2330,11 +2470,21 @@
                         <a href="#"><h5>اللغة العربيه</h5></a>
                       </div>
                       <div class="star">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <div class="star" onclick="toggleStar(446)">
+                          <i id="star446" class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="star" onclick="toggleStar(556)">
+                          <i id="star556" class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="star" onclick="toggleStar(666)">
+                          <i id="star666" class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="star" onclick="toggleStar(776)">
+                          <i id="star776" class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="star" onclick="toggleStar(886)">
+                          <i id="star886" class="fa-regular fa-star"></i>
+                        </div>
                         <div class="small-box">5.9</div>
                         <span>( 220 تقييم )</span>
                       </div>
@@ -2548,11 +2698,21 @@
                         <a href="#"><h5>اللغة العربيه</h5></a>
                       </div>
                       <div class="star">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <div class="star" onclick="toggleStar(448)">
+                          <i id="star44" class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="star" onclick="toggleStar(558)">
+                          <i id="star55" class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="star" onclick="toggleStar(668)">
+                          <i id="star66" class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="star" onclick="toggleStar(778)">
+                          <i id="star77" class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="star" onclick="toggleStar(88)">
+                          <i id="star88" class="fa-regular fa-star"></i>
+                        </div>
                         <div class="small-box">5.9</div>
                         <span>( 220 تقييم )</span>
                       </div>
@@ -3729,6 +3889,36 @@
       </section>
       <!-- endpage(footer) -->
     </div>
+    <script>
+      $(document).ready(function () {
+        progress_bar();
+      });
+
+      function progress_bar() {
+        var speed = 30;
+        var items = $(".progress_bar").find(".progress_bar_item");
+
+        items.each(function () {
+          var item = $(this).find(".progress");
+          var itemValue = item.data("progress");
+          var i = 0;
+          var value = $(this);
+
+          var count = setInterval(function () {
+            if (i <= itemValue) {
+              var iStr = i.toString();
+              item.css({
+                width: iStr + "%",
+              });
+              value.find(".item_value").html(iStr + "%");
+            } else {
+              clearInterval(count);
+            }
+            i++;
+          }, speed);
+        });
+      }
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
       integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
@@ -3856,25 +4046,12 @@
         }
       }
     </script>
+
     <script>
-      const myImage = document.getElementById("myImage");
-      const photoPaths = [
-        "photo/khalegy.png",
-        "photo/Image.png",
-        "photo/sss.png",
-      ]; // Add more photo paths as needed
-      let currentPhotoIndex = 0;
-
-      function changePhoto() {
-        myImage.src = photoPaths[currentPhotoIndex];
-        currentPhotoIndex = (currentPhotoIndex + 1) % photoPaths.length;
+      function toggleStar(starNumber) {
+        const starElement = document.getElementById(`star${starNumber}`);
+        starElement.classList.toggle("filled");
       }
-
-      // Change photo every 3 seconds (adjust as needed)
-      setInterval(changePhoto, 3000);
-
-      // Initial photo display
-      changePhoto();
     </script>
 
     <script src="js/main.js"></script>

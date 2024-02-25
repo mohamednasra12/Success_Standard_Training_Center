@@ -6130,6 +6130,12 @@ input[type="range"]::-webkit-slider-thumb {
     width: 102%;
     height: 65%;
   }
+  .allrate {
+    margin: 0;
+  }
+  .text-bags h4 {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 600px) {
   .inst-prag {

@@ -6482,10 +6482,10 @@ input[type="range"]::-webkit-slider-thumb {
   }
 
   .row.hamada {
-    display: flex !important;
+    display: block !important;
   }
   .hamadas {
-    width: 50% !important;
+    width: 100% !important;
   }
   .connect-page .Means-communication .phone {
     width: 32%;

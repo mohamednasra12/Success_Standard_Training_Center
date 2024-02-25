@@ -7059,5 +7059,9 @@ input[type="range"]::-webkit-slider-thumb {
   .allrate {
     margin: 0;
   }
+  .Educational_bags .img-sub img {
+    width: 100%;
+    height: 236px;
+}
 }
 /* responsive */

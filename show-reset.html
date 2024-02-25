@@ -40,6 +40,7 @@
   </head>
   <body>
     <!-- reset page -->
+   <div class="container">
     <div class="reset-page">
       <div class="logo-rest">
         <div class="imge-one"><img src="photo/fatora.png" alt="" /></div>
@@ -105,66 +106,8 @@
         <img src="photo/Vector.png" alt="">
     </div>
     </div>
+   </div>
     <!-- reset page -->
-
-    <script src="js/aos-anmite.js"></script>
-    <script>
-      AOS.init({ disable: "mobile" });
-    </script>
-
-    <script>
-      let look = document.getElementById("look");
-      let content = document.getElementById("content");
-      look.onclick = function () {
-        look.classList.toggle("this");
-        content.classList.remove("this");
-      };
-      content.onclick = function () {
-        content.classList.toggle("this");
-        look.classList.remove("this");
-      };
-    </script>
-    <script>
-      $(document).ready(function () {
-        progress_bar();
-      });
-
-      function progress_bar() {
-        var speed = 30;
-        var items = $(".progress_bar").find(".progress_bar_item");
-
-        items.each(function () {
-          var item = $(this).find(".progress");
-          var itemValue = item.data("progress");
-          var i = 0;
-          var value = $(this);
-
-          var count = setInterval(function () {
-            if (i <= itemValue) {
-              var iStr = i.toString();
-              item.css({
-                width: iStr + "%",
-              });
-              value.find(".item_value").html(iStr + "%");
-            } else {
-              clearInterval(count);
-            }
-            i++;
-          }, speed);
-        });
-      }
-    </script>
-    <script>
-      $(document).ready(function () {
-        $("#content").on("click", function (e) {
-          e.preventDefault();
-          $("html, body").animate({
-            scrollTop: $(".head-bags").offset().top,
-          });
-        });
-      });
-    </script>
-
     <script src="js/main.js"></script>
   </body>
 </html>

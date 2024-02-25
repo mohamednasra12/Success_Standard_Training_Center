@@ -450,7 +450,7 @@ button.btn.btn-light:hover {
   padding: 0.4rem;
   border-radius: 5px;
   overflow: hidden;
-  height: 540px;
+  height: 553px;
   position: relative;
 }
 .card-blog:hover img {
@@ -7055,6 +7055,9 @@ input[type="range"]::-webkit-slider-thumb {
   .who-we .card-teacher::after {
     width: 102%;
     height: 65%;
+  }
+  .allrate {
+    margin: 0;
   }
 }
 /* responsive */

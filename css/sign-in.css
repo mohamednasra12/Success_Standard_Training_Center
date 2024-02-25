@@ -571,9 +571,7 @@ button.swal2-confirm.swal2-styled {
   font-size: 1.2rem;
   line-height: 2rem !important;
 }
-.tab-favourite .star svg {
-  color: #e5890a;
-}
+
 .tab-favourite .star span {
   color: #656b78;
   font-family: "regular";

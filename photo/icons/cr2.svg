@@ -2,6 +2,6 @@
 <rect opacity="0.1" width="30" height="30" rx="6" fill="#EE2527"/>
 <path d="M19.8075 19.5674L17.6925 21.6824" stroke="#EE2527" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M19.8075 21.6824L17.6925 19.5674" stroke="#EE2527" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M15.12 14.1525C15.045 14.145 14.955 14.145 14.8725 14.1525C13.0875 14.0925 11.67 12.63 11.67 10.83C11.67 8.9925 13.155 7.5 15 7.5C16.8375 7.5 18.33 8.9925 18.33 10.83C18.3225 12.63 16.905 14.0925 15.12 14.1525Z" stroke="#EE2527" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.12 14.1525C15.045 14.145 15.955 14.145 14.8725 14.1525C13.0875 14.0925 11.67 12.63 11.67 10.83C11.67 8.9925 13.155 7.5 15 7.5C16.8375 7.5 18.33 8.9925 18.33 10.83C18.3225 12.63 16.905 14.0925 15.12 14.1525Z" stroke="#EE2527" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M15 22.3573C13.635 22.3573 12.2775 22.0123 11.2425 21.3223C9.42748 20.1073 9.42748 18.1273 11.2425 16.9198C13.305 15.5398 16.6875 15.5398 18.75 16.9198" stroke="#EE2527" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

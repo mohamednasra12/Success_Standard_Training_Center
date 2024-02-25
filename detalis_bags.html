@@ -130,42 +130,6 @@
             </ul>
 
             <ul class="btn">
-                            <!-- قبل تسجل الدخول -->
-
-              <!-- <li>
-                <div class="dropdown">
-                  <button
-                    class="btn btn-secondary dropdown-toggle"
-                    type="button"
-                    id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    EN
-                  </button>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton1"
-                  >
-                    <li><a class="dropdown-item" href="#">Arabic</a></li>
-                    <li><a class="dropdown-item" href="#">English</a></li>
-                  </ul>
-                </div>
-              </li> -->
-              <!-- <li>
-                <a href="sign-in.html">
-                  <a href="sign-in.html">
-                    <button type="button" class="btn btn-warning signin">
-                      تسجيل الدخول
-                    </button>
-                  </a>
-                </a>
-              </li> -->
-               <!-- قبل تسجل الدخول -->
-            </ul>
-
-            <!-- بعد تسجل الدخول -->
-            <ul class="btn">
               <li>
                 <div class="dropdown">
                   <button
@@ -267,6 +231,11 @@
                       >
                     </li>
                     <li>
+                      <a class="dropdown-item sin" href="library.html"
+                        ><img src="photo/icons/sit1.svg" alt="" />المكتبه</a
+                      >
+                    </li>
+                    <li>
                       <a class="dropdown-item sin" href="Personal-account.html"
                         ><img src="photo/icons/sit5.svg" alt="" />تسجيل
                         الخروج</a
@@ -276,7 +245,6 @@
                 </div>
               </li>
             </ul>
-            <!-- بعد تسجل الدخول -->
           </div>
         </div>
       </nav>
@@ -301,13 +269,25 @@
               </h4>
             </div>
             <div class="star-rat" data-aos="fade-up" data-aos-duration="3000">
-              <i class="fa-regular fa-star" style="color: #e5890a"></i>
-              <i class="fa-regular fa-star" style="color: #e5890a"></i>
-              <i class="fa-regular fa-star" style="color: #e5890a"></i>
-              <i class="fa-regular fa-star" style="color: #e5890a"></i>
-              <i class="fa-regular fa-star" style="color: #e5890a"></i>
-              <div class="small-box">5.9</div>
-              <span>( 220 تقييم )</span>
+              <div class="star">
+                <div class="star" onclick="toggleStar(22)">
+                  <i id="star22" class="fa-regular fa-star"></i>
+                </div>
+                <div class="star" onclick="toggleStar(33)">
+                  <i id="star33" class="fa-regular fa-star"></i>
+                </div>
+                <div class="star" onclick="toggleStar(44)">
+                  <i id="star44" class="fa-regular fa-star"></i>
+                </div>
+                <div class="star" onclick="toggleStar(55)">
+                  <i id="star55" class="fa-regular fa-star"></i>
+                </div>
+                <div class="star" onclick="toggleStar(66)">
+                  <i id="star66" class="fa-regular fa-star"></i>
+                </div>
+                <div class="small-box">5.9</div>
+                <span>( 220 تقييم )</span>
+              </div>
             </div>
             <div
               class="text-truebag"
@@ -910,13 +890,13 @@
                       <a href="#"><img src="photo/Payment 4s.png" alt="" /></a>
                     </div>
                   </div>
-                </div>
-                <div class="btn-buy">
-                  <a href="Bag-content.html">
-                    <button type="button" class="btn btn-warning">
-                      شراء الكورس
-                    </button>
-                  </a>
+                  <div class="btn-buy">
+                    <a href="Bag-content.html">
+                      <button type="button" class="btn btn-warning">
+                        شراء الكورس
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="help-card">
@@ -1263,11 +1243,21 @@
                     <a href="#"><h5>اللغة العربيه</h5></a>
                   </div>
                   <div class="star">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <div class="star" onclick="toggleStar(6)">
+                      <i id="star6" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(7)">
+                      <i id="star7" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(8)">
+                      <i id="star8" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(9)">
+                      <i id="star9" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(10)">
+                      <i id="star10" class="fa-regular fa-star"></i>
+                    </div>
                     <div class="small-box">5.9</div>
                     <span>( 220 تقييم )</span>
                   </div>
@@ -1373,19 +1363,19 @@
                         <div class="icons-hid">
                           <div class="text-ico">
                             <img src="photo/icons/n1.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n2.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n3.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n4.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                         </div>
                       </div>
@@ -1405,19 +1395,19 @@
                         <div class="icons-hid">
                           <div class="text-ico">
                             <img src="photo/icons/n1.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n2.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n3.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n4.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                         </div>
                       </div>
@@ -1437,19 +1427,19 @@
                         <div class="icons-hid">
                           <div class="text-ico">
                             <img src="photo/icons/n1.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n2.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n3.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n4.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                         </div>
                       </div>
@@ -1483,11 +1473,21 @@
                     <a href="#"><h5>اللغة العربيه</h5></a>
                   </div>
                   <div class="star">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <div class="star" onclick="toggleStar(16)">
+                      <i id="star16" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(17)">
+                      <i id="star17" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(18)">
+                      <i id="star18" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(19)">
+                      <i id="star19" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(20)">
+                      <i id="star20" class="fa-regular fa-star"></i>
+                    </div>
                     <div class="small-box">5.9</div>
                     <span>( 220 تقييم )</span>
                   </div>
@@ -1594,19 +1594,19 @@
                         <div class="icons-hid">
                           <div class="text-ico">
                             <img src="photo/icons/n1.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n2.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n3.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n4.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                         </div>
                       </div>
@@ -1626,19 +1626,19 @@
                         <div class="icons-hid">
                           <div class="text-ico">
                             <img src="photo/icons/n1.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n2.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n3.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n4.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                         </div>
                       </div>
@@ -1658,19 +1658,19 @@
                         <div class="icons-hid">
                           <div class="text-ico">
                             <img src="photo/icons/n1.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n2.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n3.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n4.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                         </div>
                       </div>
@@ -1807,6 +1807,12 @@
             '<img src="photo/finger.png" alt="">' +
             " <h4>تم ارسال تقييمك بنجاح</h4>",
         });
+      }
+    </script>
+    <script>
+      function toggleStar(starNumber) {
+        const starElement = document.getElementById(`star${starNumber}`);
+        starElement.classList.toggle("filled");
       }
     </script>
     <script src="js/aos-anmite.js"></script>

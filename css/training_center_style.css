@@ -1191,7 +1191,7 @@ h4.week {
   margin-top: 10px;
   transition: 0.7s !important;
   border-radius: 10px;
-  width: 79%;
+  width: 100%;
 }
 .card-go:hover {
   background-image: url(../photo/backgo.png);
@@ -1590,9 +1590,14 @@ img.pro-reta {
   width: 50% !important;
 }
 .Educational_bags .img-sub img {
-  /* width: 51rem; */
   width: 100%;
+  height: 500px;
 }
+.detalis .img-sub img {
+  width: 100%;
+  height: 272px;
+}
+
 .Educational_bags .adress {
   display: flex;
   justify-content: space-between;
@@ -2974,7 +2979,7 @@ img.staps1 {
 }
 .who-we .tranining {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .who-we .head-what h4 {
@@ -3170,7 +3175,7 @@ img.rewve {
   border: 1px solid #0000003b;
 }
 img.supss {
-  height: 300px;
+  height: 280px;
 }
 .header-content {
   display: flex;
@@ -5009,6 +5014,23 @@ input[type="range"]::-webkit-slider-thumb {
   width: 170px;
   height: 170px;
 }
+.presonal-account .progress {
+  background-color: #e58a0a;
+  height: 2px;
+}
+.presonal-account .progress_bar_item h4 {
+  font-family: "regular";
+  font-size: 1rem;
+}
+.star {
+  cursor: pointer;
+}
+.filled {
+  color: gold; /* Change this to the desired filled color */
+}
+.presonal-account .text-sub a {
+  color: #000000;
+}
 
 /* personal */
 /* responsive */
@@ -5020,12 +5042,6 @@ input[type="range"]::-webkit-slider-thumb {
   .container-xl,
   .container-xxl {
     max-width: 1800px;
-  }
-  .img-sub img {
-    width: 100%;
-  }
-  .bace-bags .img-sub img {
-    width: 100%;
   }
 }
 
@@ -5268,7 +5284,7 @@ input[type="range"]::-webkit-slider-thumb {
   .who-we .card-teacher::after {
     width: 103%;
     height: 63%;
-}
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -6136,7 +6152,7 @@ input[type="range"]::-webkit-slider-thumb {
     top: 79px;
   }
   .top_nav {
-    height: 68px;
+    height: 54px;
     padding: 0.5rem;
   }
   .top_nav_detlies {
@@ -6323,7 +6339,7 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .detalis .icon {
     flex-wrap: wrap;
-    gap: 11px;
+    gap: 17px;
   }
   .detalis .text p {
     width: 100%;

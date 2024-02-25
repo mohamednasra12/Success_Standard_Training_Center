@@ -127,42 +127,6 @@
             </ul>
 
             <ul class="btn">
-                            <!-- قبل تسجل الدخول -->
-
-              <!-- <li>
-                <div class="dropdown">
-                  <button
-                    class="btn btn-secondary dropdown-toggle"
-                    type="button"
-                    id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    EN
-                  </button>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton1"
-                  >
-                    <li><a class="dropdown-item" href="#">Arabic</a></li>
-                    <li><a class="dropdown-item" href="#">English</a></li>
-                  </ul>
-                </div>
-              </li> -->
-              <!-- <li>
-                <a href="sign-in.html">
-                  <a href="sign-in.html">
-                    <button type="button" class="btn btn-warning signin">
-                      تسجيل الدخول
-                    </button>
-                  </a>
-                </a>
-              </li> -->
-               <!-- قبل تسجل الدخول -->
-            </ul>
-
-            <!-- بعد تسجل الدخول -->
-            <ul class="btn">
               <li>
                 <div class="dropdown">
                   <button
@@ -264,6 +228,11 @@
                       >
                     </li>
                     <li>
+                      <a class="dropdown-item sin" href="library.html"
+                        ><img src="photo/icons/sit1.svg" alt="" />المكتبه</a
+                      >
+                    </li>
+                    <li>
                       <a class="dropdown-item sin" href="Personal-account.html"
                         ><img src="photo/icons/sit5.svg" alt="" />تسجيل
                         الخروج</a
@@ -273,7 +242,6 @@
                 </div>
               </li>
             </ul>
-            <!-- بعد تسجل الدخول -->
           </div>
         </div>
       </nav>
@@ -328,11 +296,21 @@
                     <a href="#"><h5>اللغة العربيه</h5></a>
                   </div>
                   <div class="star">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <div class="star" onclick="toggleStar(1)">
+                      <i id="star1" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(2)">
+                      <i id="star2" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(3)">
+                      <i id="star3" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(4)">
+                      <i id="star4" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(5)">
+                      <i id="star5" class="fa-regular fa-star"></i>
+                    </div>
                     <div class="small-box">5.9</div>
                     <span>( 220 تقييم )</span>
                   </div>
@@ -438,19 +416,19 @@
                         <div class="icons-hid">
                           <div class="text-ico">
                             <img src="photo/icons/n1.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n2.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n3.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n4.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                         </div>
                       </div>
@@ -470,19 +448,19 @@
                         <div class="icons-hid">
                           <div class="text-ico">
                             <img src="photo/icons/n1.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n2.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n3.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n4.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                         </div>
                       </div>
@@ -502,19 +480,19 @@
                         <div class="icons-hid">
                           <div class="text-ico">
                             <img src="photo/icons/n1.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n2.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n3.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n4.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                         </div>
                       </div>
@@ -549,11 +527,21 @@
                     <a href="#"><h5>اللغة العربيه</h5></a>
                   </div>
                   <div class="star">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <div class="star" onclick="toggleStar(6)">
+                      <i id="star6" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(7)">
+                      <i id="star7" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(8)">
+                      <i id="star8" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(9)">
+                      <i id="star9" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(10)">
+                      <i id="star10" class="fa-regular fa-star"></i>
+                    </div>
                     <div class="small-box">5.9</div>
                     <span>( 220 تقييم )</span>
                   </div>
@@ -659,19 +647,19 @@
                         <div class="icons-hid">
                           <div class="text-ico">
                             <img src="photo/icons/n1.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n2.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n3.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n4.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                         </div>
                       </div>
@@ -691,19 +679,19 @@
                         <div class="icons-hid">
                           <div class="text-ico">
                             <img src="photo/icons/n1.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n2.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n3.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n4.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                         </div>
                       </div>
@@ -723,19 +711,19 @@
                         <div class="icons-hid">
                           <div class="text-ico">
                             <img src="photo/icons/n1.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n2.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n3.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n4.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                         </div>
                       </div>
@@ -770,11 +758,21 @@
                     <a href="#"><h5>اللغة العربيه</h5></a>
                   </div>
                   <div class="star">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <div class="star" onclick="toggleStar(11)">
+                      <i id="star11" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(12)">
+                      <i id="star12" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(13)">
+                      <i id="star13" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(14)">
+                      <i id="star14" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(15)">
+                      <i id="star15" class="fa-regular fa-star"></i>
+                    </div>
                     <div class="small-box">5.9</div>
                     <span>( 220 تقييم )</span>
                   </div>
@@ -879,19 +877,19 @@
                         <div class="icons-hid">
                           <div class="text-ico">
                             <img src="photo/icons/n1.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n2.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n3.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n4.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                         </div>
                       </div>
@@ -911,19 +909,19 @@
                         <div class="icons-hid">
                           <div class="text-ico">
                             <img src="photo/icons/n1.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n2.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n3.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n4.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                         </div>
                       </div>
@@ -943,19 +941,19 @@
                         <div class="icons-hid">
                           <div class="text-ico">
                             <img src="photo/icons/n1.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n2.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n3.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n4.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                         </div>
                       </div>
@@ -990,11 +988,21 @@
                     <a href="#"><h5>اللغة العربيه</h5></a>
                   </div>
                   <div class="star">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <div class="star" onclick="toggleStar(16)">
+                      <i id="star16" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(17)">
+                      <i id="star17" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(18)">
+                      <i id="star18" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(19)">
+                      <i id="star19" class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="star" onclick="toggleStar(20)">
+                      <i id="star20" class="fa-regular fa-star"></i>
+                    </div>
                     <div class="small-box">5.9</div>
                     <span>( 220 تقييم )</span>
                   </div>
@@ -1089,19 +1097,19 @@
                         <div class="icons-hid">
                           <div class="text-ico">
                             <img src="photo/icons/n1.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n2.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n3.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n4.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                         </div>
                       </div>
@@ -1121,19 +1129,19 @@
                         <div class="icons-hid">
                           <div class="text-ico">
                             <img src="photo/icons/n1.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n2.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n3.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n4.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                         </div>
                       </div>
@@ -1153,19 +1161,19 @@
                         <div class="icons-hid">
                           <div class="text-ico">
                             <img src="photo/icons/n1.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n2.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n3.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                           <div class="text-ico">
                             <img src="photo/icons/n4.svg" alt="" />
-                            <p>4.9 اجمالي التقييمات</p>
+                            <p>5.9 اجمالي التقييمات</p>
                           </div>
                         </div>
                       </div>
@@ -1185,98 +1193,100 @@
       </div>
     </div>
 
-     <section class="footer">
-        <div class="footer-main">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3 col-md-6 col-12">
-                <div class="end-foter" id="end-res">
-                  <div class="logo">
-                    <img src="photo/footerlogo.png" alt="" />
-                  </div>
-                  <p>
-                    توفّر منصة مركز معيار النجاح للتدريب كورسات تعليمية مجانية
-                    باللّغة العربية لدعم جميع الفئات العمرية. تفضّل بزيارة
-                    صفحتنا الرئيسيه
-                  </p>
+    <section class="footer">
+      <div class="footer-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="end-foter" id="end-res">
+                <div class="logo">
+                  <img src="photo/footerlogo.png" alt="" />
                 </div>
-                <div class="mida-icons" id="res-icn">
-                  <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
-                  <a href="#"> <i class="fa-brands fa-linkedin"></i> </a>
-                  <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
-                </div>
-                <div class="side">
-                  <a href="#"> <img src="img/side.svg" alt="" /></a>
-                </div>
+                <p>
+                  توفّر منصة مركز معيار النجاح للتدريب كورسات تعليمية مجانية
+                  باللّغة العربية لدعم جميع الفئات العمرية. تفضّل بزيارة صفحتنا
+                  الرئيسيه
+                </p>
               </div>
-              <div class="col-lg-3 col-md-6 col-6">
-                <div class="company" id="com-res">
-                  <div class="header-company">
-                    <h4>عن الشركة</h4>
-                  </div>
-                  <div class="company-link">
-                    <a href="index.html"><h5>الرئيسية ..</h5></a>
+              <div class="mida-icons" id="res-icn">
+                <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+                <a href="#"> <i class="fa-brands fa-linkedin"></i> </a>
+                <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+              </div>
+              <div class="side">
+                <a href="#"> <img src="img/side.svg" alt="" /></a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="company" id="com-res">
+                <div class="header-company">
+                  <h4>عن الشركة</h4>
+                </div>
+                <div class="company-link">
+                  <a href="index.html"><h5>الرئيسية ..</h5></a>
 
-                    <a href="Educational_bags.html"
-                      ><h5>الحقائب التعليميه</h5></a
+                  <a href="Educational_bags.html"><h5>الحقائب التعليميه</h5></a>
+                  <a href="who-we.html"><h5>من نحن</h5></a>
+                  <a href="connect-us.html"><h5>تواصل معنا</h5></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="company" id="com-res">
+                <div class="header-company">
+                  <h4>صفحات اخرى</h4>
+                </div>
+                <div class="company-link">
+                  <a href="privacy-policy.html"><h5>سياسه الخصوصيه ..</h5></a>
+                  <a href="Instructions-use.html"><h5>شروط الاستخدام</h5></a>
+                  <a href="terms-use.html"><h5>الاسئلة الشائعة</h5></a>
+                  <a href="blog.html"><h5>المدونه</h5></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="company" id="com-res">
+                <div class="header-company">
+                  <h4>وسائل التواصل</h4>
+                </div>
+                <div class="company-link">
+                  <h4 class="week">رقم الهاتف</h4>
+                  <div class="last-link">
+                    <img src="photo/icons/footer1.svg" alt="" />
+                    <a href="#"><h5 class="nom">(995)658-5930</h5></a>
+                  </div>
+                  <h4 class="week">البريد الالكتروني</h4>
+                  <div class="last-link">
+                    <img src="photo/icons/footer2.svg" alt="" />
+                    <a href="#"><h5 class="nom">Cargo Hub, LD 32614, UK</h5></a>
+                  </div>
+                  <h4 class="week">موقعنا</h4>
+                  <div class="last-link">
+                    <img src="photo/icons/footer3.svg" alt="" />
+                    <a href="#"
+                      ><h5 class="nom">timothy.gilbert@mail.com</h5></a
                     >
-                    <a href="who-we.html"><h5>من نحن</h5></a>
-                    <a href="connect-us.html"><h5>تواصل معنا</h5></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-6">
-                <div class="company" id="com-res">
-                  <div class="header-company">
-                    <h4>صفحات اخرى</h4>
-                  </div>
-                  <div class="company-link">
-                    <a href="privacy-policy.html"><h5>سياسه الخصوصيه ..</h5></a>
-                    <a href="Instructions-use.html"><h5>شروط الاستخدام</h5></a>
-                    <a href="terms-use.html"><h5>الاسئلة الشائعة</h5></a>
-                    <a href="blog.html"><h5>المدونه</h5></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-12">
-                <div class="company" id="com-res">
-                  <div class="header-company">
-                    <h4>وسائل التواصل</h4>
-                  </div>
-                  <div class="company-link">
-                    <h4 class="week">رقم الهاتف</h4>
-                    <div class="last-link">
-                      <img src="photo/icons/footer1.svg" alt="" />
-                      <a href="#"><h5 class="nom">(995)658-5930</h5></a>
-                    </div>
-                    <h4 class="week">البريد الالكتروني</h4>
-                    <div class="last-link">
-                      <img src="photo/icons/footer2.svg" alt="" />
-                      <a href="#"
-                        ><h5 class="nom">Cargo Hub, LD 32614, UK</h5></a
-                      >
-                    </div>
-                    <h4 class="week">موقعنا</h4>
-                    <div class="last-link">
-                      <img src="photo/icons/footer3.svg" alt="" />
-                      <a href="#"
-                        ><h5 class="nom">timothy.gilbert@mail.com</h5></a
-                      >
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="end-page">
-          <a href="#"
-            ><h4>© All rights reserved @ Success criterion platform 2024</h4>
-          </a>
-          <a href="#">Made by <span>X</span> Coders coding with expert </a>
-        </div>
-      </section>
+      </div>
+      <div class="end-page">
+        <a href="#"
+          ><h4>© All rights reserved @ Success criterion platform 2024</h4>
+        </a>
+        <a href="#">Made by <span>X</span> Coders coding with expert </a>
+      </div>
+    </section>
+    <script>
+      function toggleStar(starNumber) {
+        const starElement = document.getElementById(`star${starNumber}`);
+        starElement.classList.toggle("filled");
+      }
+    </script>
 
     <script src="js/aos-anmite.js"></script>
     <script>

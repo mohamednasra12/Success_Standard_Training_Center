@@ -1094,6 +1094,30 @@
     <script>
       AOS.init({ disable: "mobile" });
     </script>
+    <script>
+      function gridView() {
+  var container = document.getElementById("container");
+  container.classList.remove("listmode");
+  container.classList.add("grid");
+}
+
+function listView() {
+  var container = document.getElementById("container");
+  container.classList.remove("grid");
+  container.classList.add("listmode");
+}
+function gridViewLib() {
+  var container = document.getElementById("containerlip");
+  container.classList.remove("listmodelip");
+  container.classList.add("gridlip");
+}
+
+function listViewLib() {
+  var container = document.getElementById("containerlip");
+  container.classList.remove("gridlip");
+  container.classList.add("listmodelip");
+}
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>

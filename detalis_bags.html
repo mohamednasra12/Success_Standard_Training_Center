@@ -1110,8 +1110,8 @@
                         <textarea
                           name=""
                           id=""
-                          cols="70"
-                          rows="10"
+                          cols="50"
+                          rows="3"
                           placeholder="قم بكتابة ارائك ...."
                         ></textarea>
                       </div>
@@ -1857,6 +1857,39 @@
           }
         );
       });
+    </script>
+    <script>
+      // part word
+$(document).ready(function () {
+  var pragraph = $("#pragraph");
+  var showtext = $("#showtext");
+  var more = $("#more");
+
+  // Copy the content to showtext
+  showtext.html(pragraph.html());
+
+  // Hide the full content initially
+  showtext.hide();
+
+  more.click(function (event) {
+    event.preventDefault();
+
+    // Toggle between showing and hiding the full content
+    showtext.toggle();
+  });
+});
+// part word
+    </script>
+    <script>
+      $(document).on("click", "#open", function () {
+  $(".accordion-collapse").toggleClass("show");
+  $("#open").toggleClass("active");
+  if ($("#open").hasClass("active")) {
+    $("#open").text("إغلاق كل المعايير");
+  } else {
+    $("#open").text("فتح كل المعايير");
+  }
+});
     </script>
 
     <script src="js/aos-anmite.js"></script>

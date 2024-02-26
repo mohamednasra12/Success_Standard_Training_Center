@@ -682,9 +682,17 @@ button#dropdownMenuButton1 {
 }
 .img-sub img {
   width: 100%;
+  height: 315px;
 }
 h4.ops {
   width: 78px !important;
+}
+.bace-bags .img-sub img {
+  width: 100%;
+  height: 490px;
+}
+.listmode .img-sub img {
+  height: 315px;
 }
 .adress {
   display: flex;
@@ -733,8 +741,8 @@ a.go-now {
 }
 .adress h4 {
   font-family: "bold";
-  font-size: 0.8rem;
-  width: 70%;
+  font-size: 1.1rem;
+  width: 100%;
   line-height: 1.8rem;
   color: #000000 !important;
 }
@@ -1588,7 +1596,7 @@ img.pro-reta {
 }
 
 .hamadas {
-  width: 50% !important;
+  width: 50%;
 }
 .Educational_bags .img-sub img {
   width: 100%;
@@ -3613,6 +3621,7 @@ img#uploadedPhoto {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 1rem 0;
 }
 .library-bags .fliter h4 {
   font-family: "Medium";
@@ -3668,8 +3677,12 @@ img#uploadedPhoto {
 }
 .library-bags .img-lib img {
   width: 100%;
-}
 
+  margin-bottom: 0.9rem;
+}
+.library-bags .hamadas {
+  width: 33.333%;
+}
 .library-bags .text-lib h4 {
   font-family: "bold";
 }
@@ -6169,8 +6182,18 @@ button.btn.btn-warning.bythis:hover {
   .text-bags h4 {
     width: 100%;
   }
+  .Educational_bags .img-sub img {
+    width: 100%;
+    height: 201px;
+  }
+  .Educational_bags .all-lastsub {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 600px) {
+  img.supss {
+    height: 228px !important;
+  }
   .inst-prag {
     height: 378px;
     overflow: scroll;
@@ -6343,7 +6366,6 @@ button.btn.btn-warning.bythis:hover {
   .Buy-the-course {
     margin-top: unset;
   }
- 
 
   .input-bags {
     width: 100%;
@@ -6372,10 +6394,11 @@ button.btn.btn-warning.bythis:hover {
   }
   .detalis .main-hero {
     flex-wrap: wrap;
+    gap: unset;
   }
   .detalis .icon {
     flex-wrap: wrap;
-    gap: 17px;
+    gap: 7px;
   }
   .detalis .text p {
     width: 100%;
@@ -6736,7 +6759,7 @@ button.btn.btn-warning.bythis:hover {
     font-size: 0.8rem;
   }
   #com-res img {
-   display: none;
+    display: none;
   }
   #res-icn svg {
     width: 6px;
@@ -7115,6 +7138,13 @@ button.btn.btn-warning.bythis:hover {
   }
   div#end-res .logo img {
     width: 75%;
-}
+  }
+  .detalis .img-sub img {
+    width: 100%;
+    height: 242px;
+  }
+  .detalis .main-img img {
+    width: 19%;
+  }
 }
 /* responsive */

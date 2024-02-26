@@ -639,6 +639,74 @@ button.btn.btn-warning.more:hover {
 .last-link h5 {
   margin-bottom: 0;
 }
+.profile {
+  position: relative;
+}
+
+#hid, #hid1, #hid2 {
+  display: none;
+  position: absolute;
+  top: 30px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  z-index: 100;
+}
+
+.one:hover + #hid,
+.two:hover + #hid1,
+.three:hover + #hid2 {
+  display: block;
+}
+#hid3, #hid4, #hid5 {
+  display: none;
+  position: absolute;
+  top: 30px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  z-index: 100;
+}
+
+.one1:hover + #hid3,
+.two2:hover + #hid4,
+.three3:hover + #hid5 {
+  display: block;
+}
+#hid6, #hid7, #hid8 {
+  display: none;
+  position: absolute;
+  top: 30px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  z-index: 100;
+}
+
+.one5:hover:hover + #hid6,
+.two6:hover + #hid7,
+.three7:hover + #hid8 {
+  display: block;
+}
+#hid9, #hid10, #hid11 {
+  display: none;
+  position: absolute;
+  top: 30px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  z-index: 100;
+}
+
+.one5:hover:hover + #hid9,
+.two6:hover + #hid10,
+.three7:hover + #hid10 {
+  display: block;
+}
 button#dropdownMenuButton1 {
   border-radius: 50%;
   margin-top: 20px;
@@ -742,7 +810,7 @@ a.go-now {
 .adress h4 {
   font-family: "bold";
   font-size: 1.1rem;
-  width: 100%;
+  width: 93%;
   line-height: 1.8rem;
   color: #000000 !important;
 }
@@ -935,72 +1003,7 @@ svg.svg-inline--fa.fa-heart {
   width: 36px;
   height: 36px;
 }
-#hid {
-  background-color: white;
-  box-shadow: 1px 1px 10px #00000073;
-  width: 363px;
-  height: 430px;
-  position: absolute;
-  z-index: 100;
-  padding: 1rem;
-  top: 39px;
-  border-radius: 10px;
-}
-#hid-1 {
-  background-color: white;
-  box-shadow: 1px 1px 10px #00000073;
-  width: 363px;
-  height: 430px;
-  position: absolute;
-  z-index: 100;
-  padding: 1rem;
-  top: 39px;
-  border-radius: 10px;
-}
-#hid-nas-1 {
-  background-color: white;
-  box-shadow: 1px 1px 10px #00000073;
-  width: 363px;
-  height: 430px;
-  position: absolute;
-  z-index: 100;
-  padding: 1rem;
-  top: 39px;
-  border-radius: 10px;
-}
-#hid-na-1 {
-  background-color: white;
-  box-shadow: 1px 1px 10px #00000073;
-  width: 363px;
-  height: 430px;
-  position: absolute;
-  z-index: 100;
-  padding: 1rem;
-  top: 39px;
-  border-radius: 10px;
-}
-#hid-na-kk {
-  background-color: white;
-  box-shadow: 1px 1px 10px #00000073;
-  width: 363px;
-  height: 430px;
-  position: absolute;
-  z-index: 100;
-  padding: 1rem;
-  top: 39px;
-  border-radius: 10px;
-}
-#hid-jj {
-  background-color: white;
-  box-shadow: 1px 1px 10px #00000073;
-  width: 363px;
-  height: 430px;
-  position: absolute;
-  z-index: 100;
-  padding: 1rem;
-  top: 39px;
-  border-radius: 10px;
-}
+
 .lastcard-sup {
   position: relative;
 }
@@ -1026,83 +1029,10 @@ svg.svg-inline--fa.fa-heart {
 .scools p {
   color: #656b78;
 }
-#hid-nas-oo {
-  background-color: white;
-  box-shadow: 1px 1px 10px #00000073;
-  width: 363px;
-  height: 430px;
-  position: absolute;
-  z-index: 100;
-  padding: 1rem;
-  top: 39px;
-  border-radius: 10px;
-}
-#hiden {
-  background-color: white;
-  box-shadow: 1px 1px 10px #00000073;
-  width: 363px;
-  height: 400px;
-  position: absolute;
-  z-index: 100;
-  padding: 1rem;
-  top: 39px;
-  border-radius: 10px;
-}
-div#hid-na {
-  background-color: white;
-  box-shadow: 1px 1px 10px #00000073;
-  width: 363px;
-  height: 430px;
-  position: absolute;
-  z-index: 100;
-  padding: 1rem;
-  top: 39px;
-  border-radius: 10px;
-}
-div#hid-nas {
-  background-color: white;
-  box-shadow: 1px 1px 10px #00000073;
-  width: 363px;
-  height: 430px;
-  position: absolute;
-  z-index: 100;
-  padding: 1rem;
-  top: 39px;
-  border-radius: 10px;
-}
-div#hidens {
-  background-color: white;
-  box-shadow: 1px 1px 10px #00000073;
-  width: 363px;
-  height: 430px;
-  position: absolute;
-  z-index: 100;
-  padding: 1rem;
-  top: 39px;
-  border-radius: 10px;
-}
-div#hidens {
-  background-color: white;
-  box-shadow: 1px 1px 10px #00000073;
-  width: 363px;
-  height: 430px;
-  position: absolute;
-  z-index: 100;
-  padding: 1rem;
-  top: 39px;
-  border-radius: 10px;
-}
-div#hideng {
-  background-color: white;
-  box-shadow: 1px 1px 10px #00000073;
-  width: 363px;
-  height: 430px;
-  position: absolute;
-  z-index: 100;
-  padding: 1rem;
-  top: 39px;
-  border-radius: 10px;
-}
+
+
+
+
 
 .pro-hid {
   text-align: center;
@@ -2248,24 +2178,7 @@ img.pro-reta {
 .detalis .all-img:hover {
   border: 1px solid #e5890a;
 }
-.detalis #hid {
-  top: 39px;
-}
-.detalis #hid-nas {
-  top: 39px;
-}
-.detalis #hid-na {
-  top: 39px;
-}
-.detalis #hiden {
-  top: 39px;
-}
-.detalis #hidens {
-  top: 39px;
-}
-.detalis #hideng {
-  top: 39px;
-}
+
 .detalis .card-subject {
   margin-top: 1rem !important;
   width: 100%;
@@ -2346,42 +2259,7 @@ svg.svg-inline--fa.fa-list-check {
   font-size: 1.8rem;
 }
 
-.bace-bags #hid-1 {
-  top: 39px;
-}
-.bace-bags #hid-na-1 {
-  top: 39px;
-}
-.bace-bags #hid-nas-1 {
-  top: 39px;
-}
-.bace-bags #hid-jj {
-  top: 39px;
-}
-.bace-bags #hid-na-kk {
-  top: 39px;
-}
-.bace-bags #hid-nas-oo {
-  top: 39px;
-}
-.bace-bags #hid {
-  top: 39px;
-}
-.bace-bags #hid-na {
-  top: 39px;
-}
-.bace-bags #hid-nas {
-  top: 39px;
-}
-.bace-bags #hiden {
-  top: 39px;
-}
-.bace-bags #hidens {
-  top: 39px;
-}
-.bace-bags #hideng {
-  top: 39px;
-}
+
 .bace-bags .fliter h4 {
   font-family: "regular";
 }
@@ -2394,42 +2272,7 @@ svg.svg-inline--fa.fa-list-check {
 .list-bags {
   margin-top: 15px;
 }
-.list-bags #hid-1 {
-  top: 39px;
-}
-.list-bags #hid-na-1 {
-  top: 39px;
-}
-.list-bags #hid-nas-1 {
-  top: 39px;
-}
-.list-bags #hid-jj {
-  top: 39px;
-}
-.list-bags #hid-na-kk {
-  top: 39px;
-}
-.list-bags #hid-nas-oo {
-  top: 39px;
-}
-.list-bags #hid {
-  top: 39px;
-}
-.list-bags #hid-na {
-  top: 39px;
-}
-.list-bags #hid-nas {
-  top: 39px;
-}
-.list-bags #hiden {
-  top: 39px;
-}
-.list-bags #hidens {
-  top: 39px;
-}
-.list-bags #hideng {
-  top: 39px;
-}
+
 .not {
   width: 100%;
   height: 100vh;
@@ -5094,83 +4937,7 @@ button.btn.btn-warning.bythis:hover {
     overflow: scroll;
   }
 
-  #hid {
-    background-color: white;
-    box-shadow: 1px 1px 10px #00000073;
-    width: 363px;
-    height: 430px;
-    position: absolute;
-    z-index: 100;
-    padding: 1rem;
-    top: 39px;
-    border-radius: 10px;
-  }
-  #hiden {
-    background-color: white;
-    box-shadow: 1px 1px 10px #00000073;
-    width: 363px;
-    height: 400px;
-    position: absolute;
-    z-index: 100;
-    padding: 1rem;
-    top: 39px;
-    border-radius: 10px;
-  }
-  div#hid-na {
-    background-color: white;
-    box-shadow: 1px 1px 10px #00000073;
-    width: 363px;
-    height: 430px;
-    position: absolute;
-    z-index: 100;
-    padding: 1rem;
-    top: 39px;
-    border-radius: 10px;
-  }
-  div#hid-nas {
-    background-color: white;
-    box-shadow: 1px 1px 10px #00000073;
-    width: 363px;
-    height: 430px;
-    position: absolute;
-    z-index: 100;
-    padding: 1rem;
-    top: 39px;
-    border-radius: 10px;
-  }
-  div#hidens {
-    background-color: white;
-    box-shadow: 1px 1px 10px #00000073;
-    width: 363px;
-    height: 430px;
-    position: absolute;
-    z-index: 100;
-    padding: 1rem;
-    top: 39px;
-    border-radius: 10px;
-  }
-  div#hidens {
-    background-color: white;
-    box-shadow: 1px 1px 10px #00000073;
-    width: 363px;
-    height: 430px;
-    position: absolute;
-    z-index: 100;
-    padding: 1rem;
-    top: 39px;
-    border-radius: 10px;
-  }
-  div#hideng {
-    background-color: white;
-    box-shadow: 1px 1px 10px #00000073;
-    width: 363px;
-    height: 430px;
-    position: absolute;
-    z-index: 100;
-    padding: 1rem;
-    top: 39px;
-    border-radius: 10px;
-  }
+  
 
   .all-lastsub {
     width: 80%;
@@ -5291,29 +5058,7 @@ button.btn.btn-warning.bythis:hover {
     justify-content: center;
     align-items: center;
   }
-  #hid {
-    height: 349px;
-  }
-  div#hid-na {
-    height: 349px;
-    width: 300px;
-  }
-  div#hid-nas {
-    height: 349px;
-    width: 300px;
-  }
-  #hiden {
-    height: 349px;
-    width: 300px;
-  }
-  div#hidens {
-    height: 349px;
-    width: 300px;
-  }
-  div#hideng {
-    height: 349px;
-    width: 300px;
-  }
+  
   .cle {
     display: flex;
     justify-content: center;
@@ -5423,11 +5168,6 @@ button.btn.btn-warning.bythis:hover {
     height: 100%;
   }
 
-  #hid {
-    top: 100%;
-    right: 0px;
-    width: 300px;
-  }
   .card_introduction {
     width: 100%;
   }
@@ -5812,10 +5552,7 @@ button.btn.btn-warning.bythis:hover {
     flex-wrap: wrap !important;
     justify-content: center;
   }
-  #hid {
-    top: 100%;
-    width: 300px;
-  }
+  
   .last-link img {
     width: 10%;
   }
@@ -5892,30 +5629,7 @@ button.btn.btn-warning.bythis:hover {
     width: 100%;
     height: 409px;
   }
-  .detalis #hid {
-    top: 39px;
-    width: 300px;
-  }
-  .detalis #hid-nas {
-    top: 39px;
-    width: 300px;
-  }
-  .detalis #hid-na {
-    top: 39px;
-    width: 300px;
-  }
-  .detalis #hiden {
-    top: 39px;
-    width: 300px;
-  }
-  .detalis #hidens {
-    top: 39px;
-    width: 300px;
-  }
-  .detalis #hideng {
-    top: 39px;
-    width: 300px;
-  }
+  
 
   .Buy-the-course {
     width: 100%;
@@ -6124,29 +5838,6 @@ button.btn.btn-warning.bythis:hover {
     border-radius: 4px;
   }
 
-  #hid {
-    height: 349px;
-  }
-  div#hid-na {
-    height: 349px;
-    width: 300px;
-  }
-  div#hid-nas {
-    height: 349px;
-    width: 300px;
-  }
-  #hiden {
-    height: 349px;
-    width: 300px;
-  }
-  div#hidens {
-    height: 349px;
-    width: 300px;
-  }
-  div#hideng {
-    height: 349px;
-    width: 300px;
-  }
   button.btn.btn-warning.more {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
@@ -6318,11 +6009,7 @@ button.btn.btn-warning.bythis:hover {
     flex-wrap: wrap;
   }
 
-  #hid {
-    top: 100%;
-    right: 0px;
-    width: 300px;
-  }
+ 
   .all-ads {
     flex-wrap: wrap;
   }
@@ -6404,30 +6091,6 @@ button.btn.btn-warning.bythis:hover {
     width: 100%;
   }
 
-  .detalis #hid {
-    top: 39px;
-    width: 300px;
-  }
-  .detalis #hid-nas {
-    top: 39px;
-    width: 300px;
-  }
-  .detalis #hid-na {
-    top: 39px;
-    width: 300px;
-  }
-  .detalis #hiden {
-    top: 39px;
-    width: 300px;
-  }
-  .detalis #hidens {
-    top: 39px;
-    width: 300px;
-  }
-  .detalis #hideng {
-    top: 39px;
-    width: 300px;
-  }
   .bace-bags .fliter {
     flex-wrap: wrap;
   }
@@ -6449,42 +6112,7 @@ button.btn.btn-warning.bythis:hover {
   .list-bags .form-select {
     width: 100%;
   }
-  #go-hid {
-    top: 23px;
-  }
-  #hid-1 {
-    width: 300px;
-  }
-  #hid-na-1 {
-    width: 300px;
-  }
-  #hid-nas-1 {
-    width: 300px;
-  }
-  #hid-jj {
-    width: 300px;
-  }
-  #hid-na-kk {
-    width: 300px;
-  }
-  #hid-nas-oo {
-    width: 300px;
-  }
-  div#hid-na {
-    width: 300px;
-  }
-  div#hid-nas {
-    width: 300px;
-  }
-  #hiden {
-    width: 300px;
-  }
-  div#hidens {
-    width: 300px;
-  }
-  div#hideng {
-    width: 300px;
-  }
+  
   .content {
     height: 100%;
   }

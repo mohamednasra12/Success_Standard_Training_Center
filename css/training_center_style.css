@@ -1366,6 +1366,7 @@ hr:not([size]) {
   font-family: "regular";
   font-size: 1rem;
   color: #656b78;
+  margin-bottom: 0;
 }
 .Educational_bags .accordion-button:not(.collapsed) {
   background-color: #e9ebf8;
@@ -5031,6 +5032,33 @@ input[type="range"]::-webkit-slider-thumb {
 .presonal-account .text-sub a {
   color: #000000;
 }
+.btn-buy-love {
+  padding: 0 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+button.btn.btn-warning.bythis {
+  width: 85%;
+  color: white;
+  font-family: "regular";
+  background-color: #e5890a;
+  border: 1px solid #e5890a;
+  height: 50px;
+}
+button.btn.btn-warning.fav {
+  width: 13%;
+
+  border: 1px solid #e5890a;
+  background-color: transparent;
+  height: 50px;
+}
+button.btn.btn-warning.fav svg {
+  font-size: 1.4rem;
+  color: #e5890a;
+}
+button.btn.btn-warning.bythis:hover {
+  background-color: #532807;
+}
 
 /* personal */
 /* responsive */
@@ -5438,9 +5466,7 @@ input[type="range"]::-webkit-slider-thumb {
   .who-we .arrows {
     display: none;
   }
-  .who-we .all {
-    flex-wrap: wrap;
-  }
+
   .who-we .adsss {
     background-size: cover;
   }
@@ -5489,7 +5515,7 @@ input[type="range"]::-webkit-slider-thumb {
     flex-wrap: nowrap;
   }
   button.btn.btn-warning.start-now {
-    width: 40%;
+    width: 100%;
   }
   .drow {
     width: 50px;
@@ -5633,6 +5659,17 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 @media only screen and (max-width: 991.98px) {
+  .who-we .beet-one img {
+    width: 157px;
+    height: 387px;
+  }
+  .who-we .beet-two img {
+    width: 132px;
+    height: 180px;
+  }
+  .who-we .all {
+    gap: 10px;
+  }
   .inst-prag {
     height: 378px;
     overflow: scroll;
@@ -5646,15 +5683,13 @@ input[type="range"]::-webkit-slider-thumb {
   .our-blog-page .card-plog {
     height: 315px;
   }
-  .content {
-    height: 520px;
-  }
+
   img.supss {
     height: 420px !important;
   }
   .small-box {
-    width: 40px;
-    height: 22px;
+    width: 28px;
+    height: 19px;
   }
   .bag-content .det-teacher h4 {
     font-size: 0.8rem;
@@ -5681,11 +5716,6 @@ input[type="range"]::-webkit-slider-thumb {
   .navbar-brand img {
     width: 85%;
   }
-  .all-frist {
-    flex-wrap: wrap;
-    padding: 1rem;
-    text-align: center;
-  }
 
   h4.growup {
     width: 100%;
@@ -5695,7 +5725,7 @@ input[type="range"]::-webkit-slider-thumb {
     width: 100%;
   }
   button.btn.btn-warning.start-now {
-    width: 100%;
+    width: 40%;
     height: unset;
   }
   ul.btn button.btn.btn-warning {
@@ -5773,8 +5803,8 @@ input[type="range"]::-webkit-slider-thumb {
     top: 100%;
     width: 300px;
   }
-  .all-ads {
-    flex-wrap: wrap;
+  .last-link img {
+    width: 10%;
   }
   .img-sub img {
     width: 100%;
@@ -5816,13 +5846,7 @@ input[type="range"]::-webkit-slider-thumb {
   .Buy-the-course {
     margin-top: unset;
   }
-  .allrate {
-    flex-wrap: wrap;
-  }
-  .rate-bags {
-    width: 100%;
-    animation: unset;
-  }
+
   .input-bags {
     width: 100%;
   }
@@ -5835,8 +5859,9 @@ input[type="range"]::-webkit-slider-thumb {
   .price {
     flex-wrap: wrap;
   }
-  .detalis .main-hero {
-    flex-wrap: wrap;
+  .profile-pictuer {
+    width: 130px;
+    height: 130px;
   }
   .detalis .icon {
     flex-wrap: wrap;
@@ -5844,7 +5869,16 @@ input[type="range"]::-webkit-slider-thumb {
   .detalis .text p {
     width: 100%;
   }
-
+  .adress h4 {
+    font-size: 1.2rem;
+  }
+  .card-subject {
+    gap: unset;
+  }
+  .detalis .img-sub img {
+    width: 100%;
+    height: 409px;
+  }
   .detalis #hid {
     top: 39px;
     width: 300px;
@@ -5934,9 +5968,7 @@ input[type="range"]::-webkit-slider-thumb {
   .who-we .arrows {
     display: none;
   }
-  .who-we .all {
-    flex-wrap: wrap;
-  }
+
   .who-we .adsss {
     background-size: cover;
   }
@@ -6071,11 +6103,12 @@ input[type="range"]::-webkit-slider-thumb {
     margin-bottom: 10px;
   }
   .cle {
-    width: 50px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 4px;
   }
 
   #hid {
@@ -6310,12 +6343,8 @@ input[type="range"]::-webkit-slider-thumb {
   .Buy-the-course {
     margin-top: unset;
   }
-  .allrate {
-    flex-wrap: wrap;
-  }
-  .rate-bags {
-    width: 100%;
-  }
+ 
+
   .input-bags {
     width: 100%;
   }
@@ -6336,6 +6365,7 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .rate-bags {
     animation: unset;
+    width: 50%;
   }
   html {
     font-size: 0.7rem;
@@ -6706,11 +6736,11 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 0.8rem;
   }
   #com-res img {
-    width: 4%;
+   display: none;
   }
   #res-icn svg {
-    width: 10px;
-    height: 10px;
+    width: 6px;
+    height: 6px;
   }
   .alila {
     display: flex;
@@ -6908,7 +6938,7 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 0.9rem;
   }
   .bag-content .date {
-    width: 100%;
+    width: 38%;
     margin-bottom: 10px;
   }
   .Indicator-details .date {
@@ -7068,6 +7098,20 @@ input[type="range"]::-webkit-slider-thumb {
   .Educational_bags .img-sub img {
     width: 100%;
     height: 236px;
-}
+  }
+  div#end-res {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-company {
+    margin-bottom: 0.2rem;
+  }
+  h4.week {
+    margin-right: 0;
+  }
+  .company-link a h5 {
+    padding: 0.2rem;
+  }
 }
 /* responsive */

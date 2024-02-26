@@ -7113,5 +7113,8 @@ button.btn.btn-warning.bythis:hover {
   .company-link a h5 {
     padding: 0.2rem;
   }
+  div#end-res .logo img {
+    width: 75%;
+}
 }
 /* responsive */

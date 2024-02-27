@@ -149,6 +149,35 @@ a.dropdown-item:hover {
   background-color: #e5890a;
   color: white !important;
 }
+h4.logout {
+  font-family: "bold";
+  margin-top: 12px;
+}
+p.logouts {
+  font-family: 'regular';
+}
+.nownoti {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a.dropdown-item.notifacation:hover {
+  background-color: rgba(255, 255, 255, 0.082);
+  color: rgb(0, 0, 0) !important;
+  
+}
+a.dropdown-item.notifacation {
+  border-bottom: 1px solid #0000001f;
+  padding: 1rem 0.2rem;
+}
+h5.all-noti {
+color: #e5890a;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+}
 .dropdown-menu.sin {
   width: 100%;
 }
@@ -2955,7 +2984,7 @@ img.rewve {
 .presonal-account .all-tabs {
   display: flex;
   align-items: start;
-  gap: 40px;
+  gap: 10px;
 }
 .presonal-account .pro-detailes {
   background-image: url(../photo/detalis.png);
@@ -3659,6 +3688,7 @@ img#uploadedPhoto {
   justify-content: space-between;
   align-items: center;
 }
+
 .bag-content .sec-comple {
   display: flex;
   justify-content: space-between;
@@ -4357,6 +4387,58 @@ img#uploadedPhoto {
 .ques-content .form-wizard .form-wizard-previous-btn {
   background-color: #fb1647;
 }
+h4.popp {
+  font-family: "bold";
+}
+p.poppf {
+  font-family: 'regular';
+  color: #7b8291;
+}
+h4.popps {
+  font-family: 'bold';
+  text-align: start;
+  margin-top: 16px;
+  font-size: 0.9rem;
+}
+p.poppd {
+  font-family: 'regular';
+  font-size: 0.7rem;
+  text-align: start;
+  color: #7b8291;
+}
+button#dropdownnotifacation {
+  border-radius: 50%;
+    margin-top: 20px;
+    font-family: "regular";
+    letter-spacing: 1.8px;
+    background-color: #eff0f1;
+    color: #000000;
+    border: 0;
+}
+ul.dropdown-menu.notifacation.show {
+  width:410px;
+  text-align: right;
+  overflow-y: scroll;
+  height: 400px;
+}
+.notifacationcontent {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+ 
+  gap: 10px;
+}
+.nownoti h4 {
+  font-size: 0.8rem;
+  font-family: "bold";
+  margin-bottom: 0px;
+}
+.notitext p {
+  font-size: 0.7rem;
+  font-family: "regular";
+  color: #656b78;
+  margin-bottom: 7px;
+}
 .ques-content .form-wizard .form-control {
   font-weight: 300;
   height: auto !important;
@@ -4875,6 +4957,11 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: #e58a0a;
   height: 2px;
 }
+.presonal-account .chat img {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
 .presonal-account .progress_bar_item h4 {
   font-family: "regular";
   font-size: 1rem;
@@ -4894,7 +4981,7 @@ input[type="range"]::-webkit-slider-thumb {
   margin-top: 0.5rem;
 }
 button.btn.btn-warning.bythis {
-  width: 85%;
+  width: 80%;
   color: white;
   font-family: "regular";
   background-color: #e5890a;
@@ -4902,11 +4989,13 @@ button.btn.btn-warning.bythis {
   height: 50px;
 }
 button.btn.btn-warning.fav {
-  width: 13%;
-
+  width: 18%;
   border: 1px solid #e5890a;
   background-color: transparent;
   height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 button.btn.btn-warning.fav svg {
   font-size: 1.4rem;
@@ -4983,6 +5072,7 @@ button.btn.btn-warning.bythis:hover {
   }
   .Buy-the-course {
     width: 308px;
+    margin-top: -380px;
   }
   .lang-arab h4 {
     padding: 0.5rem;
@@ -5065,12 +5155,16 @@ button.btn.btn-warning.bythis:hover {
     align-items: center;
   }
   .card-blog {
-    height: 451px;
+    height: 470px;
   }
   .who-we .card-teacher::after {
     width: 103%;
     height: 63%;
   }
+  .bace-bags .img-sub img {
+    width: 100%;
+    height: 285px;
+}
 }
 
 @media only screen and (max-width: 1200px) {
@@ -5250,6 +5344,10 @@ button.btn.btn-warning.bythis:hover {
   }
 }
 @media only screen and (max-width: 1024px) {
+  .detalis .img-sub img {
+    width: 100%;
+    height: 237px;
+}
   .allrate {
     margin-top: -326px;
   }
@@ -5316,7 +5414,7 @@ button.btn.btn-warning.bythis:hover {
     align-items: center;
   }
   .adress h4 {
-    width: 100%;
+    width: 87%;
   }
   .top_nav {
     height: 56px;
@@ -6226,7 +6324,7 @@ button.btn.btn-warning.bythis:hover {
     flex-wrap: wrap;
   }
   .who-we .all-Trainees {
-    height: 57px;
+    height: 105px;
   }
   .who-we .trainees-icon {
     margin-top: 10px;
@@ -6773,6 +6871,12 @@ button.btn.btn-warning.bythis:hover {
   }
   .detalis .main-img img {
     width: 19%;
+  }
+  .ques-content .que-hed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   }
 }
 /* responsive */
